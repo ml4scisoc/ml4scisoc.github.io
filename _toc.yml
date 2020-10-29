@@ -1,0 +1,13 @@
+- file: about
+
+
+- part: Syllabus
+  chapters:
+    - file: syllabus/index
+    - file: syllabus/schedule
+    # - file: syllabus/policies
+
+
+# - part: Notes
+#   chapters:
+#     - file:

@@ -1,0 +1,17 @@
+# Book settings
+title: Machine Learning for Science & Society
+author: Sarah M Brown
+logo: logo.png
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+
+copyright                   : ""
+
+
+repository:
+  url                       : https://github.com/executablebooks/jupyter-book  # The URL to your book's repository
+  path_to_book              : ""  # A path to your book's folder, relative to the repository root.
+  branch                    : main
