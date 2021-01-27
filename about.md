@@ -71,7 +71,7 @@ To be successful in this class students should have:
 - basic programming skills
 - familiarity with concepts in probability, linear algebra, and calculus that appear in ML
 
-varying skill in these topics is ok, but a general understanding of the basic ideas is important.  If you're intersted and not sure if you have the background, complete the form below
+varying skill in these topics is ok, but a general understanding of the basic ideas is important.  If you're interested and not sure if you have the background, complete the form below
 <!-- we won't be working through a lot of derivations, but papers and discussions will rely on having an understanding of conditional probability, optimization,  -->
 
 

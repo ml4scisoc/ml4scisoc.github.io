@@ -2,7 +2,7 @@
 
 ## Meetings
 
-This class will meet on Tu 5:30-8:15.
+This class will meet on Monday and Wednesday 3-4:15pm.
 via Zoom (link provided to registered students via BrightSpace)
 
 
@@ -12,4 +12,4 @@ Professor Sarah M Brown is an Assistant Professor in Computer Science. Her curre
 
 ## Office Hours
 
-TBA
+By appointment, link on Brightspace
