@@ -13,11 +13,11 @@ In this part of the class, Professor Brown will lead synchronous sessions.  Stud
 
 ## Deep Dives
 
-During the middle of the course we will spend one class session on each topic. There will be 1-3 papers to read each week.
+During the middle of the course we will spend one week on each topic. There will be 1-3 papers to read each week.
 
 Students will be responsible for presenting papers in class on a rotating basis.
 
-During this time students will have milestones where they need to complete interim steps for their course project. This
+During this time students will have milestones where they need to complete interim steps for their course project. The first milestone will be a proposal that includes the specific products for the remainder of the milestones based on a template.  
 
 
 ## Conclusion
