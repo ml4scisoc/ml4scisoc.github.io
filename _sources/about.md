@@ -74,5 +74,5 @@ To be successful in this class students should have:
 varying skill in these topics is ok, but a general understanding of the basic ideas is important.  If you're interested and not sure if you have the background, complete the form below
 <!-- we won't be working through a lot of derivations, but papers and discussions will rely on having an understanding of conditional probability, optimization,  -->
 
-
-[Complete this Google form](https://forms.gle/XouLBRikos7J4Lpg7) to request a permission number from Professor Brown to enroll in this course. Note that you must be enrolled at URI to take this course and be logged into your URI google account to view that form.
+<!-- 
+[Complete this Google form](https://forms.gle/XouLBRikos7J4Lpg7) to request a permission number from Professor Brown to enroll in this course. Note that you must be enrolled at URI to take this course and be logged into your URI google account to view that form. -->
