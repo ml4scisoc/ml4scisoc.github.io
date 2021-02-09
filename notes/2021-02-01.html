@@ -5,56 +5,58 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Machine Learning for Science &amp; Society &#8212; Machine Learning for Science &amp; Society</title>
+    <title>ML and Probability Review &#8212; Machine Learning for Science &amp; Society</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
   <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
   <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="author" title="About these documents" href="about.html" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class 3: ML Pipelines" href="2021-02-03.html" />
+    <link rel="prev" title="Class 1: Introductions" href="2021-01-27.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -71,22 +73,22 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
+<a class="navbar-brand text-wrap" href="../index.html">
   
-  <img src="_static/logo.png" class="logo" alt="logo">
+  <img src="../_static/logo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
   
 </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="about.html">
+  <a class="reference internal" href="../about.html">
    Machine Learning for Science &amp; Society
   </a>
  </li>
@@ -98,13 +100,45 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="syllabus/index.html">
+  <a class="reference internal" href="../syllabus/index.html">
    Basic Facts
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="syllabus/schedule.html">
+  <a class="reference internal" href="../syllabus/schedule.html">
    Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/learning.html">
+   Learning Outcomes and Evaluation
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Notes
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-01-27.html">
+   Class 1: Introductions
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   ML and Probability Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-02-03.html">
+   Class 3: ML Pipelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-02-08.html">
+   Class 4: Missing Data: Basic techniques
   </a>
  </li>
 </ul>
@@ -147,7 +181,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/flyer.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notes/2021-02-01.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -167,10 +201,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fflyer.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-01.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/flyer.md"><button
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-01.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -190,6 +224,35 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#admin">
+   admin
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-formalism">
+   More formalism
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probability">
+   Probability
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practical-application-of-ml-pipelines">
+   Practical Application of ML &amp; Pipelines
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -197,27 +260,35 @@
         
               <div>
                 
-  <p><img alt="mlss" src="_images/ml4ss_header.png" /></p>
-<div class="section" id="machine-learning-for-science-society">
-<h1>Machine Learning for Science &amp; Society<a class="headerlink" href="#machine-learning-for-science-society" title="Permalink to this headline">¶</a></h1>
-<p><strong>Spring 2021</strong></p>
-<p><strong>Professor Sarah Brown</strong></p>
-<p>In this class we will address the challenges in applying machine learning to scientific research and in high stakes social contexts. On the science side, we will examine the role of ML in research, in particular how it works within knowledge production. On the social side, we will consider how to ensure ML-trained algorithms make fair decisions. While these two applications are distinct, many of the technical challenges are shared. Some of the common challenges include:</p>
+  <div class="section" id="ml-and-probability-review">
+<h1>ML and Probability Review<a class="headerlink" href="#ml-and-probability-review" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="admin">
+<h2>admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>missing data</p></li>
-<li><p>noisy or missing labels</p></li>
-<li><p>multiple objectives</p></li>
+<li><p>collaborative notes</p></li>
+<li><p>brightspace will be updated later this week</p></li>
+<li><p>grading details by Wed</p></li>
+<li><p>environment for coding demos</p></li>
 </ul>
-<p>We will look at a range of strategies for identifying and mitigating these problems including:</p>
+</div>
+<div class="section" id="more-formalism">
+<h2>More formalism<a class="headerlink" href="#more-formalism" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>robust evaluation</p></li>
-<li><p>model inspection,</p></li>
-<li><p>model explanations</p></li>
-<li><p>interpretable models.</p></li>
+<li><p>model</p></li>
+<li><p>prediction algo</p></li>
+<li><p>cost function</p></li>
+<li><p>objective</p></li>
 </ul>
-<p><a class="reference external" href="https://forms.gle/XouLBRikos7J4Lpg7">Request a permission number for CSC 592</a></p>
-<p><img alt="blank to force spacing" src="_images/space.png" />
-<img alt="blank to force spacing" src="_images/space.png" /></p>
+</div>
+<div class="section" id="probability">
+<h2>Probability<a class="headerlink" href="#probability" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>sample distros</p></li>
+</ul>
+</div>
+<div class="section" id="practical-application-of-ml-pipelines">
+<h2>Practical Application of ML &amp; Pipelines<a class="headerlink" href="#practical-application-of-ml-pipelines" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -233,7 +304,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./notes"
         },
         predefinedOutput: true
     }
@@ -248,6 +319,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="2021-01-27.html" title="previous page">Class 1: Introductions</a>
+    <a class='right-next' id="next-link" href="2021-02-03.html" title="next page">Class 3: ML Pipelines</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -267,7 +340,7 @@
     </div>
 
     
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

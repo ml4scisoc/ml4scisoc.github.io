@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 4: Missing Data: Basic techniques &#8212; Machine Learning for Science &amp; Society</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Class 3: ML Pipelines" href="2021-02-03.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about.html">
+   Machine Learning for Science &amp; Society
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/index.html">
+   Basic Facts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/schedule.html">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/learning.html">
+   Learning Outcomes and Evaluation
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Notes
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-01-27.html">
+   Class 1: Introductions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-02-01.html">
+   ML and Probability Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-02-03.html">
+   Class 3: ML Pipelines
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Class 4: Missing Data: Basic techniques
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notes/2021-02-08.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-08.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-08.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluation-of-missing-data-at-training">
+   Evaluation of missing data at training
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#imputation">
+     Imputation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#imputation-ml">
+     Imputation ML
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#testing">
+     Testing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discussion-questions">
+     Discussion  &amp; Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#handling-missing-values-at-application-time">
+   Handling missing values At application time
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#techniques">
+     Techniques:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-complex-model">
+     More complex model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hybrid-models-for-efficient-prediction">
+     Hybrid Models for efficient prediction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-takeaways">
+     General takeaways
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#weaknesses">
+     Weaknesses
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overall-discussion">
+   Overall Discussion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for-wednesday">
+   For Wednesday
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="class-4-missing-data-basic-techniques">
+<h1>Class 4: Missing Data: Basic techniques<a class="headerlink" href="#class-4-missing-data-basic-techniques" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="evaluation-of-missing-data-at-training">
+<h2>Evaluation of missing data at training<a class="headerlink" href="#evaluation-of-missing-data-at-training" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>mulitple imputation</p></li>
+<li><p>ML based was better than imputation which is better than dropping samples</p></li>
+<li><p>example datasets: 45% of patients have at least 1 missing value</p></li>
+</ul>
+<div class="section" id="imputation">
+<h3>Imputation<a class="headerlink" href="#imputation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Mean imputation:</p>
+<ul>
+<li><p>insert the mean based onthe other values</p></li>
+</ul>
+</li>
+<li><p>Hot deck</p>
+<ul>
+<li><p>mean-like with similarity</p></li>
+</ul>
+</li>
+<li><p>Multiple inputation</p>
+<ul>
+<li><p>3 diff ways</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="imputation-ml">
+<h3>Imputation ML<a class="headerlink" href="#imputation-ml" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>MLP</p>
+<ul>
+<li><p>fully connected</p></li>
+</ul>
+</li>
+<li><p>Self organization</p>
+<ul>
+<li><p>competitive learning</p></li>
+<li><p>NN on modle of nodes in 2d grid,</p></li>
+</ul>
+</li>
+<li><p>KNN</p>
+<ul>
+<li><p>select closest complete case to impute values from</p></li>
+<li><p>expensive for large datasets due to need to search everywhere for each missing value</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="testing">
+<h3>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Train NN based on data imputed with each technie</p></li>
+</ul>
+<p>Conclusions:</p>
+<ul class="simple">
+<li><p>in general, any imputation was better than deletion</p></li>
+<li><p>ML based performed better</p></li>
+</ul>
+</div>
+<div class="section" id="discussion-questions">
+<h3>Discussion  &amp; Questions<a class="headerlink" href="#discussion-questions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>interesting that even simple methods provide improvement</p></li>
+<li><p>SOM is sort of unclear how does that work?</p></li>
+<li><p>Review of MLP  and <a class="reference external" href="https://en.wikipedia.org/wiki/Sigmoid_function">sigmoid</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="handling-missing-values-at-application-time">
+<h2>Handling missing values At application time<a class="headerlink" href="#handling-missing-values-at-application-time" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>reduced models vs imputation.</p></li>
+<li><p>broad approach</p></li>
+<li><p>15 common datasets</p></li>
+</ul>
+<div class="section" id="techniques">
+<h3>Techniques:<a class="headerlink" href="#techniques" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Discard</p></li>
+<li><p>Acquire missing values</p></li>
+<li><p>Imputation</p>
+<ul>
+<li><p>predictive value imputation</p></li>
+<li><p>distribution based</p></li>
+<li><p>unique values</p></li>
+</ul>
+</li>
+<li><p>Reduced Feature Models</p>
+<ul>
+<li><p>retrain for different feature models</p></li>
+</ul>
+</li>
+</ul>
+<p>Feature imputability impacts the distribution or predictive type of imputation</p>
+</div>
+<div class="section" id="more-complex-model">
+<h3>More complex model<a class="headerlink" href="#more-complex-model" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>decision tree with bagging</p></li>
+<li><p>again, reduced model is the best strategy</p></li>
+</ul>
+</div>
+<div class="section" id="hybrid-models-for-efficient-prediction">
+<h3>Hybrid Models for efficient prediction<a class="headerlink" href="#hybrid-models-for-efficient-prediction" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>reduced models</p></li>
+<li><p>a hybrid is a complete model with stored subset for most common missing features</p></li>
+<li><p>Reduced feature enseble</p>
+<ul>
+<li><p>N models for N features</p></li>
+<li><p>each one is missing one feature</p></li>
+<li><p>average these together for final prediction</p></li>
+<li><p>substantial reduction in when there is a single feature is missing</p></li>
+<li><p>combine with  imputation for multiple features</p></li>
+<li><p>relative accuracy is better than imputation</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="general-takeaways">
+<h3>General takeaways<a class="headerlink" href="#general-takeaways" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>reduced models vs imputatation is  a large improvement</p></li>
+<li><p>this is sort of an imputation</p></li>
+</ul>
+</div>
+<div class="section" id="weaknesses">
+<h3>Weaknesses<a class="headerlink" href="#weaknesses" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Didn’t check unique value imputation</p></li>
+<li><p>MCAR</p></li>
+<li><p>focused on</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="overall-discussion">
+<h2>Overall Discussion<a class="headerlink" href="#overall-discussion" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>How might the two problems interact?</p>
+<ul>
+<li><p>if missing data at both train and prediction…</p></li>
+<li><p>train using missing data without imputation for training the separate models</p></li>
+</ul>
+</li>
+<li><p>Questions on these ideas</p></li>
+<li><p>What additional things might you need to consider when choosing one?</p>
+<ul>
+<li><p>feature imputability at training</p></li>
+</ul>
+</li>
+<li><p>what to do with time series data</p></li>
+<li><p>How to check if missing CAR?</p>
+<ul>
+<li><p>look at collection technique</p></li>
+<li></li>
+</ul>
+</li>
+<li><p>what do to with varying data per person</p>
+<ul>
+<li><p>LSTM for time series data</p></li>
+<li><p>hierarchichal modeling other wise</p></li>
+<li><p><a class="reference external" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.232.390&amp;rep=rep1&amp;type=pdf">example of hierarchical with time series also</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="for-wednesday">
+<h2>For Wednesday<a class="headerlink" href="#for-wednesday" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf">Graphical Models for Inference with Missing Data</a></p></li>
+<li><p><a class="reference external" href="https://auai.org/uai2015/proceedings/papers/204.pdf">Missing Data as a Causal and Probabilistic Problem</a></p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="2021-02-03.html" title="previous page">Class 3: ML Pipelines</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Sarah M Brown<br/>
+        
+            &copy; Copyright .<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
