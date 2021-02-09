@@ -33,9 +33,9 @@ Final projects will be evaluated through a presentation and paper
 ## Weekly topics
 
 
-```{list-table} Schedule
+````{list-table} Schedule
 :header-rows: 1
-:name: schdeule
+:name: schedule
 
 * - Class
   - Topic
@@ -156,7 +156,7 @@ Final projects will be evaluated through a presentation and paper
   - Project Presentations
   - Reading
   - revision plans
-```
+````
 
 
 
