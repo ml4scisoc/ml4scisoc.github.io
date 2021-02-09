@@ -35,38 +35,35 @@ Final projects will be evaluated through a presentation and paper
 
 ``````{list-table} Schedule
 :header-rows: 1
+:widths: 10 10 20 20
 :name: schedule
 
 * - Class
   - Topic
   - Reading
   - Activities
-* - '2021-01-29'
+* - 2021-01-29
   - Introduction
   - None
   - introductions, expectation setting
-* - '2021-02-01'
+* - 2021-02-01
   - Probability Review
   - Model Based ML, chapter 1
-  - Activities
+  - reading discussion, setting
 * - 2021-02-03
-  - ML Process
-  - Scikit learn getting started
-  - Activities
+  - ML Process & Mutual information preview
+  - Scikit learn getting started,
+  - live coding
 * - 2021-02-08
   - Missing Data: Intro strategies
-  - ```-[Handling Missing Values when Applying Classification Models](https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf) {cite}`saar2007handling`
-  -[Missing data imputation using statistical and machine learning methods in a real
-  breast cancer problem]
-  (https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&rep=rep1&type=pdf) {cite}`jerez2010missing`
-  ```
+  - [Handling Missing Values when Applying Classification Models](https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf) &
+  [Missing data imputation using statistical and machine learning methods in a real
+  breast cancer problem](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&rep=rep1&type=pdf)
   - Paper discussion led by Daniel
 * - 2021-02-10
   - Missing data with graphical models and causal reasoning
-  - ```
-  - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf)
-  - [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
-```
+  - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf) &
+ [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
   - Paper discussion led by Julian
 * - 2021-02-15
   - Current Challenges in Missing data
@@ -77,12 +74,10 @@ Final projects will be evaluated through a presentation and paper
   - Current Challenges in Missing data
   - [ from Artemiss workshop](https://artemiss-workshop.github.io/#program
 )
-  - '''- Replication and testing discussion
-  -preview of lasso and admm constraint to multiobjecitve reformulation '''
+  - Replication and testing discussion and preview of lasso and admm constraint to multiobjecitve reformulation '''
 * - 2021-02-22
   - Fairness
-  - ```- fairml classification chapter
-  - friedler empricial comparison paper  ```
+  - fairml classification chapter and friedler empricial comparison paper
   - Empirical setup
 * - 2021-02-24
   - Fairness
@@ -118,7 +113,7 @@ Final projects will be evaluated through a presentation and paper
   - Activities
 * - 2021-03-24
   - Interpretable
-  - '''Rudin examples, CORELS'''
+  - Rudin HDR, CORELS
   - Activities
 * - 2021-03-29
   - Interpretability
@@ -137,12 +132,12 @@ Final projects will be evaluated through a presentation and paper
   - TCAV
   - Activities
 * - 2021-04-12
-  - Meta- issues
-  - '''ml & phil sci'''
+  - Meta issues
+  - ml & phil sci
   - Activities
 * - 2021-04-13
-  - Meta- issues
-  - Roles for computing in social change'''
+  - Meta issues
+  - Roles for computing in social change
   - Activities
 * - 2021-04-19
   - Project Presentations

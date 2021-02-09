@@ -5,9 +5,13 @@
   chapters:
     - file: syllabus/index
     - file: syllabus/schedule
+    - file: syllabus/learning
     # - file: syllabus/policies
 
 
-# - part: Notes
-#   chapters:
-#     - file:
+- part: Notes
+  chapters:
+    - file: notes/2021-01-27
+    - file: notes/2021-02-01
+    - file: notes/2021-02-03
+    - file: notes/2021-02-08

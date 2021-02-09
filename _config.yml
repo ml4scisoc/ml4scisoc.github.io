@@ -10,7 +10,8 @@ latex:
 
 copyright                   : ""
 
-exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", 'README.md']
+exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", 'README.md',
+                              .gitignore,flyer.md, .github, hold]
 
 repository:
   url                       : https://github.com/ml4scisoc/ml4scisoc.github.io  # The URL to your book's repository

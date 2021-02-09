@@ -33,7 +33,7 @@ jobs:
     - name: Build the book
       run: |
         jupyter-book build . --builder pdfhtml
-        mv _build/pdf/book.pdf _build/html/coursemanual.pdf
+        mv _build/pdf/book.pdf _build/html/syllabus.pdf
         jupyter-book build .
 
     # Push the book's HTML to github-pages
