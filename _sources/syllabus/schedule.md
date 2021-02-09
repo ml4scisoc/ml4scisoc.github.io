@@ -35,16 +35,17 @@ Final projects will be evaluated through a presentation and paper
 
 ```{list-table} Schedule
 :header-rows: 1
+:name: schdeule
 
 * - Class
   - Topic
   - Reading
   - Activities
-* - 2021-01-29
+* - '2021-01-29'
   - Introduction
   - None
-  - introductions & expectation setting
-* - 2021-02-01
+  - introductions, expectation setting
+* - '2021-02-01'
   - Probability Review
   - Model Based ML, chapter 1
   - Activities
