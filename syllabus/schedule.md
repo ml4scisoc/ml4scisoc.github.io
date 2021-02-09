@@ -33,7 +33,7 @@ Final projects will be evaluated through a presentation and paper
 ## Weekly topics
 
 
-````{list-table} Schedule
+``````{list-table} Schedule
 :header-rows: 1
 :name: schedule
 
@@ -142,7 +142,7 @@ Final projects will be evaluated through a presentation and paper
   - Activities
 * - 2021-04-13
   - Meta- issues
-  - '''Roles for computing in social change'''
+  - Roles for computing in social change'''
   - Activities
 * - 2021-04-19
   - Project Presentations
@@ -156,7 +156,7 @@ Final projects will be evaluated through a presentation and paper
   - Project Presentations
   - Reading
   - revision plans
-````
+``````
 
 
 
