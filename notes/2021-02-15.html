@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ML and Probability Review &#8212; Machine Learning for Science &amp; Society</title>
+    <title>Missing Data 3 &#8212; Machine Learning for Science &amp; Society</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -52,11 +52,13 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class 3: ML Pipelines" href="2021-02-03.html" />
-    <link rel="prev" title="Class 1: Introductions" href="2021-01-27.html" />
+    <link rel="next" title="MIssing data" href="2021-02-17.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="2021-02-10.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -126,8 +128,8 @@
    Class 1: Introductions
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021-02-01.html">
    ML and Probability Review
   </a>
  </li>
@@ -141,8 +143,8 @@
    Class 4: Missing Data: Basic techniques
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-15.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Missing Data 3
   </a>
  </li>
@@ -201,7 +203,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notes/2021-02-01.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notes/2021-02-15.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -221,10 +223,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-01.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-15.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-01.md"><button
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-15.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -250,23 +252,42 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#admin">
-   admin
+  <a class="reference internal nav-link" href="#handling-missing-data-in-decision-a-probabilistic-approach">
+   Handling Missing Data in Decision: A probabilistic approach
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-ideas">
+     key ideas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discussion">
+     Discussion
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-formalism">
-   More formalism
+  <a class="reference internal nav-link" href="#how-to-miss-data-reinformcent-leanring-for-environgments-iwith-high-obseration-cost">
+   How to miss data?: Reinformcent leanring for environgments iwith high obseration cost
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-points">
+     Key points
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Discussion
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#probability">
-   Probability
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#practical-application-of-ml-pipelines">
-   Practical Application of ML &amp; Pipelines
+  <a class="reference internal nav-link" href="#general">
+   General
   </a>
  </li>
 </ul>
@@ -280,34 +301,85 @@
         
               <div>
                 
-  <div class="section" id="ml-and-probability-review">
-<h1>ML and Probability Review<a class="headerlink" href="#ml-and-probability-review" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="admin">
-<h2>admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="missing-data-3">
+<h1>Missing Data 3<a class="headerlink" href="#missing-data-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="handling-missing-data-in-decision-a-probabilistic-approach">
+<h2>Handling Missing Data in Decision: A probabilistic approach<a class="headerlink" href="#handling-missing-data-in-decision-a-probabilistic-approach" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="key-ideas">
+<h3>key ideas<a class="headerlink" href="#key-ideas" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>collaborative notes</p></li>
-<li><p>brightspace will be updated later this week</p></li>
-<li><p>grading details by Wed</p></li>
-<li><p>environment for coding demos</p></li>
+<li><p>A decision tree’s structure and notation</p></li>
+<li><p>Review of imputation</p>
+<ul>
+<li><p>Predictive value imputation</p>
+<ul>
+<li><p>mean, median or mode</p></li>
+<li><p>make assumption that features are indpendent</p></li>
+<li><p>surrogate splits, partition data using another feature to</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>XG Boost</p></li>
+</ul>
+<p>Expected Predictions:</p>
+<ul class="simple">
+<li><p>impute all possible completions as once to avoid strong dist assumptions</p></li>
+<li><p>consistent for MCAR and MAR</p></li>
+<li><p>expensive, but density can help reduce</p></li>
+<li><p>tractably compute the exact expected predictions</p></li>
+<li><p>loss minimization</p></li>
+</ul>
+<p>Experiments</p>
+<ul class="simple">
+<li><p>for a single dataset, outperforms in general</p></li>
 </ul>
 </div>
-<div class="section" id="more-formalism">
-<h2>More formalism<a class="headerlink" href="#more-formalism" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="discussion">
+<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>model</p></li>
-<li><p>prediction algo</p></li>
-<li><p>cost function</p></li>
-<li><p>objective</p></li>
+<li><p>generally easier</p></li>
+<li><p>given single dataset, of results, how much do we trust this?</p></li>
+<li><p>what does this provide as an advantage</p></li>
+<li><p>NP hard</p></li>
 </ul>
 </div>
-<div class="section" id="probability">
-<h2>Probability<a class="headerlink" href="#probability" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="how-to-miss-data-reinformcent-leanring-for-environgments-iwith-high-obseration-cost">
+<h2>How to miss data?: Reinformcent leanring for environgments iwith high obseration cost<a class="headerlink" href="#how-to-miss-data-reinformcent-leanring-for-environgments-iwith-high-obseration-cost" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="key-points">
+<h3>Key points<a class="headerlink" href="#key-points" title="Permalink to this headline">¶</a></h3>
+<p>Reinforcement learning</p>
 <ul class="simple">
-<li><p>sample distros</p></li>
+<li><p>cost associated with making accurate observations</p></li>
+<li><p>goal directed</p></li>
+<li><p>RL agent tries to</p></li>
+</ul>
+<p>Problem setting:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(o \sim p_0(o_t |s_t; \beta)\)</span></p></li>
+<li><p>beta is accuracy og obs</p></li>
+<li><p>r is old reward</p></li>
+</ul>
+<p>Scenario A:</p>
+<ul class="simple">
+<li><p>observed cangle vs</p></li>
+</ul>
+<p>Big picture: manipulating how the data collection</p>
+</div>
+<div class="section" id="id1">
+<h3>Discussion<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>survivorship bias?</p></li>
+<li><p>right left imbalance for figure 3</p></li>
+<li><p>simple pendulum example helped overcome the background lacking</p></li>
+<li><p>figures</p></li>
 </ul>
 </div>
-<div class="section" id="practical-application-of-ml-pipelines">
-<h2>Practical Application of ML &amp; Pipelines<a class="headerlink" href="#practical-application-of-ml-pipelines" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="general">
+<h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
+<p>Try writing out a missingness graph for a problem of choice, some scenario where you imagine there would be missing data, or an example dataset that you can find.</p>
 </div>
 </div>
 
@@ -339,8 +411,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="2021-01-27.html" title="previous page">Class 1: Introductions</a>
-    <a class='right-next' id="next-link" href="2021-02-03.html" title="next page">Class 3: ML Pipelines</a>
+    <a class='left-prev' id="prev-link" href="2021-02-10.html" title="previous page">&lt;no title&gt;</a>
+    <a class='right-next' id="next-link" href="2021-02-17.html" title="next page">MIssing data</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

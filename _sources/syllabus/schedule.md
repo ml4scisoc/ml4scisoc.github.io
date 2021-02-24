@@ -67,14 +67,12 @@ Final projects will be evaluated through a presentation and paper
   - Paper discussion led by Julian
 * - 2021-02-15
   - Current Challenges in Missing data
-  - [ from Artemiss workshop](https://artemiss-workshop.github.io/#program
-)
-  - Paper overview
+  - [Handling Missing Data in Decision Trees: A Probabilistic Approach](https://openreview.net/forum?id=0IXcmQIAJPt) & [How to miss data? Reinforcement learning for environments with high observation cost](https://openreview.net/forum?id=jEN6sD09HWe)
+  - Paper discussions by Xavier and Zhen
 * - 2021-02-17
   - Current Challenges in Missing data
-  - [ from Artemiss workshop](https://artemiss-workshop.github.io/#program
-)
-  - Replication and testing discussion and preview of lasso and admm constraint to multiobjecitve reformulation '''
+  - [How to deal with missing data in supervised deep learning](https://openreview.net/forum?id=jEXxzPUMYVZ)
+  - Paper discussion by Madhukara, Replication & testing discussion,
 * - 2021-02-22
   - Fairness
   - fairml classification chapter and friedler empricial comparison paper
@@ -82,15 +80,15 @@ Final projects will be evaluated through a presentation and paper
 * - 2021-02-24
   - Fairness
   - Reading
-  - Activities
+  -  preview of lasso and admm constraint to multiobjecitve reformulation
 * - 2021-03-01
   - Multi-objective & constrained opt
-  - Reading
-  - Activities
+  - [Elastic Net](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x)
+  - Paper presentation by Daniel, try out elastic net & LASSO in scikit learn
 * - 2021-03-03
   - Multi-objective & constrained opt
-  - Reading
-  - Activities
+  - [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg)
+  - Paper presentation and discussion by Zhen
 * - 2021-03-08
   - Multi-objective & constrained opt
   - Reading
