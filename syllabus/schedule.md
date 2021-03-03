@@ -90,12 +90,12 @@ Final projects will be evaluated through a presentation and paper
   - [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg)
   - Paper presentation and discussion by Zhen
 * - 2021-03-08
-  - Multi-objective & constrained opt
-  - Reading
+  - Latent Variable Models
+  - [Gaussian Mixture Models](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) and [Topic Models](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
   - Activities
 * - 2021-03-10
-  - Multi-objective & constrained opt
-  - Reading
+  - Latent Variable Models
+  - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
   - Activities
 * - 2021-03-15
   - Noisy & Missing labels
