@@ -92,17 +92,17 @@ Final projects will be evaluated through a presentation and paper
 * - 2021-03-08
   - Latent Variable Models
   - [Gaussian Mixture Models](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) and [Topic Models](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
-  - Activities
+  - Paper presentaiton by Xavier
 * - 2021-03-10
   - Latent Variable Models
   - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
-  - Activities
+  - Paper presentation by Madhukara
 * - 2021-03-15
-  - Noisy & Missing labels
+  - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf)
   - Reading
   - Activities
 * - 2021-03-17
-  - Noisy & Missing labels
+  - [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
   - Reading
   - Activities
 * - 2021-03-22
