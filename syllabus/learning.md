@@ -27,14 +27,21 @@ By the end of the course students will be able to:
 
 ## Evaluation
 
-The grading scheme is rooted in achieving the learning outcomes and is holistic rather than averaged over a number of activities.  A more detailed rubric will be provided soon, in this space.
+The grading scheme is rooted in achieving the learning outcomes.
 
-### Presentation and participation
-
-Presenting papers and participating in class will contribute to demonstrating a basic awareness at each of learning objective. Active participation and presentations will be evaluated and feedback will be provided after each presentation and regularly on other participation.
+### Presentations, Discussion, and Exercises (40%)
 
 
-### Translation mini project
+Presenting papers and participating in class will contribute to demonstrating a basic awareness at each of learning objective.
+
+
+Each class session will be evaluated on specification if you contribute to discussion or not.
+
+Each time you present (20%) will be evaluated on
+
+
+
+### Translation mini project  (10%)
 
 For this assignment you can choose any topic other than the one your project is for and produce a short demo, illustration, or replication that makes some aspect of the the topic.
 
@@ -42,7 +49,10 @@ For this, you must submit a one paragraph proposal by the Friday after we cover 
 
 
 
-### Project Timeline
+### Project (50%)
+
+The final project is a chance to dive deeply into one of the course topics
+
 
 ```{list-table}
 :header-rows: 1
