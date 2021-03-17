@@ -111,7 +111,7 @@ Final projects will be evaluated through a presentation and paper
   - Activities
 * - 2021-03-24
   - A Case for Interpretability over Explanation
-  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](jmlr.org/papers/volume18/17-716/17-716.pdf)
+  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
   - Activities
 * - 2021-03-29
   - Models for Explanation

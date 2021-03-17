@@ -43,10 +43,23 @@ Each time you present (20%) will be evaluated on
 
 ### Translation mini project  (10%)
 
-For this assignment you can choose any topic other than the one your project is for and produce a short demo, illustration, or replication that makes some aspect of the the topic.
+For this assignment you can choose any topic other than the one your project is for and produce a short demo, illustration, or replication that makes some aspect of the the topic accessible for a broader audience.
 
-For this, you must submit a one paragraph proposal by the Friday after we cover that topic in class.  Once that's approved that it will count, you have two weeks to build your demo or replication. The latest your demo may be submitted is at the same time as your final project.
+For this, you must submit a one paragraph proposal that describes your demo  Once that's approved that it will count, you have two weeks to build your demo or replication. The latest your demo may be submitted is at the same time as your final project.
 
+Your demo proposal must:
+- state the topic from class your demo relates to
+- state the format/medium your demo will take:
+  - illustration, replication, interactive visualization, etc
+- describe the target audience (a particular type of scientists, impacted people, software engineers, layperson, etc)
+- describes what your demo will do by answering the relevant questions from the list below:
+  - what will a person learn by reading/ using your demo?
+  - if it's interactive what will vary? what will be the inputs?
+  - what specific result will you replicate?
+
+The proposal will be graded on specification and may be resubmitted until successful.
+
+The demo will be graded on specification and can be revised and resubmitted one time. 
 
 
 ### Project (50%)
