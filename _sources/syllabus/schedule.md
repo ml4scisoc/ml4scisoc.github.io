@@ -98,36 +98,36 @@ Final projects will be evaluated through a presentation and paper
   - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
   - Paper presentation by Madhukara
 * - 2021-03-15
-  - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf)
-  - Reading
-  - Activities
+  - Missing or Noisy labels
+  - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
+  - Julian and Daniel
 * - 2021-03-17
-  - [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
-  - Reading
-  - Activities
+  - Noisy Labels as a model for Bias
+  - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915)
+  - Zhen
 * - 2021-03-22
-  - Interpretable & Explanation
-  - survey
+  - Interpretable & Explanation Intro
+  - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
   - Activities
 * - 2021-03-24
-  - Interpretable
-  - Rudin HDR, CORELS
+  - A Case for Interpretability over Explanation
+  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](jmlr.org/papers/volume18/17-716/17-716.pdf)
   - Activities
 * - 2021-03-29
-  - Interpretability
-  - Science of - Kim & Doshi
+  - Models for Explanation
+  - TCAV
   - Activities
 * - 2021-03-31
-  - Interpretability
+  - Perturbation based
   - Falsifiable, survey
   - Activities
 * - 2021-04-05
-  - Explanation - perturbation based
+  - What are the risks of explanations
   - Reading
   - Activities
 * - 2021-04-07
-  - Explanation
-  - TCAV
+  - What does Interpretable mean
+  - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608)
   - Activities
 * - 2021-04-12
   - Meta issues
