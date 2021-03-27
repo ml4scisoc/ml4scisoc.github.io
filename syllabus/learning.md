@@ -177,9 +177,19 @@ The proposal will be graded on if it meets the specification or not, but you wil
 - scheduled on time
 - at least one dimension of progress from proposal
 
+### Presentation Specifications
+
+Your presentation should:
+- include an agenda for the talk
+- describe the problem
+- summarize relevant backround
+- clearly identify what you did
+- describe findings
+- include concluding remarks on reflection/possible extensions
+
 ### Paper Specifications
 
-Your final paper should include a concise problem statement, a complete literature review that situates your project, a description of method(s) used your project, and findings. 
+Your final paper should include a concise problem statement, a complete literature review that situates your project, a description of method(s) used your project, findings, and a discussion or future work section. 
 
 
 For it to meet specification it must:
