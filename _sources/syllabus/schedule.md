@@ -108,22 +108,23 @@ Final projects will be evaluated through a presentation and paper
 * - 2021-03-22
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
-  - Activities
+  - Xavier
 * - 2021-03-24
   - A Case for Interpretability over Explanation
   - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
-  - Activities
+  - Madhukara
 * - 2021-03-29
   - Models for Explanation
-  - TCAV
-  - Activities
+  - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279) and [A unified approach to interpreting model predictions](https://dl.acm.org/doi/10.5555/3295222.3295230)
+  - Zhen
 * - 2021-03-31
-  - Perturbation based
-  - Falsifiable, survey
-  - Activities
+  - Choosing Explanations and using explantions
+  - [How can I choose an explainer? An Application-grounded
+Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.3445941) [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566)
+  - Daniel
 * - 2021-04-05
   - What are the risks of explanations
-  - Reading
+  - [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
   - Activities
 * - 2021-04-07
   - What does Interpretable mean
@@ -131,24 +132,24 @@ Final projects will be evaluated through a presentation and paper
   - Activities
 * - 2021-04-12
   - Meta issues
-  - ml & phil sci
+  - [The Scientific Method in the Science of Machine Learning](https://arxiv.org/abs/1904.10922) and [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/abs/1912.01172)
   - Activities
 * - 2021-04-13
   - Meta issues
-  - Roles for computing in social change
+  - [Roles for computing in social change](https://dl.acm.org/doi/abs/10.1145/3351095.3372871)
   - Activities
 * - 2021-04-19
   - Project Presentations
   - projects
-  - peer feedback
+  - presentations with peer feedback
 * - 2021-04-21
   - Project Presentations
   - projects
   - peer feedback
 * - 2021-04-26
-  - Project Presentations
-  - Reading
-  - revision plans
+  - Review and Project Reflections
+  - Paper feedback
+  - presentations with revision plans
 ``````
 
 
