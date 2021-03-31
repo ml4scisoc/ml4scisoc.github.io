@@ -128,7 +128,7 @@ Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.
   - Activities
 * - 2021-04-07
   - What does Interpretable mean
-  - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608)
+  - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
   - Activities
 * - 2021-04-12
   - Meta issues
