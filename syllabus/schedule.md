@@ -125,19 +125,19 @@ Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.
 * - 2021-04-05
   - What are the risks of explanations
   - [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
-  - Activities
+  - Xavier
 * - 2021-04-07
   - What does Interpretable mean
   - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
-  - Activities
+  - Madhukara
 * - 2021-04-12
   - Meta issues
   - [The Scientific Method in the Science of Machine Learning](https://arxiv.org/abs/1904.10922) and [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/abs/1912.01172)
-  - Activities
+  - Sarah
 * - 2021-04-13
   - Meta issues
   - [Roles for computing in social change](https://dl.acm.org/doi/abs/10.1145/3351095.3372871)
-  - Activities
+  - Sarah
 * - 2021-04-19
   - Project Presentations
   - projects
