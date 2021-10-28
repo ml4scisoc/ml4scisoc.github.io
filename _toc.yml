@@ -1,22 +1,25 @@
-- file: about
+format: jb-book
+root: about
 
-
-- part: Syllabus
-  chapters:
-    - file: syllabus/index
-    - file: syllabus/schedule
-    - file: syllabus/learning
+parts:
+  - caption: Syllabus
+    chapters:
+      - file: syllabus/index
+      - file: syllabus/schedule
+      - file: syllabus/learning
     # - file: syllabus/policies
-
-
-- part: Notes
-  chapters:
-    - file: notes/2021-01-27
-    - file: notes/2021-02-01
-    - file: notes/2021-02-03
-    - file: notes/2021-02-08
-    - file: notes/2021-02-10
-    - file: notes/2021-02-15
-    - file: notes/2021-02-17
-    - file: notes/2021-02-22
-    - file: notes/2021-02-24
+  - caption: Notes
+    maxdepth: 1
+    chapters:
+      - file: notes/2021-01-00-intro
+        sections:
+        - file: notes/2021-01-27
+        - file: notes/2021-02-01
+        - file: notes/2021-02-03
+        - file: notes/2021-02-08
+        - file: notes/2021-02-10
+        - file: notes/2021-02-15
+        - file: notes/2021-02-17
+        - file: notes/2021-02-22
+        - file: notes/2021-02-24
+      - file: notes/2022-01-00-intro
