@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class 3: ML Pipelines &#8212; Machine Learning for Science &amp; Society</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,19 +31,19 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -57,14 +54,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Class 4: Missing Data: Basic techniques" href="2021-02-08.html" />
     <link rel="prev" title="ML and Probability Review" href="2021-02-01.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -73,32 +70,36 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../about.html">
    Machine Learning for Science &amp; Society
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption" role="heading">
  <span class="caption-text">
   Syllabus
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../syllabus/index.html">
    Basic Facts
@@ -115,54 +116,72 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption" role="heading">
  <span class="caption-text">
   Notes
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-01-27.html">
-   Class 1: Introductions
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="2021-01-00-intro.html">
+   Spring 2021
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-01-27.html">
+     Class 1: Introductions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-01.html">
+     ML and Probability Review
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Class 3: ML Pipelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-08.html">
+     Class 4: Missing Data: Basic techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-15.html">
+     Missing Data 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-17.html">
+     MIssing data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-22.html">
+     Intro to Fairness
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-24.html">
+     Comparison of Fairness Interventions
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-01.html">
-   ML and Probability Review
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Class 3: ML Pipelines
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-08.html">
-   Class 4: Missing Data: Basic techniques
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-15.html">
-   Missing Data 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-17.html">
-   MIssing data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-22.html">
-   Intro to Fairness
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2021-02-24.html">
-   Comparison of Fairness Interventions
+  <a class="reference internal" href="2022-01-00-intro.html">
+   Spring 2022
   </a>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -233,12 +252,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -264,12 +283,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-when-using-ml">
    Goals when using ML
@@ -282,8 +300,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -292,7 +309,7 @@
         
               <div>
                 
-  <div class="section" id="class-3-ml-pipelines">
+  <div class="tex2jax_ignore mathjax_ignore section" id="class-3-ml-pipelines">
 <h1>Class 3: ML Pipelines<a class="headerlink" href="#class-3-ml-pipelines" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="goals-when-using-ml">
 <h2>Goals when using ML<a class="headerlink" href="#goals-when-using-ml" title="Permalink to this headline">¶</a></h2>
@@ -348,7 +365,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f6677bba0d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f0764ddbc90&gt;
 </pre></div>
 </div>
 <img alt="../_images/2021-02-03_3_1.png" src="../_images/2021-02-03_3_1.png" />
@@ -432,17 +449,17 @@ possibly multiple data</p></li>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;priors&#39;: None,
  &#39;var_smoothing&#39;: 1e-09,
- &#39;n_features_in_&#39;: 4,
- &#39;epsilon_&#39;: 3.0270280612244896e-09,
  &#39;classes_&#39;: array([0, 1, 2]),
- &#39;theta_&#39;: array([[5.01025641, 3.4025641 , 1.46410256, 0.25128205],
-        [5.925     , 2.7625    , 4.245     , 1.3225    ],
-        [6.55454545, 2.9969697 , 5.54848485, 1.98484848]]),
- &#39;sigma_&#39;: array([[0.13835635, 0.15512163, 0.02589086, 0.01224195],
-        [0.254375  , 0.10334375, 0.198475  , 0.03424375],
-        [0.44066116, 0.10089991, 0.32249771, 0.05704316]]),
- &#39;class_count_&#39;: array([39., 40., 33.]),
- &#39;class_prior_&#39;: array([0.34821429, 0.35714286, 0.29464286])}
+ &#39;n_features_in_&#39;: 4,
+ &#39;epsilon_&#39;: 3.0144610969387765e-09,
+ &#39;theta_&#39;: array([[4.98108108, 3.39459459, 1.45675676, 0.23243243],
+        [5.98571429, 2.78857143, 4.23714286, 1.32285714],
+        [6.4625    , 2.95      , 5.45      , 2.045     ]]),
+ &#39;var_&#39;: array([[0.10964208, 0.12753835, 0.02785975, 0.00813733],
+        [0.28351021, 0.09015511, 0.23719184, 0.0343347 ],
+        [0.30484375, 0.0795    , 0.245     , 0.073475  ]]),
+ &#39;class_count_&#39;: array([37., 35., 40.]),
+ &#39;class_prior_&#39;: array([0.33035714, 0.3125    , 0.35714286])}
 </pre></div>
 </div>
 </div>
@@ -454,7 +471,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([4.8, 3.4, 1.6, 0.2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([7.7, 3. , 6.1, 2.3])
 </pre></div>
 </div>
 </div>
@@ -473,7 +490,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 2, 1, 1, 0])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 1, 1, 1, 0])
 </pre></div>
 </div>
 </div>
@@ -485,7 +502,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 2, 1, 2, 0])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 1, 1, 1, 0])
 </pre></div>
 </div>
 </div>
@@ -497,9 +514,9 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[11,  0,  0],
-       [ 0,  8,  2],
-       [ 0,  2, 15]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[13,  0,  0],
+       [ 0, 13,  2],
+       [ 0,  0, 10]])
 </pre></div>
 </div>
 </div>
@@ -511,14 +528,14 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8947368421052632
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9473684210526315
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb2</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">(</span><span class="n">priors</span><span class="o">=</span><span class="p">[</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="o">.</span><span class="mi">25</span><span class="p">,</span><span class="o">.</span><span class="mi">25</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb2</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">(</span><span class="n">priors</span><span class="o">=</span><span class="p">[</span><span class="mf">.5</span><span class="p">,</span><span class="mf">.25</span><span class="p">,</span><span class="mf">.25</span><span class="p">])</span>
 
 <span class="n">gnb2_cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">gnb2</span><span class="p">,</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
 </pre></div>
@@ -532,7 +549,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9644268774703558
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9549407114624506
 </pre></div>
 </div>
 </div>
@@ -551,7 +568,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9735177865612649
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9640316205533598
 </pre></div>
 </div>
 </div>
@@ -565,13 +582,13 @@ possibly multiple data</p></li>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00        11
-           1       0.80      0.80      0.80        10
-           2       0.88      0.88      0.88        17
+           0       1.00      1.00      1.00        13
+           1       1.00      0.87      0.93        15
+           2       0.83      1.00      0.91        10
 
-    accuracy                           0.89        38
-   macro avg       0.89      0.89      0.89        38
-weighted avg       0.89      0.89      0.89        38
+    accuracy                           0.95        38
+   macro avg       0.94      0.96      0.95        38
+weighted avg       0.96      0.95      0.95        38
 </pre></div>
 </div>
 </div>
@@ -583,44 +600,44 @@ weighted avg       0.89      0.89      0.89        38
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.00000000e+000, 9.85626828e-019, 4.64767124e-026],
-       [4.46556313e-190, 1.25700683e-007, 9.99999874e-001],
-       [2.86933152e-052, 9.99999507e-001, 4.93204075e-007],
-       [8.01479708e-168, 5.17397189e-001, 4.82602811e-001],
-       [1.00000000e+000, 5.85448260e-019, 1.41419857e-026],
-       [1.00000000e+000, 1.54006262e-019, 1.50224865e-026],
-       [1.58921440e-099, 9.85121565e-001, 1.48784350e-002],
-       [1.00000000e+000, 9.77294057e-022, 2.17185912e-028],
-       [2.76865539e-105, 9.90505051e-001, 9.49494918e-003],
-       [4.85152955e-200, 1.15457895e-007, 9.99999885e-001],
-       [8.89020070e-143, 6.88756120e-002, 9.31124388e-001],
-       [1.00000000e+000, 7.43871666e-019, 7.97079920e-026],
-       [6.95859252e-237, 2.19816247e-007, 9.99999780e-001],
-       [4.64891004e-243, 2.62729980e-011, 1.00000000e+000],
-       [1.04937409e-213, 3.98158135e-007, 9.99999602e-001],
-       [1.53662146e-174, 1.54419409e-004, 9.99845581e-001],
-       [1.00000000e+000, 5.04152682e-019, 2.52555760e-026],
-       [1.00000000e+000, 3.36518316e-022, 9.10051530e-029],
-       [1.00000000e+000, 1.84247753e-013, 1.41975974e-020],
-       [1.00000000e+000, 6.36966930e-019, 3.99865798e-026],
-       [1.08677211e-174, 1.41393998e-003, 9.98586060e-001],
-       [0.00000000e+000, 3.09944340e-014, 1.00000000e+000],
-       [5.11828878e-045, 9.99999457e-001, 5.43089408e-007],
-       [2.51138918e-144, 5.87362985e-001, 4.12637015e-001],
-       [1.14767146e-264, 1.02676201e-011, 1.00000000e+000],
-       [6.51094119e-146, 5.64874118e-002, 9.43512588e-001],
-       [1.00000000e+000, 3.47294560e-019, 1.74421961e-026],
-       [2.16755295e-059, 9.99998440e-001, 1.55973697e-006],
-       [1.00000000e+000, 1.63822180e-019, 7.58575360e-027],
-       [1.90221068e-083, 9.99890032e-001, 1.09968069e-004],
-       [4.27631575e-207, 3.34033102e-006, 9.99996660e-001],
-       [6.15389672e-275, 1.57909499e-013, 1.00000000e+000],
-       [4.89846843e-131, 4.73288883e-001, 5.26711117e-001],
-       [1.25718098e-134, 9.71761371e-001, 2.82386285e-002],
-       [1.02496104e-192, 2.46133637e-007, 9.99999754e-001],
-       [6.02092522e-215, 2.62174678e-007, 9.99999738e-001],
-       [2.39763659e-078, 9.99850790e-001, 1.49210387e-004],
-       [2.32886502e-195, 1.57049789e-007, 9.99999843e-001]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[4.73792773e-295, 1.55911841e-010, 1.00000000e+000],
+       [6.23770515e-125, 8.57049198e-001, 1.42950802e-001],
+       [5.55205931e-083, 9.99926593e-001, 7.34067020e-005],
+       [1.61637364e-093, 9.99840982e-001, 1.59017634e-004],
+       [1.00000000e+000, 3.69492326e-018, 8.42177257e-028],
+       [5.07071802e-172, 4.69323295e-001, 5.30676705e-001],
+       [1.00000000e+000, 1.03206509e-016, 3.09052974e-026],
+       [1.00000000e+000, 8.26429542e-015, 1.00074955e-023],
+       [0.00000000e+000, 3.08364083e-011, 1.00000000e+000],
+       [1.00000000e+000, 1.59915742e-012, 1.23028208e-021],
+       [2.20027240e-082, 9.99975452e-001, 2.45475528e-005],
+       [4.24272211e-119, 9.94208070e-001, 5.79192999e-003],
+       [1.47234459e-232, 7.52172116e-008, 9.99999925e-001],
+       [1.52845856e-109, 9.97282266e-001, 2.71773378e-003],
+       [3.32020676e-090, 9.99646819e-001, 3.53180554e-004],
+       [1.25132538e-218, 5.18097442e-004, 9.99481903e-001],
+       [1.00000000e+000, 9.16766286e-019, 4.97510176e-029],
+       [6.83044779e-160, 4.65736444e-002, 9.53426356e-001],
+       [1.00000000e+000, 1.26993147e-018, 6.42702604e-029],
+       [4.42043056e-082, 9.99958643e-001, 4.13567898e-005],
+       [9.99999998e-001, 1.64961226e-009, 1.23378912e-019],
+       [3.31780599e-153, 7.47612886e-002, 9.25238711e-001],
+       [1.00000000e+000, 2.36431699e-016, 8.48907695e-027],
+       [5.43387444e-134, 5.86807730e-001, 4.13192270e-001],
+       [1.00000000e+000, 3.63442912e-021, 4.29068433e-030],
+       [5.25436668e-253, 2.57568626e-006, 9.99997424e-001],
+       [1.00000000e+000, 2.06728116e-018, 5.70404980e-029],
+       [2.11985079e-071, 9.99980364e-001, 1.96357461e-005],
+       [2.00086033e-286, 7.95723865e-009, 9.99999992e-001],
+       [3.48702081e-155, 4.61600669e-001, 5.38399331e-001],
+       [1.00000000e+000, 3.79706516e-014, 4.60292993e-024],
+       [1.00000000e+000, 1.78238648e-018, 1.34923141e-028],
+       [7.35311846e-064, 9.99997532e-001, 2.46798684e-006],
+       [4.84388680e-310, 8.74379005e-009, 9.99999991e-001],
+       [1.91033418e-085, 9.99777667e-001, 2.22333264e-004],
+       [1.73402404e-055, 9.99999135e-001, 8.65370124e-007],
+       [5.85941709e-235, 1.92478857e-005, 9.99980752e-001],
+       [1.00000000e+000, 1.88981922e-018, 9.53670949e-028]])
 </pre></div>
 </div>
 </div>
@@ -651,16 +668,36 @@ weighted avg       0.89      0.89      0.89        38
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="2021-02-01.html" title="previous page">ML and Probability Review</a>
-    <a class='right-next' id="next-link" href="2021-02-08.html" title="next page">Class 4: Missing Data: Basic techniques</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="2021-02-01.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">ML and Probability Review</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="2021-02-08.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Class 4: Missing Data: Basic techniques</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -675,11 +712,9 @@ weighted avg       0.89      0.89      0.89        38
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

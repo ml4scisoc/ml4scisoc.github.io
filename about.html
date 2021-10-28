@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Machine Learning for Science &amp; Society &#8212; Machine Learning for Science &amp; Society</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,19 +31,19 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -56,14 +53,14 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Basic Facts" href="syllabus/index.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -72,32 +69,36 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
- <li class="toctree-l1 current active">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 current">
   <a class="reference internal" href="#">
    Machine Learning for Science &amp; Society
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption" role="heading">
  <span class="caption-text">
   Syllabus
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="syllabus/index.html">
    Basic Facts
@@ -114,54 +115,72 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption" role="heading">
  <span class="caption-text">
   Notes
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-01-27.html">
-   Class 1: Introductions
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="notes/2021-01-00-intro.html">
+   Spring 2021
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-01-27.html">
+     Class 1: Introductions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-01.html">
+     ML and Probability Review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-03.html">
+     Class 3: ML Pipelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-08.html">
+     Class 4: Missing Data: Basic techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-15.html">
+     Missing Data 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-17.html">
+     MIssing data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-22.html">
+     Intro to Fairness
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notes/2021-02-24.html">
+     Comparison of Fairness Interventions
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-01.html">
-   ML and Probability Review
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-03.html">
-   Class 3: ML Pipelines
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-08.html">
-   Class 4: Missing Data: Basic techniques
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-15.html">
-   Missing Data 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-17.html">
-   MIssing data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-22.html">
-   Intro to Fairness
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notes/2021-02-24.html">
-   Comparison of Fairness Interventions
+  <a class="reference internal" href="notes/2022-01-00-intro.html">
+   Spring 2022
   </a>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -229,12 +248,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -243,12 +262,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#format">
    Format
@@ -258,13 +276,10 @@
   <a class="reference internal nav-link" href="#prerequisites">
    Prerequisites
   </a>
-  <ul class="nav section-nav flex-column">
-  </ul>
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -273,13 +288,14 @@
         
               <div>
                 
-  <div class="section" id="machine-learning-for-science-society">
+  <div class="tex2jax_ignore mathjax_ignore section" id="machine-learning-for-science-society">
 <h1>Machine Learning for Science &amp; Society<a class="headerlink" href="#machine-learning-for-science-society" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Spring 2021</p></li>
-<li><p>Tuesdays 5:30-8:15</p></li>
-<li><p>Professor Sarah Brown</p></li>
-<li><p>CSC 592: Topics in Computer Science</p></li>
+<li><p>Spring 2022</p></li>
+<li><p>time: MW 3:00-4:15pm</p></li>
+<li><p>Professor: <a class="reference external" href="http://sarahmbrown.org/">Sarah Brown</a></p></li>
+<li><p>course number: CSC 592: Topics in Computer Science</p></li>
+<li><p>Credits: 4</p></li>
 </ul>
 <p>In this class, we will address the challenges in applying machine learning to scientific research and in high stakes social contexts. On the science side, we will examine the role of ML in research, in particular how it works within knowledge production and how to evaluate ML in line with domain norms. On the social side, we will consider how to ensure ML-based algorithmic decision making systems uphold social values, with a focus on fairness. While these two applications are distinct, many of the challenges translate into common technical problems. Some of the common challenges include:</p>
 <ul class="simple">
@@ -306,12 +322,12 @@ Topics covered:
  -->
 <div class="section" id="format">
 <h2>Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h2>
-<p>This will be a synchronous course offered via Zoom. To successfully participate in this course students will need:</p>
-<ul class="simple">
-<li><p>consistent internet access during class time</p></li>
-<li><p>to use URI SSO credentials to access readings and materials</p></li>
-<li><p>a microphone to participate in conversations in class, at least most sessions</p></li>
-</ul>
+<p>This will be a synchronous course offered in person.</p>
+<!-- To successfully participate in this course students will need:
+
+- consistent internet access during class time
+- to use URI SSO credentials to access readings and materials
+- a microphone to participate in conversations in class, at least most sessions -->
 <p>The course will involve:</p>
 <ul class="simple">
 <li><p>reading and evaluating ML research papers</p></li>
@@ -332,18 +348,18 @@ By the of this course students will be able to:
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <p>To be successful in this class students should have:</p>
 <ul class="simple">
-<li><p>past experience with machine  (CSC461 or equivalent)</p></li>
+<li><p>past experience with machine</p></li>
 <li><p>basic programming skills</p></li>
 <li><p>familiarity with concepts in probability, linear algebra, and calculus that appear in ML</p></li>
 </ul>
-<p>varying skill in these topics is ok, but a general understanding of the basic ideas is important.  If you’re interested and not sure if you have the background, complete the form below</p>
+<p>varying skill in these topics is ok, but a general understanding of the basic ideas is important.</p>
+<!-- If you're interested and not sure if you have the background, complete the form below. -->
 <!-- we won't be working through a lot of derivations, but papers and discussions will rely on having an understanding of conditional probability, optimization,  -->
-<!-- 
-[Complete this Google form](https://forms.gle/XouLBRikos7J4Lpg7) to request a permission number from Professor Brown to enroll in this course. Note that you must be enrolled at URI to take this course and be logged into your URI google account to view that form. -->
-<div class="toctree-wrapper compound">
+<p><a class="reference external" href="https://forms.gle/XouLBRikos7J4Lpg7">Complete this Google form</a> to request a permission number from Professor Brown to enroll in this course. Note that you must be enrolled at URI to take this course and be logged into your URI google account to view that form.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -370,15 +386,27 @@ By the of this course students will be able to:
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="syllabus/index.html" title="next page">Basic Facts</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+     <div id="next">
+        <a class="right-next" href="syllabus/index.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Basic Facts</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -393,11 +421,9 @@ By the of this course students will be able to:
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

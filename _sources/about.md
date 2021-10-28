@@ -2,10 +2,11 @@
 # Machine Learning for Science & Society
 
 
-- Spring 2021
-- Tuesdays 5:30-8:15
-- Professor Sarah Brown
-- CSC 592: Topics in Computer Science
+- Spring 2022
+- time: MW 3:00-4:15pm
+- Professor: [Sarah Brown](http://sarahmbrown.org/)
+- course number: CSC 592: Topics in Computer Science
+- Credits: 4
 
 
 In this class, we will address the challenges in applying machine learning to scientific research and in high stakes social contexts. On the science side, we will examine the role of ML in research, in particular how it works within knowledge production and how to evaluate ML in line with domain norms. On the social side, we will consider how to ensure ML-based algorithmic decision making systems uphold social values, with a focus on fairness. While these two applications are distinct, many of the challenges translate into common technical problems. Some of the common challenges include:
@@ -38,11 +39,13 @@ Topics covered:
 
 ## Format
 
-This will be a synchronous course offered via Zoom. To successfully participate in this course students will need:
+This will be a synchronous course offered in person.
+
+<!-- To successfully participate in this course students will need:
 
 - consistent internet access during class time
 - to use URI SSO credentials to access readings and materials
-- a microphone to participate in conversations in class, at least most sessions
+- a microphone to participate in conversations in class, at least most sessions -->
 
 
 The course will involve:
@@ -67,12 +70,13 @@ By the of this course students will be able to:
 ## Prerequisites
 
 To be successful in this class students should have:
-- past experience with machine  (CSC461 or equivalent)
+- past experience with machine
 - basic programming skills
 - familiarity with concepts in probability, linear algebra, and calculus that appear in ML
 
-varying skill in these topics is ok, but a general understanding of the basic ideas is important.  If you're interested and not sure if you have the background, complete the form below
+varying skill in these topics is ok, but a general understanding of the basic ideas is important.  
+<!-- If you're interested and not sure if you have the background, complete the form below. -->
 <!-- we won't be working through a lot of derivations, but papers and discussions will rely on having an understanding of conditional probability, optimization,  -->
 
-<!-- 
-[Complete this Google form](https://forms.gle/XouLBRikos7J4Lpg7) to request a permission number from Professor Brown to enroll in this course. Note that you must be enrolled at URI to take this course and be logged into your URI google account to view that form. -->
+
+[Complete this Google form](https://forms.gle/XouLBRikos7J4Lpg7) to request a permission number from Professor Brown to enroll in this course. Note that you must be enrolled at URI to take this course and be logged into your URI google account to view that form.
