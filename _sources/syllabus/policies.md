@@ -1,3 +1,1 @@
 # Course Policies
-
-Assignments

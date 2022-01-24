@@ -23,7 +23,7 @@ During this time students will have milestones where they need to complete inter
 
 ### Conclusion
 
-<!-- In the end of the course, we will focus on integrating ideas across multiple topics. -->
+In the end of the course, we will focus on integrating ideas across multiple topics.
 
 We will also workshop students' projects, giving substantive feedback prior to the final submissions.
 
@@ -32,9 +32,6 @@ Final projects will be evaluated through a presentation and paper
 
 ## Weekly topics
 
-The readings are subject to revision in class up until a presenter is assigned.
-Topics may also be updated after the first few classes based on student interests
-and recent publications.
 
 ``````{list-table} Schedule
 :header-rows: 1
@@ -45,111 +42,111 @@ and recent publications.
   - Topic
   - Reading
   - Activities
-* - 2021-01-24
+* - 2021-01-29
   - Introduction
   - None
   - introductions, expectation setting
-* - 2021-01-26
+* - 2021-02-01
   - Probability Review
   - Model Based ML, chapter 1
-  - reading discussion, setting up
-* - 2021-01-31
-  - Setting the Stage
-  - [The Scientific Method in the Science of Machine Learning](https://arxiv.org/abs/1904.10922) and [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/abs/1912.01172)
-  - Paper Presentation by Dr. Brown
-* - 2021-02-02
-  - Meta issues
-  - [Roles for computing in social change](https://dl.acm.org/doi/abs/10.1145/3351095.3372871)
-  - Paper Presentation by Dr. Brown
-* - 2021-02-07
+  - reading discussion, setting
+* - 2021-02-03
+  - ML Process & Mutual information preview
+  - Scikit learn getting started,
+  - live coding
+* - 2021-02-08
   - Missing Data: Intro strategies
   - [Handling Missing Values when Applying Classification Models](https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf) &
   [Missing data imputation using statistical and machine learning methods in a real
   breast cancer problem](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&rep=rep1&type=pdf)
-  - Paper discussion led by
-* - 2021-02-09
+  - Paper discussion led by Daniel
+* - 2021-02-10
   - Missing data with graphical models and causal reasoning
   - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf) &
  [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
-  - Paper discussion led by J
-* - 2021-02-14
+  - Paper discussion led by Julian
+* - 2021-02-15
   - Current Challenges in Missing data
-  - TBD
-  - Paper discussions by
-* - 2021-02-16
+  - [Handling Missing Data in Decision Trees: A Probabilistic Approach](https://openreview.net/forum?id=0IXcmQIAJPt) & [How to miss data? Reinforcement learning for environments with high observation cost](https://openreview.net/forum?id=jEN6sD09HWe)
+  - Paper discussions by Xavier and Zhen
+* - 2021-02-17
   - Current Challenges in Missing data
-  - TBD
-  - Paper discussion by
-* - 2021-02-21
+  - [How to deal with missing data in supervised deep learning](https://openreview.net/forum?id=jEXxzPUMYVZ)
+  - Paper discussion by Madhukara, Replication & testing discussion,
+* - 2021-02-22
   - Fairness
   - fairml classification chapter and friedler empricial comparison paper
   - Empirical setup
-* - 2021-02-23
+* - 2021-02-24
   - Fairness
   - Reading
   -  preview of lasso and admm constraint to multiobjecitve reformulation
-* - 2021-02-28
+* - 2021-03-01
   - Multi-objective & constrained opt
   - [Elastic Net](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x)
-  - Paper presentation by
-* - 2021-03-02
+  - Paper presentation by Daniel, try out elastic net & LASSO in scikit learn
+* - 2021-03-03
   - Multi-objective & constrained opt
   - [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg)
-  - Paper presentation and discussion by
-* - 2021-03-07
+  - Paper presentation and discussion by Zhen
+* - 2021-03-08
   - Latent Variable Models
   - [Gaussian Mixture Models](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) and [Topic Models](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
-  - Paper presentaiton by
-* - 2021-03-09
+  - Paper presentaiton by Xavier
+* - 2021-03-10
   - Latent Variable Models
   - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
-  - Paper presentation by
-* - 2021-03-21
+  - Paper presentation by Madhukara
+* - 2021-03-15
   - Missing or Noisy labels
   - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
-  -
-* - 2021-03-23
+  - Julian and Daniel
+* - 2021-03-17
   - Noisy Labels as a model for Bias
   - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915)
-  -
-* - 2021-03-28
+  - Zhen
+* - 2021-03-22
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
-  - Paper Presentation by
-* - 2021-03-30
+  - Xavier
+* - 2021-03-24
   - A Case for Interpretability over Explanation
   - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
-  - Paper Presentation by
-* - 2021-04-04
+  - Madhukara
+* - 2021-03-29
   - Models for Explanation
   - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279) and [A unified approach to interpreting model predictions](https://dl.acm.org/doi/10.5555/3295222.3295230)
-  - Paper Presentation by
-* - 2021-04-06
+  - Zhen
+* - 2021-03-31
   - Choosing Explanations and using explantions
   - [How can I choose an explainer? An Application-grounded
 Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.3445941) [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566)
-  - Paper Presentation by
-* - 2021-04-11
+  - Daniel
+* - 2021-04-05
   - What are the risks of explanations
   - [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
-  - Paper Presentation by
-* - 2021-04-13
+  - Xavier
+* - 2021-04-07
   - What does Interpretable mean
   - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
-  - Paper Presentation by
-* - 2021-04-18
-  - Project Presentations
-  - projects
-  - Paper Presentation by
-* - 2021-04-20
+  - Madhukara
+* - 2021-04-12
+  - Meta issues
+  - [The Scientific Method in the Science of Machine Learning](https://arxiv.org/abs/1904.10922) and [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/abs/1912.01172)
+  - Sarah
+* - 2021-04-13
+  - Meta issues
+  - [Roles for computing in social change](https://dl.acm.org/doi/abs/10.1145/3351095.3372871)
+  - Sarah
+* - 2021-04-19
   - Project Presentations
   - projects
   - presentations with peer feedback
-* - 2021-04-25
+* - 2021-04-21
   - Project Presentations
   - projects
   - peer feedback
-* - 2021-04-27
+* - 2021-04-26
   - Review and Project Reflections
   - Paper feedback
   - presentations with revision plans
