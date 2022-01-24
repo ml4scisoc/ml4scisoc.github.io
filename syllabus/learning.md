@@ -18,6 +18,7 @@ By the end of the course students will be able to:
 
 - reading and evaluating ML research papers
 - facilitating and participating in class discussions of the papers
+- coproducing notes that sumamrized key points and open questions of papers
 - producing a replication, demo, or illustration of one concept covered for a broader audience
 - completing a project using ML in a scientific or social domain
 - writing a CS conference style (short & concise) final paper on the project
@@ -27,9 +28,26 @@ By the end of the course students will be able to:
 
 ## Evaluation
 
-The grading scheme is rooted in achieving the learning outcomes.
+The grading scheme is rooted in achieving the learning outcomes and finalized
+with a grading contract.  Each student will submit a grading contract in the
+first two weeks and then if all work meets the specification, will earn the
+contracted grade.
 
-### Presentations (20%)
+The following describes each activity in the course and the specification for it.
+
+### Discussions, Exercises, and Notes
+
+For each topic we cover in class, you should engage fully in the class discussion
+and practice exercises that are provided if applicable.
+
+To demonstrate engagement you must:
+- provide a good faith attempt at any exercises provided
+- contribute to the discussion (comments and questions both count)
+- contribute to annotated class notes
+
+
+
+### Presentations
 
 
 Presenting papers and participating in class will contribute to demonstrating a basic awareness at each of learning objective.
@@ -62,46 +80,7 @@ Questions that will help organize your preparation, but may apply variably to di
   - are they realistic?
   - what questions do you have about the proof?
 
-### Discussions and Exercises (20%)
-
-For each topic we cover in class, you should engage fully in the class discussion
-and practice exercises that are provided if applicable.
-
-To demonstrate engagement you must:
-- provide a good faith attempt at any exercises provided
-- contribute to the discussion (comments and questions both count)
-
-
-### Translation mini project  (10%)
-
-For this assignment you can choose any topic other than the one your project is for and produce a short demo, illustration, or replication that makes some aspect of the the topic accessible for a broader audience.
-
-For this, you must submit a one paragraph proposal that describes your demo  Once that's approved that it will count, you have two weeks to build your demo or replication. The latest your demo may be submitted is at the same time as your final project.
-
-The proposal (2%) will be graded on specification and may be resubmitted until successful.
-Your demo proposal must:
-- state the topic from class your demo relates to
-- state the format/medium your demo will take:
-  - illustration, replication, interactive visualization, etc
-- describe the target audience (a particular type of scientists, impacted people, software engineers, layperson, etc)
-- describes what your demo will do by answering the relevant questions from the list below:
-  - what will a person learn by reading/ using your demo?
-  - if it's interactive what will vary? what will be the inputs?
-  - what specific result will you replicate?
-- describe a demo that is an appropriate scope (not too large or too small)
-
-
-The demo will be graded on specification (6%) and can be revised and resubmitted one time.
-Your demo must:
-- describe a topic accurately
-- be accessible to the specified topic model
-- meet the description in the proposal
-
-With your demo or after, submit a one paragraph reflection (2%) describing what you learned doing this exercise.
-The reflection will be graded on completion.
-
-
-### Project (50%)
+### Project
 
 The final project is a chance to dive deeply into one of the course topics. It has the following timeline. Percentages below are of the total grade.
 
@@ -112,43 +91,43 @@ The final project is a chance to dive deeply into one of the course topics. It h
 * - Date
   - Milestone
   - Submission format
-  - grading
-* - 2021-02-19
+  - Evaluation
+* - 2022-02-18
   - Area Selection
   - Consultation meeting and general questions
   - feedback only
-* - 2021-03-01
+* - 2021-03-02
   - Topic Selection
   - Objectives and scope of work
-  - completion (5%)
-* - 2021-03-15
+  - completion or scope adjustment
+* - 2021-03-10
   - Proposal
   - Problem statement, lit review, method
-  - specification, with revisions (10%)
+  - specification, with revisions
 * - 2021-04-02
   - Checkin
   - Consultation meeting and prelim result
-  - specification, no revision (5%)
+  - completion
 * - 2021-04-13
   - Rough draft
   - Draft ready for peers to read
   - feedback only, per paper specs
-* - 2021-04-19,21
+* - 2021-04-x
   - Presentation
   - talk in class
-  - specification (10%)
+  - specification
 * - 2021-04-26
   - revision plan
   - plan for final revision, minor extensions
   - feedback only, per paper specs
-* - 2021-05-07
+* - 2021-05-x
   - final paper
   - final paper submitted for grading
-  - specification (15%)
-* - 2021-05-07
+  - specification
+* - 2021-05-x
   - final reflection
   - final paper submitted for grading
-  - completion (5%)
+  - completion
 ```
 
 ### Proposal Specifications
@@ -182,7 +161,7 @@ The proposal will be graded on if it meets the specification or not, but you wil
 Your presentation should:
 - include an agenda for the talk
 - describe the problem
-- summarize relevant backround
+- summarize relevant background
 - clearly identify what you did
 - describe findings
 - include concluding remarks on reflection/possible extensions
@@ -202,3 +181,33 @@ For it to meet specification it must:
 - summarize relevant course-related literature for your project
 - include clear description of what was accomplished
 - include a clear summary of results (may include null results/ failed findings)
+
+
+
+## Translation Mini Project  
+
+For this assignment you can choose any topic other than the one your project is for and produce a short demo, illustration, or replication that makes some aspect of the the topic accessible for a broader audience.
+
+For this, you must submit a one paragraph proposal that describes your demo  Once that's approved that it will count, you have two weeks to build your demo or replication. The latest your demo may be submitted is at the same time as your final project.
+
+The proposal will be graded on specification and may be resubmitted until successful.
+Your demo proposal must:
+- state the topic from class your demo relates to
+- state the format/medium your demo will take:
+  - illustration, replication, interactive visualization, etc
+- describe the target audience (a particular type of scientists, impacted people, software engineers, layperson, etc)
+- describes what your demo will do by answering the relevant questions from the list below:
+  - what will a person learn by reading/ using your demo?
+  - if it's interactive what will vary? what will be the inputs?
+  - what specific result will you replicate?
+- describe a demo that is an appropriate scope (not too large or too small)
+
+
+The demo will be graded on specification and can be revised and resubmitted one time.
+Your demo must:
+- describe a topic accurately
+- be accessible to the specified topic model
+- meet the description in the proposal
+
+With your demo or after, submit a one paragraph reflection describing what you learned doing this exercise.
+The reflection will be graded on completion.

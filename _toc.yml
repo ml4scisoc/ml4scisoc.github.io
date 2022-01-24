@@ -13,6 +13,7 @@ parts:
     chapters:
       - file: notes/2021-01-00-intro
         sections:
+        - file: syllabus/schedule-2021
         - file: notes/2021-01-27
         - file: notes/2021-02-01
         - file: notes/2021-02-03

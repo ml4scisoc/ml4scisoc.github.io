@@ -3,7 +3,7 @@
 # Machine Learning for Science & Society
 
 
-__Spring 2021__
+__Spring 2022__
 
 __Professor Sarah Brown__
 
