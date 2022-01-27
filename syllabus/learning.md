@@ -18,7 +18,7 @@ By the end of the course students will be able to:
 
 - reading and evaluating ML research papers
 - facilitating and participating in class discussions of the papers
-- coproducing notes that sumamrized key points and open questions of papers
+- coproducing notes that summarized key points and open questions of papers
 - producing a replication, demo, or illustration of one concept covered for a broader audience
 - completing a project using ML in a scientific or social domain
 - writing a CS conference style (short & concise) final paper on the project
@@ -61,24 +61,12 @@ Each time you present  will be evaluated on specification, your presentation sho
 - discussion of strengths and weaknesses of the paper & method
 - describe how this paper relates to bigger ideas in the course or your own work
 
-You'll present 5 times, but must meet specification for at least 3.
+You'll present 2-3 times and you will be expected to improve each time, not to be perfect.  
 
 When you present you don't have to have all the answers, you can have open questions.  
 The goal is that you guide the discussion by doing the above and opening the floor up for questions.
 
 
-Questions that will help organize your preparation, but may apply variably to different readings:
-- What is the key question that drove the research?
-- What is the main finding?
-- What is the model assumed in the paper?
-- Did they include experimental results? If so:
-  - do the experiments support the claims?
-  - what additional experiments would help make the result make more sense?
-  - how broad are the experiments, are the context-specific or general?
-- Is there an analytical result? if so:
-  - do the conditions for the proof make sense?
-  - are they realistic?
-  - what questions do you have about the proof?
 
 ### Project
 
