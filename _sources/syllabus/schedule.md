@@ -1,6 +1,6 @@
 # Schedule
 
-We will meet synchronously via Zoom: Tu 5:30-8:15
+We will meet in person in Tyler 108 MW 3:00-4:15pm
 
 This course will proceed in three main parts: overview, deep dives, and wrap up.
 

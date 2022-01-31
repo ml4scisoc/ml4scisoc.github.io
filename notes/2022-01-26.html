@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ML and Probability Review &#8212; Machine Learning for Science &amp; Society</title>
+    <title>2022-01-26 &#8212; Machine Learning for Science &amp; Society</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,6 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class 3: ML Pipelines" href="2021-02-03.html" />
-    <link rel="prev" title="Class 1: Introductions" href="2021-01-27.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -124,17 +122,17 @@
   Notes
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="2021-01-00-intro.html">
    Spring 2021
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../syllabus/schedule-2021.html">
      Schedule
@@ -145,8 +143,8 @@
      Class 1: Introductions
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-01.html">
      ML and Probability Review
     </a>
    </li>
@@ -282,7 +280,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notes/2021-02-01.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notes/2022-01-26.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -302,10 +300,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-01.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2022-01-26.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-01.md"><button
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2022-01-26.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -332,23 +330,44 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#admin">
-   admin
+   Admin
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-formalism">
-   More formalism
+  <a class="reference internal nav-link" href="#opening-question">
+   Opening Question
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#probability">
-   Probability
+  <a class="reference internal nav-link" href="#how-to-read-a-paper">
+   How to Read a Paper
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#practical-application-of-ml-pipelines">
-   Practical Application of ML &amp; Pipelines
+  <a class="reference internal nav-link" href="#model-based-ml">
+   Model Based ML
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare-for-next-class">
+   Prepare for next class
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-evaluation">
+     Learning &amp; Evaluation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reading">
+     Reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -360,7 +379,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>ML and Probability Review</h1>
+                <h1>2022-01-26</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -372,23 +391,44 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#admin">
-   admin
+   Admin
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-formalism">
-   More formalism
+  <a class="reference internal nav-link" href="#opening-question">
+   Opening Question
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#probability">
-   Probability
+  <a class="reference internal nav-link" href="#how-to-read-a-paper">
+   How to Read a Paper
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#practical-application-of-ml-pipelines">
-   Practical Application of ML &amp; Pipelines
+  <a class="reference internal nav-link" href="#model-based-ml">
+   Model Based ML
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare-for-next-class">
+   Prepare for next class
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-evaluation">
+     Learning &amp; Evaluation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reading">
+     Reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -399,34 +439,130 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="ml-and-probability-review">
-<h1>ML and Probability Review<a class="headerlink" href="#ml-and-probability-review" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>2022-01-26<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Lead Scribe: Lily</p>
 <div class="section" id="admin">
-<h2>admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
+<h2>Admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>collaborative notes</p></li>
-<li><p>brightspace will be updated later this week</p></li>
-<li><p>grading details by Wed</p></li>
-<li><p>environment for coding demos</p></li>
+<li><p>sorry about notes</p></li>
+<li><p>private github repo –&gt; Spring 2022</p></li>
+<li><p>grading contract FYI</p>
+<ul>
+<li><p>Will be given further instructions on ways to achieve an ‘A’ or ‘B’</p>
+<ul>
+<li><p>To get a ‘B’ you will only need to complete the paper and presentation</p></li>
+<li><p>To get an ‘A’ you will implement a project (translation)</p></li>
+</ul>
+</li>
+<li><p>Paper and presentation will be assigned</p>
+<ul>
+<li><p>Paper –&gt; CS Conference Style</p></li>
+<li><p>Draft due: last day before the presentation, will be posted for the class to review</p></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="more-formalism">
-<h2>More formalism<a class="headerlink" href="#more-formalism" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="opening-question">
+<h2>Opening Question<a class="headerlink" href="#opening-question" title="Permalink to this headline">¶</a></h2>
+<p>What kind of data are you most in working with?</p>
 <ul class="simple">
-<li><p>model</p></li>
-<li><p>prediction algo</p></li>
-<li><p>cost function</p></li>
-<li><p>objective</p></li>
+<li><p>Class response:</p>
+<ul>
+<li><p>GIS data</p></li>
+<li><p>Linguistic data (tweets, reddit posts)</p></li>
+<li><p>Numerical data (tabular)</p></li>
+<li><p>Video/Image</p></li>
+<li><p>Time series</p></li>
+<li><p>EHR/Medical related data</p></li>
+<li><p>NLP</p></li>
+<li><p>tabular/survey</p></li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="probability">
-<h2>Probability<a class="headerlink" href="#probability" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-to-read-a-paper">
+<h2>How to Read a Paper<a class="headerlink" href="#how-to-read-a-paper" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="model-based-ml">
+<h2>Model Based ML<a class="headerlink" href="#model-based-ml" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>sample distros</p></li>
+<li><p>Discrete probabilities (distributions introduced in murder mystery chapter)</p></li>
+<li><p>Bernoulli</p></li>
+<li><p>Priors (probablistic guess about a random variable)</p>
+<ul>
+<li><p>Are useful for working with less data to create strong inferences</p>
+<ul>
+<li><p>Working with things when not a lot of data is available</p></li>
+</ul>
+</li>
+<li><p>Assumptions, expressed in a probability distribution</p></li>
+</ul>
+</li>
+<li><p>Posterior</p>
+<ul>
+<li><p>Inference given regularizer: Likelihood…</p></li>
+<li><p>Most common posterior probability distribution we’re doing: Probability of parameters given data</p></li>
+</ul>
+</li>
+<li><p>Point Estimate</p>
+<ul>
+<li><p>This are the single values produced after training (weights)</p></li>
+<li><p>Posterior mean
+<img alt="example of point estimate" src="../_images/pointEstimate.svg" /></p></li>
+</ul>
+</li>
+<li><p>Most of the probability distributions we’ll use belong to the exponential family</p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Exponential_family">https://en.wikipedia.org/wiki/Exponential_family</a></p></li>
+</ul>
+</li>
+<li><p>Conditional Probability</p>
+<ul>
+<li><p>One for each value of the conditioning variable</p></li>
+<li><p>(e.g.) Murder mystery –&gt; murderer variable can be Grey or Auburn
+<img alt="example marginal distribution from murder mystery text" src="../_images/marginalDistribution.svg" /></p></li>
+</ul>
+</li>
+<li><p>Marginal probability</p>
+<ul>
+<li><p>(Section 1.2 – A Model of Murder)</p></li>
+<li><p>“Probability of one event in the presence of all (or subset) outcomes of the other random variable…” (<a class="reference external" href="https://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/">https://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/</a>)</p></li>
+</ul>
+</li>
+<li><p>Maximum Likelihood Estimation</p>
+<ul>
+<li><p>Assume a distribution, our goal will be to find the theta (parameter)</p></li>
+<li><p>Maximizing, find parameters that will give us the highest probability (finding the one–parameter–that fits best)</p></li>
+</ul>
+</li>
+<li><p>elicitation - an interdisciplinary field in statistics and psychology; study of how to get an expert’s distribution for how likely an event is to occur.</p></li>
 </ul>
 </div>
-<div class="section" id="practical-application-of-ml-pipelines">
-<h2>Practical Application of ML &amp; Pipelines<a class="headerlink" href="#practical-application-of-ml-pipelines" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="prepare-for-next-class">
+<h2>Prepare for next class<a class="headerlink" href="#prepare-for-next-class" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Order of the weekly topics may change</p></li>
+<li><p>Dr. Brown will present next week, but we’ll start rotating the following week</p></li>
+<li><p>There are (2) readings, bring questions and prepare</p></li>
+</ul>
+<div class="section" id="learning-evaluation">
+<h3>Learning &amp; Evaluation<a class="headerlink" href="#learning-evaluation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Read through the whole Learning and Evaluation Page after I post a notification to, there are some fixes to be made</p></li>
+<li><p>Bring Questions to class next week</p></li>
+<li><p>Be ready to work on your grading contract</p></li>
+</ul>
+</div>
+<div class="section" id="reading">
+<h3>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">¶</a></h3>
+<p>The Scientific Method in the Science of Machine Learning and Value-laden Disciplinary Shifts in Machine Learning</p>
+</div>
+<div class="section" id="id2">
+<h3><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
@@ -454,21 +590,7 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="2021-01-27.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Class 1: Introductions</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="2021-02-03.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Class 3: ML Pipelines</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
