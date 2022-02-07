@@ -71,7 +71,7 @@ and recent publications.
   - Missing data with graphical models and causal reasoning
   - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf) &
  [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
-  - Paper discussion led by 
+  - Paper discussion led by
 * - 2021-02-14
   - Current Challenges in Missing data
   - TBD
