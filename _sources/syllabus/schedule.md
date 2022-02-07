@@ -1,6 +1,6 @@
 # Schedule
 
-We will meet in person in Tyler 108 MW 3:00-4:15pm
+We meet in Tyler 108, MW 3-4:15pm.
 
 This course will proceed in three main parts: overview, deep dives, and wrap up.
 
@@ -66,12 +66,12 @@ and recent publications.
   - [Handling Missing Values when Applying Classification Models](https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf) &
   [Missing data imputation using statistical and machine learning methods in a real
   breast cancer problem](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&rep=rep1&type=pdf)
-  - Paper discussion led by
+  - Paper discussion led by Emmely & Chan
 * - 2021-02-09
   - Missing data with graphical models and causal reasoning
   - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf) &
  [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
-  - Paper discussion led by J
+  - Paper discussion led by
 * - 2021-02-14
   - Current Challenges in Missing data
   - TBD

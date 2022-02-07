@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Machine Learning for Science &amp; Society</title>
+    <title>Missing Data 2: &#8212; Machine Learning for Science &amp; Society</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -124,17 +124,17 @@
   Notes
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="2021-01-00-intro.html">
    Spring 2021
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="../syllabus/schedule-2021.html">
      Schedule
@@ -158,6 +158,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="2021-02-08.html">
      Class 4: Missing Data: Basic techniques
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Missing Data 2:
     </a>
    </li>
    <li class="toctree-l2">
@@ -329,7 +334,32 @@
                 <i class="fas fa-list"></i> Contents
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graph-theory-foundation">
+   Graph theory foundation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#missingness-graphs">
+   Missingness graphs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recoverabiilty-for-mcar">
+   Recoverabiilty for MCAR
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discussion">
+   Discussion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for-next-week">
+   For next week
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -340,7 +370,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Missing Data 2:</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -349,7 +379,32 @@
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graph-theory-foundation">
+   Graph theory foundation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#missingness-graphs">
+   Missingness graphs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recoverabiilty-for-mcar">
+   Recoverabiilty for MCAR
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discussion">
+   Discussion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for-next-week">
+   For next week
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -359,7 +414,59 @@
             
               <div>
                 
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="missing-data-2">
+<h1>Missing Data 2:<a class="headerlink" href="#missing-data-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="graph-theory-foundation">
+<h2>Graph theory foundation<a class="headerlink" href="#graph-theory-foundation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A DAG</p></li>
+<li><p>shapes are nodes</p>
+<ul>
+<li><p>nodes generally represent a random variable</p></li>
+</ul>
+</li>
+<li><p>nodes are connected with edges</p>
+<ul>
+<li><p>edges may be directed (with an arrow)</p></li>
+</ul>
+</li>
+<li><p>path is a sequence of edges</p></li>
+<li><p>a cycle is a path that returns to a given node twice</p></li>
+<li><p>we will focus on acyclic graphs</p></li>
+<li><p>directed edges connect parent nodes to child nodes (follwoign the arrow)</p></li>
+<li><p>Why graphs: useful representation of joint distribtions</p></li>
+<li><p>d-connected: two nodes are d-connected if there is a connected path without a collider</p></li>
+<li><p>d-separation: independent through a collider</p></li>
+<li><p>collider is when arrows flip</p></li>
+</ul>
+</div>
+<div class="section" id="missingness-graphs">
+<h2>Missingness graphs<a class="headerlink" href="#missingness-graphs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>x,y are variables</p></li>
+<li><p>Y^* is a proxy for y</p></li>
+<li><p>R_y : causal mechanism for missingness of y*</p></li>
+</ul>
+</div>
+<div class="section" id="recoverabiilty-for-mcar">
+<h2>Recoverabiilty for MCAR<a class="headerlink" href="#recoverabiilty-for-mcar" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="discussion">
+<h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>proxy</p></li>
+<li><p>example with ocean data temp sensor, cloud cover images</p></li>
+</ul>
+</div>
+<div class="section" id="for-next-week">
+<h2>For next week<a class="headerlink" href="#for-next-week" title="Permalink to this headline">¶</a></h2>
+<p>Choose one:
+<a class="reference external" href="https://artemiss-workshop.github.io/#program">https://artemiss-workshop.github.io/#program</a></p>
+<p>Information Theoretic Approaches for Testing Missingness in Predictive Models
+<a class="reference external" href="https://openreview.net/forum?id=6Y05VJfGlFM">https://openreview.net/forum?id=6Y05VJfGlFM</a></p>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
