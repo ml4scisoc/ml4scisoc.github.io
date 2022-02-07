@@ -1,0 +1,62 @@
+# MLSS
+
+# 2022-02-07
+Lead Scribe: Surbhi Rathore
+paper presentation: Emmley
+handling missing values at prediction time
+-- classification trees
+-- imputation -- it can be estimated from the data that are present, (replacement of missing data points)
+-- MCAR (Missing completely at random)-- scenarion where missigingness of feature values in independent of feature value the missing features have noting to do with feature values. 
+
+results:
+-- accuracy is decresing for missing data
+-- they get -- "predictive imputation" -- 
+redced model -- work wellas per the results
+
+distribution -- how
+
+low feature imputability -- how well do we impute the value correctly , bar positive better score
+avg imputability score fordata 
+cate -- clafficication  avg ...
+better avg score is higher feature imputability score, 
+
+-- reduced feature modeling should have advantages all along the imputability spectrum
+
+-- evaluation using logistic regression: 
+
+--evaluation with naturally occuring missing values-- 
+
+Missing value but consistent results : — 
+
+Imputation is always worse 
+
+Conclusion:  reduced feature ensembles offered significant better performance than imputation — hybrid solution.
+
+Paper two :
+
+Missing data using stasticxal and macing learning methods in real Brest cancer problem:
+
+Lots of missing data, cat attributes handling , EL-Alamo-! Data set — 
+
+Mean imputation — generic, avoided as it could be dangerous for medical data sets.
+Hot deck imputation — assigned values of the nearest neighbor record according to a similarity criteria.
+Different cases for categorical or numerical attributes
+
+Multiple imputation: out performs mean imputation
+
+Machine earning
+
+Mlp —  sigmoid 
+
+self organizing maps: training models to predict values of features
+
+K-nearest neighbors —  
+
+Machine learning performed better . — KNN and MLP
+
+Conclusions:
+Ann better but there isn’t huge diff as the data is smaller, 
+
+
+
+
