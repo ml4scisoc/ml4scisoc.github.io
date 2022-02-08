@@ -4,7 +4,7 @@
 Lead Scribe: Surbhi Rathore
 
 ## Opening Notes
-Handling missing data
+Handling missing data.
 
 ## Paper - Handling Missing Values when Applying Classification Models
  [paper](https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf) -- Presented by Emmely 
