@@ -70,23 +70,22 @@ and recent publications.
 * - 2021-02-09
   - Missing data with graphical models and causal reasoning
   - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf)
-  - Paper discussion led by Chamudi  & Lily
+  - Paper discussion led by Chamudi
 * - 2021-02-14
-  - causal and probabilisitc missing data
+  - causal and probabilistic missing data
   -  [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
-  -
   - Paper discussion by Lily
 * - 2021-02-16
   - Fairness
-  - [Fairml classification chapter](https://fairmlbook.org/classification.html) and [Machine Bias]() and [Gender Shades]() and [Obermyer]()
+  - [Fairml classification chapter](https://fairmlbook.org/classification.html) and [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342)
   - Paper discussion by
 * - 2021-02-21
   - Fairness and Causality
   - [FairML Causality chapter](https://fairmlbook.org/causal.html)
-  - TBD
+  - Paper discussion by
 * - 2021-02-23
   - Fairness and experiments
-  - [friedler empricial comparison paper]
+  - [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589)
   - & empirical setups and scope of work
 * - 2021-02-28
   - Multi-objective & constrained opt
