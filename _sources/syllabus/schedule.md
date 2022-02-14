@@ -78,7 +78,7 @@ and recent publications.
 * - 2021-02-16
   - Fairness
   - [Fairml classification chapter](https://fairmlbook.org/classification.html) and [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342)
-  - Paper discussion by
+  - Paper discussion by Damon & Dereck 
 * - 2021-02-21
   - Fairness and Causality
   - [FairML Causality chapter](https://fairmlbook.org/causal.html)
