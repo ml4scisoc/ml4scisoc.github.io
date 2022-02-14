@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -462,158 +465,6 @@
 <p>The readings are subject to revision in class up until a presenter is assigned.
 Topics may also be updated after the first few classes based on student interests
 and recent publications.</p>
-<table class="colwidths-given table" id="id1">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Schedule</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Class</p></th>
-<th class="head"><p>Topic</p></th>
-<th class="head"><p>Reading</p></th>
-<th class="head"><p>Activities</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>2021-01-24</p></td>
-<td><p>Introduction</p></td>
-<td><p>None</p></td>
-<td><p>introductions, expectation setting</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-01-26</p></td>
-<td><p>Probability Review</p></td>
-<td><p>Model Based ML, chapter 1</p></td>
-<td><p>reading discussion, setting up</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-01-31</p></td>
-<td><p>Setting the Stage</p></td>
-<td><p><a class="reference external" href="https://arxiv.org/abs/1904.10922">The Scientific Method in the Science of Machine Learning</a> and <a class="reference external" href="https://arxiv.org/abs/1912.01172">Value-laden Disciplinary Shifts in Machine Learning</a></p></td>
-<td><p>Paper Presentation by Dr. Brown</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-02-02</p></td>
-<td><p>Meta issues</p></td>
-<td><p><a class="reference external" href="https://dl.acm.org/doi/abs/10.1145/3351095.3372871">Roles for computing in social change</a></p></td>
-<td><p>Paper Presentation by Dr. Brown</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-02-07</p></td>
-<td><p>Missing Data: Intro strategies</p></td>
-<td><p><a class="reference external" href="https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf">Handling Missing Values when Applying Classification Models</a> &amp;
-<a class="reference external" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&amp;rep=rep1&amp;type=pdf">Missing data imputation using statistical and machine learning methods in a real
-breast cancer problem</a></p></td>
-<td><p>Paper discussion led by Emmely &amp; Chan</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-02-09</p></td>
-<td><p>Missing data with graphical models and causal reasoning</p></td>
-<td><p><a class="reference external" href="https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf">Graphical Models for Inference with Missing Data</a> &amp;
-<a class="reference external" href="https://auai.org/uai2015/proceedings/papers/204.pdf">Missing Data as a Causal and Probabilistic Problem</a></p></td>
-<td><p>Paper discussion led by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-02-14</p></td>
-<td><p>Current Challenges in Missing data</p></td>
-<td><p>TBD</p></td>
-<td><p>Paper discussions by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-02-16</p></td>
-<td><p>Current Challenges in Missing data</p></td>
-<td><p>TBD</p></td>
-<td><p>Paper discussion by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-02-21</p></td>
-<td><p>Fairness</p></td>
-<td><p>fairml classification chapter and friedler empricial comparison paper</p></td>
-<td><p>Empirical setup</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-02-23</p></td>
-<td><p>Fairness</p></td>
-<td><p>Reading</p></td>
-<td><p>preview of lasso and admm constraint to multiobjecitve reformulation</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-02-28</p></td>
-<td><p>Multi-objective &amp; constrained opt</p></td>
-<td><p><a class="reference external" href="https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x">Elastic Net</a></p></td>
-<td><p>Paper presentation by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-03-02</p></td>
-<td><p>Multi-objective &amp; constrained opt</p></td>
-<td><p><a class="reference external" href="https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg">A critical review of multi-objective optimization in data mining: a position paper</a></p></td>
-<td><p>Paper presentation and discussion by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-03-07</p></td>
-<td><p>Latent Variable Models</p></td>
-<td><p><a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html">Gaussian Mixture Models</a> and <a class="reference external" href="https://jmlr.org/papers/volume3/blei03a/blei03a.pdf">Topic Models</a></p></td>
-<td><p>Paper presentaiton by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-03-09</p></td>
-<td><p>Latent Variable Models</p></td>
-<td><p><a class="reference external" href="https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf">Indian Buffet Process</a> and <a class="reference external" href="https://arxiv.org/pdf/1312.6114.pdf">Auto-Encoding Variational Bayes</a></p></td>
-<td><p>Paper presentation by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-03-21</p></td>
-<td><p>Missing or Noisy labels</p></td>
-<td><p><a class="reference external" href="https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf">Learning with Noisy Labels</a> and <a class="reference external" href="https://link.springer.com/article/10.1007/s10994-019-05855-6">Semi Supervised Learning</a></p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>2021-03-23</p></td>
-<td><p>Noisy Labels as a model for Bias</p></td>
-<td><p><a class="reference external" href="https://arxiv.org/pdf/1912.01094.pdf">Recovering from biased data: Can fairness constraints improve accuracy</a> and  <a class="reference external" href="https://dl.acm.org/doi/10.1145/3442188.3445915">Fair classification with group dependent label noise</a></p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>2021-03-28</p></td>
-<td><p>Interpretable &amp; Explanation Intro</p></td>
-<td><p><a class="reference external" href="https://dl.acm.org/doi/pdf/10.1145/3236009">A Survey of Methods for Explaining Black Box Models</a></p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-03-30</p></td>
-<td><p>A Case for Interpretability over Explanation</p></td>
-<td><p><a class="reference external" href="https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6">Why are we explaining black box models</a> and <a class="reference external" href="http://jmlr.org/papers/volume18/17-716/17-716.pdf">Learning Certifiably optimal rule lists for categorical data</a></p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-04-04</p></td>
-<td><p>Models for Explanation</p></td>
-<td><p><a class="reference external" href="https://arxiv.org/abs/1711.11279">Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)</a> and <a class="reference external" href="https://dl.acm.org/doi/10.5555/3295222.3295230">A unified approach to interpreting model predictions</a></p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-04-06</p></td>
-<td><p>Choosing Explanations and using explantions</p></td>
-<td><p><a class="reference external" href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445941">How can I choose an explainer? An Application-grounded
-Evaluation of Post-hoc Explanations</a> <a class="reference external" href="https://dl.acm.org/doi/10.1145/3287560.3287566">Actionable Recourse in Linear Classification</a></p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-04-11</p></td>
-<td><p>What are the risks of explanations</p></td>
-<td><p><a class="reference external" href="https://arxiv.org/abs/1807.05185">Model Reconstruction from Model Explanations</a></p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-04-13</p></td>
-<td><p>What does Interpretable mean</p></td>
-<td><p><a class="reference external" href="https://arxiv.org/abs/1702.08608">Towards A Rigorous Science of Interpretable Machine Learning</a> and <a class="reference external" href="https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf">Towards falsifiable interpretability research</a></p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-04-18</p></td>
-<td><p>Project Presentations</p></td>
-<td><p>projects</p></td>
-<td><p>Paper Presentation by</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-04-20</p></td>
-<td><p>Project Presentations</p></td>
-<td><p>projects</p></td>
-<td><p>presentations with peer feedback</p></td>
-</tr>
-<tr class="row-even"><td><p>2021-04-25</p></td>
-<td><p>Project Presentations</p></td>
-<td><p>projects</p></td>
-<td><p>peer feedback</p></td>
-</tr>
-<tr class="row-odd"><td><p>2021-04-27</p></td>
-<td><p>Review and Project Reflections</p></td>
-<td><p>Paper feedback</p></td>
-<td><p>presentations with revision plans</p></td>
-</tr>
-</tbody>
-</table>
 <!-- You can also cite references that are stored in a `bibtex` file. For example,
 the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
 this: {cite}`holdgraf_evidence_2014`.

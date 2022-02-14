@@ -69,25 +69,25 @@ and recent publications.
   - Paper discussion led by Emmely & Chan
 * - 2021-02-09
   - Missing data with graphical models and causal reasoning
-  - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf) &
- [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
-  - Paper discussion led by
+  - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf)
+  - Paper discussion led by Chamudi  & Lily
 * - 2021-02-14
-  - Current Challenges in Missing data
-  - TBD
-  - Paper discussions by
+  - causal and probabilisitc missing data
+  -  [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
+  -
+  - Paper discussion by Lily
 * - 2021-02-16
-  - Current Challenges in Missing data
-  - TBD
+  - Fairness
+  - [Fairml classification chapter](https://fairmlbook.org/classification.html) and [Machine Bias]() and [Gender Shades]() and [Obermyer]()
   - Paper discussion by
 * - 2021-02-21
-  - Fairness
-  - fairml classification chapter and friedler empricial comparison paper
-  - Empirical setup
+  - Fairness and Causality
+  - [FairML Causality chapter](https://fairmlbook.org/causal.html)
+  - TBD
 * - 2021-02-23
-  - Fairness
-  - Reading
-  -  preview of lasso and admm constraint to multiobjecitve reformulation
+  - Fairness and experiments
+  - [friedler empricial comparison paper]
+  - & empirical setups and scope of work
 * - 2021-02-28
   - Multi-objective & constrained opt
   - [Elastic Net](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x)
