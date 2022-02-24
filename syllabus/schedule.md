@@ -78,23 +78,19 @@ and recent publications.
 * - 2021-02-16
   - Fairness
   - [Fairml classification chapter](https://fairmlbook.org/classification.html) and [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342)
-  - Paper discussion by Damon & Dereck 
-* - 2021-02-21
-  - Fairness and Causality
-  - [FairML Causality chapter](https://fairmlbook.org/causal.html)
-  - Paper discussion by
+  - Paper discussion by Damon & Dereck
 * - 2021-02-23
-  - Fairness and experiments
-  - [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589)
-  - & empirical setups and scope of work
+  - Fairness and Causality
+  - [FairML Causality chapter](https://fairmlbook.org/causal.html) [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589)
+  - Paper discussion Surbhi and Chan
 * - 2021-02-28
   - Multi-objective & constrained opt
   - [Elastic Net](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x)
-  - Paper presentation by
+  - Paper presentation by Alex
 * - 2021-03-02
   - Multi-objective & constrained opt
   - [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg)
-  - Paper presentation and discussion by
+  - Paper presentation and discussion by Chamudis
 * - 2021-03-07
   - Latent Variable Models
   - [Gaussian Mixture Models](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) and [Topic Models](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
