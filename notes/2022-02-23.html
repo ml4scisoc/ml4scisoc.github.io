@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2022-02-23 &#8212; Machine Learning for Science &amp; Society</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about.html">
+   Machine Learning for Science &amp; Society
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/index.html">
+   Basic Facts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/schedule.html">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/learning.html">
+   Learning Outcomes and Evaluation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Notes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2021-01-00-intro.html">
+   Spring 2021
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../syllabus/schedule-2021.html">
+     Schedule
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-01-27.html">
+     Class 1: Introductions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-01.html">
+     ML and Probability Review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-03.html">
+     Class 3: ML Pipelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-08.html">
+     Class 4: Missing Data: Basic techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-10.html">
+     Missing Data 2:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-15.html">
+     Missing Data 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-17.html">
+     MIssing data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-01.html">
+     Elastic Net
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-03.html">
+     Multiobjective
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-08.html">
+     Latent Variable Models: GMM &amp; Topic Models
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-10.html">
+     Latent Variable Models:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-15.html">
+     Semi-supervised learning and noisy labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-17.html">
+     Noisy labels as a Bias model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-24.html">
+     Comparison of Fairness Interventions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2022-01-00-intro.html">
+   Spring 2022
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-24.html">
+     Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-26.html">
+     2022-01-26
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-31.html">
+     Scientific Method &amp; Philosphy of ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-02.html">
+     Roles for Computing in Social Change
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/paperpresentations.html">
+   Preparing to present a paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/notes.html">
+   Posting Notes
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notes/2022-02-23.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2022-02-23.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2022-02-23.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fairness-and-causality-experiments">
+   Fairness and Causality/Experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#causality">
+     Causality
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#empirical-comparison">
+     Empirical Comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>2022-02-23</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fairness-and-causality-experiments">
+   Fairness and Causality/Experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#causality">
+     Causality
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#empirical-comparison">
+     Empirical Comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>2022-02-23<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Lead Scribe : Derek</p>
+<div class="section" id="fairness-and-causality-experiments">
+<h2>Fairness and Causality/Experiments<a class="headerlink" href="#fairness-and-causality-experiments" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="causality">
+<h3>Causality<a class="headerlink" href="#causality" title="Permalink to this headline">¶</a></h3>
+<p>Presented by Surbhi</p>
+<ul class="simple">
+<li><p>Main Goal</p>
+<ul>
+<li><p>Teach more how causality can help us understand a situation</p></li>
+</ul>
+</li>
+<li><p>Passive observation</p>
+<ul>
+<li><p>Something we generally observe but it does not require proper attention</p></li>
+<li><p>Like noticing a car driving by you</p></li>
+<li><p>Data collected this way shows a snapshot of the world as it is</p></li>
+</ul>
+</li>
+<li><p>Causal reasoning</p>
+<ul>
+<li><p>Important questions are not usually observational in nature</p>
+<ul>
+<li><p>Would traffic fatalities decrease if we raised the legal driving age by 2 years?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Not every cause qeustion is easy to address</p>
+<ul>
+<li><p>Causal inference gives a formal language to ask questions, but does not trivialize finding the answer</p></li>
+</ul>
+</li>
+<li><p>Supporting 3 purposes for understanding causality</p>
+<ol class="simple">
+<li><p>Conceptualize and address limits of observational techniques</p></li>
+<li><p>Provide tools to help design intervention that acheive a desired effect</p></li>
+<li><p>Engage with important debate about when and how much reasoning about discrimination and fairness require causal understanding</p></li>
+</ol>
+</li>
+<li><p>Simpson’s Paradox</p>
+<ul>
+<li><p>Higher acceptance ratio among women, while two show a higher acceptance for men</p></li>
+<li><p>There’s variation between departments, and so the higher rate for men may be seen in aggregate but reversed at the department level</p></li>
+<li><p>This is one example of us misinterpreting what conditional probabilities encode</p></li>
+<li><p>If we look at overall data, it looks like admissions are unfair and discriminating for men, but broken by department it looks like it’s the other way around</p>
+<ul>
+<li><p>Not the admission that makes it look this way but it depends on where women/men tend to apply and such</p>
+<ul>
+<li><p>For example engineering vs english vs other</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Causal Models</p>
+<ul>
+<li><p>Causal ineference can be used to guide design of studies</p>
+<ul>
+<li><p>Choosing which variables to include, which to exclude, which to hold constant</p></li>
+</ul>
+</li>
+<li><p>Serve as mechanism to incorporate scientific domain knowledge and exchange plausible conclusions</p></li>
+</ul>
+</li>
+<li><p>Structural Causal Models</p>
+<ul>
+<li><p>A sequence of assignments for generating a joint distribution from independent noise models</p></li>
+<li><p>By executing the sequence of assignments, we build a set of jointly distributed random variables</p></li>
+<li><p>Provides a joint distribution and describes how the dist can be generated from elementary noise variables</p></li>
+<li><p>A Probabilistic model</p>
+<ul>
+<li><p>Different set of operations</p></li>
+<li><p>Useful for considering hypothetical scenarios differently than if you have a single set of data</p></li>
+<li><p>How we can intervene in a world AND measure the effect of that intervention</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Causal Graphs</p>
+<ul>
+<li><p>Parent notation we saw last week, interpreted a little differently and we can take a model to build a graph</p></li>
+<li><p>Can go from graph to model too</p>
+<ul>
+<li><p>Looking at directed graphs as placeholder for an unspecified structuarl causal model that has the assignment structure given by the graph
+<img alt="" src="https://fairmlbook.org/assets/causal-ex.svg" /></p></li>
+</ul>
+</li>
+<li><p>Graph Structure</p>
+<ul>
+<li><p>Forks</p>
+<ul>
+<li><p>Has outgoing edges to two other variables</p></li>
+<li><p>Aka the most common cause of other variables
+<img alt="" src="https://fairmlbook.org/assets/causal-conf.svg" /></p></li>
+</ul>
+</li>
+<li><p>Mediators</p>
+<ul>
+<li><p>A case of a fork where x causes z and z causes y so x causes y multiple ways
+<img alt="" src="https://fairmlbook.org/assets/causal-chain.svg" /></p></li>
+</ul>
+</li>
+<li><p>Colliders</p>
+<ul>
+<li><p>Not confounders</p></li>
+<li><p>X and Y are unconfounded, and we can replace do-statements by conditional probabilities
+<img alt="" src="https://fairmlbook.org/assets/causal-collider.svg" /></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The Harvard Admission example</p>
+<ul>
+<li><p>The story</p>
+<ul>
+<li><p>Asian American Male 25% admission chance, as white 36%, as Hispanic 77%, as African American 95%</p></li>
+</ul>
+</li>
+<li><p>Invalid statistically because everything on the application is exactly the same except for race but typically many other things will change besides just the race</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="empirical-comparison">
+<h3>Empirical Comparison<a class="headerlink" href="#empirical-comparison" title="Permalink to this headline">¶</a></h3>
+<p>Presented by Chan</p>
+<ul class="simple">
+<li><p>Main Goal</p>
+<ul>
+<li><p>Metaanalysis paper of analyzing fair machine learning algorithms</p></li>
+<li><p>Comparison of algorithms they’d found</p></li>
+</ul>
+</li>
+<li><p>Problem</p>
+<ul>
+<li><p>Fairness</p>
+<ul>
+<li><p>Comes with sensitive data</p></li>
+<li><p>Age, race, gender, etc</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The Experiemnts</p>
+<ul>
+<li><p>Testing on</p>
+<ul>
+<li><p>Preprocessing</p>
+<ul>
+<li><p>Comes in 2 ways before feeding into the algorithms that may or may not preprocess further</p></li>
+<li><p>Training data is the cause of discrimination motivates this</p></li>
+<li><p>If training data is discriminating then the results definitely will be, so we can preprocess to make it more fair</p></li>
+</ul>
+</li>
+<li><p>Modifications to the algorithms</p></li>
+<li><p>Postprocessing</p>
+<ul>
+<li><p>If we have a result, can we prune or round items for better results</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The Results</p>
+<ul>
+<li><p>Measures of discrimination correlate with each other</p></li>
+<li><p>Algorhtms make different fairness accuracy tradeoffs</p></li>
+<li><p>Algorithms are gragile: they are sensitive to variations in the input</p></li>
+</ul>
+</li>
+<li><p>Datasets</p>
+<ul>
+<li><p>Ricci</p>
+<ul>
+<li><p>Determining if firefighters would receive a promotion</p></li>
+</ul>
+</li>
+<li><p>Adult Income</p>
+<ul>
+<li><p>Predicting income above or below $50k</p></li>
+</ul>
+</li>
+<li><p>German</p>
+<ul>
+<li><p>Classifying people on good or bad credit risk</p></li>
+</ul>
+</li>
+<li><p>ProPublica Recidivism/Violent Recidivism</p>
+<ul>
+<li><p>Committing a crime/violent again</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Preprocessing</p>
+<ul>
+<li><p>Modifying input according to any data-specific needs</p>
+<ul>
+<li><p>Removing unneeded features, imputing missing data, etc</p></li>
+<li><p>Add a combined senstivie attribute i.e. “White-Woman”</p></li>
+</ul>
+</li>
+<li><p>Senstiive Attribute treated as binary</p></li>
+<li><p>Analysis</p>
+<ul>
+<li><p>See <a class="reference external" href="https://dl.acm.org/doi/pdf/10.1145/3287560.3287589">Figure 2</a> in the paper</p></li>
+<li><p>One dot is one fold (LOOCV) of the data score in whatever metric in one algorithm</p></li>
+<li><p>Equality between preprocessing choices = Showing the plot is not square, where the x and y axis are equal</p></li>
+<li><p>Binary sensitive attribute is more accurate when using a fair classifier</p></li>
+<li><p>Things we knew about ML before don’t necessarily apply to fair classifiers</p>
+<ul>
+<li><p>Fairness may limit our accuracy</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Sarah M Brown<br/>
+    
+        &copy; Copyright .<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
