@@ -36,6 +36,10 @@ parts:
         - file: notes/2022-01-26
         - file: notes/2022-01-31
         - file: notes/2022-02-02
+        - file: notes/2022-02-07
+        - file: notes/2022-02-09
+        - file: notes/2022-02-16
+        - file: notes/2022-02-23
   - caption: Reference
     chapters:
       - file: reference/paperpresentations
