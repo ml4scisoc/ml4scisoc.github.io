@@ -90,15 +90,15 @@ and recent publications.
 * - 2021-03-02
   - Multi-objective & constrained opt
   - [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg)
-  - Paper presentation and discussion by Chamudis
+  - Paper presentation and discussion by Chamudi
 * - 2021-03-07
   - Latent Variable Models
   - [Gaussian Mixture Models](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) and [Topic Models](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
-  - Paper presentaiton by
+  - Paper presentation by Alex and Lily
 * - 2021-03-09
   - Latent Variable Models
   - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
-  - Paper presentation by
+  - Paper presentation by Surbhi and Chan
 * - 2021-03-21
   - Missing or Noisy labels
   - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
@@ -120,7 +120,7 @@ and recent publications.
   - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279) and [A unified approach to interpreting model predictions](https://dl.acm.org/doi/10.5555/3295222.3295230)
   - Paper Presentation by
 * - 2021-04-06
-  - Choosing Explanations and using explantions
+  - Choosing Explanations and using explanations
   - [How can I choose an explainer? An Application-grounded
 Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.3445941) [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566)
   - Paper Presentation by
