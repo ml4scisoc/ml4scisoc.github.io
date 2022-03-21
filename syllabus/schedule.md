@@ -99,14 +99,14 @@ and recent publications.
   - Latent Variable Models
   - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
   - Paper presentation by Surbhi and Chan
-* - 2021-03-21
+* - 2021-03-28
   - Missing or Noisy labels
   - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
-  -
-* - 2021-03-23
+  - presentations by Dereck
+* - 2021-03-30
   - Noisy Labels as a model for Bias
   - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915)
-  -
+  - Paper presentations by Surbhi and Lily
 * - 2021-03-28
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
