@@ -99,56 +99,55 @@ and recent publications.
   - Latent Variable Models
   - [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
   - Paper presentation by Surbhi and Chan
-* - 2021-03-21
+* - 2021-03-28
   - Missing or Noisy labels
   - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
-  -
-* - 2021-03-23
+  - presentations by Dereck
+* - 2021-03-30
   - Noisy Labels as a model for Bias
   - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915)
-  -
-* - 2021-03-28
+  - Paper presentations by Surbhi and Lily
+* - 2021-04-04
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
   - Paper Presentation by
-* - 2021-03-30
+* - 2021-04-06
   - A Case for Interpretability over Explanation
   - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
   - Paper Presentation by
-* - 2021-04-04
+* - 2021-04-11
   - Models for Explanation
   - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279) and [A unified approach to interpreting model predictions](https://dl.acm.org/doi/10.5555/3295222.3295230)
   - Paper Presentation by
-* - 2021-04-06
+* - 2021-04-13
   - Choosing Explanations and using explanations
   - [How can I choose an explainer? An Application-grounded
 Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.3445941) [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566)
   - Paper Presentation by
-* - 2021-04-11
-  - What are the risks of explanations
-  - [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
-  - Paper Presentation by
-* - 2021-04-13
+* - 2021-04-18
   - What does Interpretable mean
   - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
   - Paper Presentation by
-* - 2021-04-18
-  - Project Presentations
+* - 2021-04-20
+  - 3 Project Presentations
   - projects
   - Paper Presentation by
-* - 2021-04-20
-  - Project Presentations
+* - 2021-04-25
+  - 3 Project Presentations
   - projects
   - presentations with peer feedback
-* - 2021-04-25
-  - Project Presentations
-  - projects
-  - peer feedback
 * - 2021-04-27
-  - Review and Project Reflections
-  - Paper feedback
+  - 2 Project Presentations and Project Reflections
+  - projects
   - presentations with revision plans
 ``````
+
+
+<!--
+* - 2021-04-1
+- What are the risks of explanations
+- [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
+- Paper Presentation by -->
 
 
 
