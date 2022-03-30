@@ -110,7 +110,7 @@ and recent publications.
 * - 2021-04-04
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
-  - Paper Presentation by
+  - Paper Presentation by Emmely
 * - 2021-04-06
   - A Case for Interpretability over Explanation
   - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
@@ -118,7 +118,7 @@ and recent publications.
 * - 2021-04-11
   - Models for Explanation
   - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279) and [A unified approach to interpreting model predictions](https://dl.acm.org/doi/10.5555/3295222.3295230)
-  - Paper Presentation by
+  - Paper Presentation by Alex and Surbhi
 * - 2021-04-13
   - Choosing Explanations and using explanations
   - [How can I choose an explainer? An Application-grounded
