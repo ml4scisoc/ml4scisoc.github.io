@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MLSS &#8212; Machine Learning for Science &amp; Society</title>
+    <title>Missing data Intro &#8212; Machine Learning for Science &amp; Society</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -246,7 +246,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     MLSS
+     Missing data Intro
     </a>
    </li>
    <li class="toctree-l2">
@@ -392,100 +392,88 @@ const thebe_selector_output = ".output, .cell_output"
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   MLSS
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opening-notes">
+   Opening Notes
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   2022-02-07
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paper-handling-missing-values-when-applying-classification-models">
+   Paper - Handling Missing Values when Applying Classification Models
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#opening-notes">
-     Opening Notes
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paper-handling-missing-values-when-applying-classification-models">
-     Paper - Handling Missing Values when Applying Classification Models
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis-over-different-treatments-of-missing-values-at-prediction-time">
+     Analysis over different treatments of missing values at prediction time.
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#analysis-over-different-treatments-of-missing-values-at-prediction-time">
-       Analysis over different treatments of missing values at prediction time.
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparison-of-pvi-dbi-and-reduced-modeling">
+       Comparison of PVI, DBI and Reduced Modeling
       </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#comparison-of-pvi-dbi-and-reduced-modeling">
-         Comparison of PVI, DBI and Reduced Modeling
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#low-and-high-feature-imputability-result">
-         LOW and HIGH FEATURE IMPUTABILITY Result
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum">
-         REDUCED-FEATURE MODELING SHOULD HAVE ADVANTAGES ALL ALONG THE IMPUTABILITY SPECTRUM
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#evaluation-with-naturally-occurring-missing-values">
-         Evaluation with “Naturally Occurring” Missing Values
-        </a>
-       </li>
-      </ul>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#conclusions">
-       Conclusions
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#low-and-high-feature-imputability-result">
+       LOW and HIGH FEATURE IMPUTABILITY Result
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum">
+       REDUCED-FEATURE MODELING SHOULD HAVE ADVANTAGES ALL ALONG THE IMPUTABILITY SPECTRUM
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#evaluation-with-naturally-occurring-missing-values">
+       Evaluation with “Naturally Occurring” Missing Values
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem">
-     Paper - Missing data imputation using statistical and machine learning methods in a real breast cancer problem
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-el-alamo-i-breast-cancer-dataset">
-       The ‘‘El Alamo-I’’ breast cancer dataset
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#statistical-methods">
-       Statistical methods
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-learning-methods">
-       Machine learning methods
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#model-evaluation">
-         Model evaluation
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
-       Conclusions
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#closing">
-     closing
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusions">
+     Conclusions
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem">
+   Paper - Missing data imputation using statistical and machine learning methods in a real breast cancer problem
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-el-alamo-i-breast-cancer-dataset">
+     The ‘‘El Alamo-I’’ breast cancer dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#statistical-methods">
+     Statistical methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#machine-learning-methods">
+     Machine learning methods
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#model-evaluation">
+       Model evaluation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Conclusions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#closing">
+   closing
+  </a>
  </li>
 </ul>
 
@@ -497,7 +485,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>MLSS</h1>
+                <h1>Missing data Intro</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -507,100 +495,88 @@ const thebe_selector_output = ".output, .cell_output"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   MLSS
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opening-notes">
+   Opening Notes
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   2022-02-07
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paper-handling-missing-values-when-applying-classification-models">
+   Paper - Handling Missing Values when Applying Classification Models
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#opening-notes">
-     Opening Notes
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paper-handling-missing-values-when-applying-classification-models">
-     Paper - Handling Missing Values when Applying Classification Models
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis-over-different-treatments-of-missing-values-at-prediction-time">
+     Analysis over different treatments of missing values at prediction time.
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#analysis-over-different-treatments-of-missing-values-at-prediction-time">
-       Analysis over different treatments of missing values at prediction time.
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparison-of-pvi-dbi-and-reduced-modeling">
+       Comparison of PVI, DBI and Reduced Modeling
       </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#comparison-of-pvi-dbi-and-reduced-modeling">
-         Comparison of PVI, DBI and Reduced Modeling
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#low-and-high-feature-imputability-result">
-         LOW and HIGH FEATURE IMPUTABILITY Result
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum">
-         REDUCED-FEATURE MODELING SHOULD HAVE ADVANTAGES ALL ALONG THE IMPUTABILITY SPECTRUM
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#evaluation-with-naturally-occurring-missing-values">
-         Evaluation with “Naturally Occurring” Missing Values
-        </a>
-       </li>
-      </ul>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#conclusions">
-       Conclusions
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#low-and-high-feature-imputability-result">
+       LOW and HIGH FEATURE IMPUTABILITY Result
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum">
+       REDUCED-FEATURE MODELING SHOULD HAVE ADVANTAGES ALL ALONG THE IMPUTABILITY SPECTRUM
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#evaluation-with-naturally-occurring-missing-values">
+       Evaluation with “Naturally Occurring” Missing Values
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem">
-     Paper - Missing data imputation using statistical and machine learning methods in a real breast cancer problem
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-el-alamo-i-breast-cancer-dataset">
-       The ‘‘El Alamo-I’’ breast cancer dataset
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#statistical-methods">
-       Statistical methods
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-learning-methods">
-       Machine learning methods
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#model-evaluation">
-         Model evaluation
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
-       Conclusions
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#closing">
-     closing
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusions">
+     Conclusions
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem">
+   Paper - Missing data imputation using statistical and machine learning methods in a real breast cancer problem
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-el-alamo-i-breast-cancer-dataset">
+     The ‘‘El Alamo-I’’ breast cancer dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#statistical-methods">
+     Statistical methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#machine-learning-methods">
+     Machine learning methods
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#model-evaluation">
+       Model evaluation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Conclusions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#closing">
+   closing
+  </a>
  </li>
 </ul>
 
@@ -611,11 +587,8 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="mlss">
-<h1>MLSS<a class="headerlink" href="#mlss" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>2022-02-07<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="missing-data-intro">
+<h1>Missing data Intro<a class="headerlink" href="#missing-data-intro" title="Permalink to this headline">¶</a></h1>
 <p>Lead Scribe: Surbhi Rathore</p>
 <div class="section" id="opening-notes">
 <h2>Opening Notes<a class="headerlink" href="#opening-notes" title="Permalink to this headline">¶</a></h2>
@@ -762,8 +735,8 @@ suboptimal accuracy.</p>
 </ul>
 </div>
 </div>
-<div class="section" id="id2">
-<h3>Conclusions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Conclusions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <blockquote class="epigraph">
 <div><p>machine learning techniques may be the best approach to imputing missing values,
 as they led to statistically significant improvements in prediction accuracy.
