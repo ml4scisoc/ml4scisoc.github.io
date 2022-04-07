@@ -1,0 +1,58 @@
+# 2022-02-28
+Lead Scribe: Damon
+
+## Elastic Net
+Presented by Alex
+
+Introduction
+- Ordinary Least Squares (OLS) often poor at prediction and intrepretation
+- need penalization techniques to help
+    - Ridge Regression
+    - Best Subset Selection
+    - Lasso
+    - None of these 3 techniques dominate the other 2, however
+    
+Lasso
+- a penalized least squares method imposing an L1-penalty on the regression coefficients
+- Advantage: produces a sparse representation, so more appealing than ridge and best subset
+    - better at getting rid of noise
+- Limitations: 
+    - in p>n case, lasso selects at most n variables before it saturates
+    - also, the lasso is not well defined unless the bound on the L1-norm of the coefficients is smaller than a certain value
+    - also, if there are high correlations, ridge is better
+
+Paper Goals
+- find a new method that works as well as lasso whenever lasso is best, but fixes issues highligthed above when it needs to
+
+Introduces elastic net, like "improved Lasso"
+- simultaneously does automatic variable selection and continuous shrinkage, and it can select groups of correlated variables
+- Hybrid Elastic-Net Regression is good at dealing with situations when there are correlations between parameters
+- Elastic net is basically a combination of ridge and lasso, but better. Often outperforms lasso
+- The elastic net produces a sparse model with good prediction accuracy, while encouraging a grouping effect.
+
+Elastic Net Penalization
+- regular regression cost function with L2 and L1 added with coefficents
+- the elastic net penalty can be used in classification problems with any consistent loss functions, including the L2-loss which we have considered here and binomial deviance.
+
+Naive Elastic Net
+- Impact of alpha
+    - if alpha = 1 -> ridge regression
+    - alpha = 0 -> lasso regression
+    - 0 < alpha < 1 -> elastic net
+- Why Naive
+    - in the procedure for finding elastic nets method, 2 stages involving both lasso and regression techniques
+    -  first find the ridge regression coefficients, and then do the lasso-type shrinkage along the lasso coefficient solution path 
+
+Examples
+- Predicting likelihood of prostate cancer example
+    - Out of the the 5 methods tested, elastic net is best, OLS is worst
+    - Also, naive elastic net performs identically to the ridge regression, fails to do variable selection
+
+Results/Takeaways
+- In all examples, elastic net is significantly more accurate than lasso, even when lasso is doing much better than ridge regression
+- Elastic net also produce sparse solutions, elastic tends to select more variables than lasso due to grouping effect
+- In general, elastic net > lasso
+
+- Summary
+    - elastic net method performs variable selection and regularization simultaneously
+    - they view the elastic net as a generalization of the lasso, which has been shown to be a valuable tool for model fitting and feature extraction
