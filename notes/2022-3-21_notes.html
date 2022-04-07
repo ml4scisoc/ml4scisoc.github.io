@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLSS &#8212; Machine Learning for Science &amp; Society</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about.html">
+   Machine Learning for Science &amp; Society
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/index.html">
+   Basic Facts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/schedule.html">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/learning.html">
+   Learning Outcomes and Evaluation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Notes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2021-01-00-intro.html">
+   Spring 2021
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../syllabus/schedule-2021.html">
+     Schedule
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-01-27.html">
+     Class 1: Introductions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-01.html">
+     ML and Probability Review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-03.html">
+     Class 3: ML Pipelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-08.html">
+     Class 4: Missing Data: Basic techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-10.html">
+     Missing Data 2:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-15.html">
+     Missing Data 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-17.html">
+     MIssing data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-01.html">
+     Elastic Net
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-03.html">
+     Multiobjective
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-08.html">
+     Latent Variable Models: GMM &amp; Topic Models
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-10.html">
+     Latent Variable Models:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-15.html">
+     Semi-supervised learning and noisy labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-17.html">
+     Noisy labels as a Bias model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-24.html">
+     Comparison of Fairness Interventions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2022-01-00-intro.html">
+   Spring 2022
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-24.html">
+     Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-26.html">
+     2022-01-26
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-31.html">
+     Scientific Method &amp; Philosphy of ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-02.html">
+     Roles for Computing in Social Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-07.html">
+     MLSS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-09.html">
+     MLSS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-16.html">
+     2022-02-16
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-23.html">
+     2022-02-23
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/paperpresentations.html">
+   Preparing to present a paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/notes.html">
+   Posting Notes
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notes/2022-3-21_notes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2022-3-21_notes.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2022-3-21_notes.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   MLSS
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   2022-03-21
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-indian-buffet-process-an-introduction-and-review">
+     The Indian Buffet Process: An Introduction and Review
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#latent-class-models">
+     Latent Class Models
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finite-mixture-model">
+   Finite Mixture Model
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#infinite-mixture-models">
+     Infinite Mixture Models
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-chinese-restaurant-process">
+     The Chinese Restaurant Process
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#latent-feature-models">
+     Latent Feature Models
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-indian-buffet-process">
+     The indian Buffet Process
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#auto-encoding-variational-bayes">
+   Auto-Encoding Variational Bayes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generative-model">
+     Generative model
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methodology">
+     Methodology
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-variational-bound">
+     The variational bound
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evidence-lower-bound">
+     Evidence Lower Bound
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stochastic-gradient-variational-bayes-sgvb">
+     Stochastic Gradient Variational Bayes(SGVB)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reparameterization-tricks">
+     Reparameterization Tricks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>MLSS</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   MLSS
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   2022-03-21
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-indian-buffet-process-an-introduction-and-review">
+     The Indian Buffet Process: An Introduction and Review
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#latent-class-models">
+     Latent Class Models
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finite-mixture-model">
+   Finite Mixture Model
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#infinite-mixture-models">
+     Infinite Mixture Models
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-chinese-restaurant-process">
+     The Chinese Restaurant Process
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#latent-feature-models">
+     Latent Feature Models
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-indian-buffet-process">
+     The indian Buffet Process
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#auto-encoding-variational-bayes">
+   Auto-Encoding Variational Bayes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generative-model">
+     Generative model
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methodology">
+     Methodology
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-variational-bound">
+     The variational bound
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evidence-lower-bound">
+     Evidence Lower Bound
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stochastic-gradient-variational-bayes-sgvb">
+     Stochastic Gradient Variational Bayes(SGVB)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reparameterization-tricks">
+     Reparameterization Tricks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="mlss">
+<h1>MLSS<a class="headerlink" href="#mlss" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>2022-03-21<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Lead Scribe Chamudi</p>
+<div class="section" id="the-indian-buffet-process-an-introduction-and-review">
+<h2>The Indian Buffet Process: An Introduction and Review<a class="headerlink" href="#the-indian-buffet-process-an-introduction-and-review" title="Permalink to this headline">¶</a></h2>
+<p>Presented by Surbhi</p>
+<p>The Indian buffet process is a stochastic process defining a probability distribution over equiva- lence classes of sparse binary matrices with a finite number of rows and infinite number of columns.</p>
+<p>unsupervised learning aims to recover the latent structure responsible for generating observed data</p>
+<p>key problems faced by unsupervised learning</p>
+<ul class="simple">
+<li><p>determining the amount of latent struture(no of clusters,dimensions or variables)</p></li>
+</ul>
+<p>Problem assumes that there is a single, finite dimensional representation that correctly characterizes the properties of the observed object.</p>
+<p>An alternative is to assume that the amount of latent structure is potentially unbounded, and the observed objects only manifest a sparse subset of those classes or features.</p>
+<p>This paper</p>
+<ul class="simple">
+<li><p>summerizes the extension of nonparametric approach to models in which objects are presented using an unknown number of latent features.</p></li>
+<li><p>how the indian buffet process can be used to specify prior distributions in latent feature models, using a simple linear-Gaussian model to show how such models can be defined and used.</p></li>
+</ul>
+</div>
+<div class="section" id="latent-class-models">
+<h2>Latent Class Models<a class="headerlink" href="#latent-class-models" title="Permalink to this headline">¶</a></h2>
+<p>LCM relates a set of observed(Usually discrete) multivariate variables to a set of latent variables</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="finite-mixture-model">
+<h1>Finite Mixture Model<a class="headerlink" href="#finite-mixture-model" title="Permalink to this headline">¶</a></h1>
+<p>A finite mixture model(FMM) is a statistical model that assumes the presence of unobserved groups, called latent classes, within an overall population. Each latent class can be fit with its own regression model, which may have a linear or generalized linear response function.</p>
+<p>assumes that the assignment of an object to a class of  is independent of the assignments of all other objects.</p>
+<p>if there are K classes</p>
+<p><img alt="" src="https://i.imgur.com/fdOyH9X.png" /></p>
+<div class="section" id="infinite-mixture-models">
+<h2>Infinite Mixture Models<a class="headerlink" href="#infinite-mixture-models" title="Permalink to this headline">¶</a></h2>
+<p>defining an infinite mixture model means that we want to specify the probability of X in terms of infinitely many classes, modifying Equation 1 to become</p>
+<p><img alt="" src="https://i.imgur.com/UUJCQFK.png" /></p>
+</div>
+<div class="section" id="the-chinese-restaurant-process">
+<h2>The Chinese Restaurant Process<a class="headerlink" href="#the-chinese-restaurant-process" title="Permalink to this headline">¶</a></h2>
+<p>Named based upon a metaphor</p>
+<p>The objects are customers in a restaurant, and the classes are the tables at which they sit.</p>
+<p>If we assume an ordering on our N objects, then we can assign them to classes sequentially using the method specified by the CRP, letting objects play the role of customers and classes play the role of tables. The ith object would be assigned to the kth class with probability</p>
+</div>
+<div class="section" id="latent-feature-models">
+<h2>Latent Feature Models<a class="headerlink" href="#latent-feature-models" title="Permalink to this headline">¶</a></h2>
+<p>Each object is represented by a vector of latent feature values fi, and the properties xi are generated from a distribution dertermined by those latent feature values.</p>
+<p>Latent  feature values can be continuous, as in factor analysis and probabilistic principal component analysis or discrete, as in cooperative vector quantization.</p>
+<p><img alt="" src="https://i.imgur.com/6D5mL4H.png" /></p>
+<p>Feature matrices. A binary matrix Z, as shown in <strong>a</strong>, can be used as the basis for sparse infinite latent feature models, indicating which features take non-zero values. Elementwise multiplication of Z by a matrix V of continuous values gives a representation like that shown in <strong>b</strong>. If V contains discrete values, we obtain a representation like that shown in <strong>c</strong>.</p>
+</div>
+<div class="section" id="the-indian-buffet-process">
+<h2>The indian Buffet Process<a class="headerlink" href="#the-indian-buffet-process" title="Permalink to this headline">¶</a></h2>
+<p>Define a distribution over infinite binary matrices by specifying a procedure by which customers (objects) choose dishes (features).</p>
+<p>Indian buffet process (IBP), N customers enter a restaurant one after another.</p>
+<p>Each customer encounters a buffet consisting of infinitely many dishes arranged in a line.</p>
+<p>The first customer starts at the left of the buffet and takes a serving from each dish, stopping after Poisson(α) number  of dishes as his plate becomes overburdened.</p>
+<p>The ith customer moves along the buffet, sampling dishes in proportion to their popularity, serving himself with probability mk/i, where mk is the number of previous customers who have sampled a dish. Having reached the end of all previous sampled dishes, the ith customer then tries a Poisson(α/i) number of new dishes.</p>
+<p>We can indicate which customers chose which dishes using a binary matrix Z with N rows and infinitely many columns, where zik = 1 if the ith customer sampled the kth dish.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="auto-encoding-variational-bayes">
+<h1>Auto-Encoding Variational Bayes<a class="headerlink" href="#auto-encoding-variational-bayes" title="Permalink to this headline">¶</a></h1>
+<p>Presented by Chan</p>
+<div class="section" id="generative-model">
+<h2>Generative model<a class="headerlink" href="#generative-model" title="Permalink to this headline">¶</a></h2>
+<p>Ml model that learns a given learning data and geneates similar data according to the distribution of train data</p>
+<p>Explicit density</p>
+<p>Tractable density and approximate density</p>
+<p>Normally requires high mathematical knowledge to understand</p>
+<p>Manifold Hypothesis</p>
+<p><img alt="" src="https://i.imgur.com/nuljm0p.png" /></p>
+<p>The type of directed graphical model under consideration. Solid lines denote the generative model pθ(z)pθ(x|z), dashed lines denote the variational approximation qφ(z|x) to the intractable posterior pθ(z|x). The variational parameters φ are learned jointly with the generative model parameters θ.</p>
+</div>
+<div class="section" id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h2>
+<p>Maximumlikelihood :  𝑎𝑟𝑔max𝜃[𝑝𝜃(𝑥) = ∫z 𝑝𝜃 (𝑥,𝑧) = ∫z 𝑝𝜃 (𝑥|𝑧) 𝑝𝜃(𝑧)]</p>
+<p>Variation Inference</p>
+<p>q𝜙(z|x) ≈ pθ(z|x)</p>
+</div>
+<div class="section" id="the-variational-bound">
+<h2>The variational bound<a class="headerlink" href="#the-variational-bound" title="Permalink to this headline">¶</a></h2>
+<p>∫z q(𝑧|𝑥) = 1</p>
+<p>p(𝑥) = p(z,x)/p(z|x)</p>
+<p>𝔼[X] = ∫ 𝑥𝑓(𝑥)</p>
+<p>DKL(P||Q) = ∫p(𝑥)𝑙𝑜𝑔( p(x) / q(x))</p>
+<p><img alt="" src="https://i.imgur.com/aDRfycP.png" /></p>
+</div>
+<div class="section" id="evidence-lower-bound">
+<h2>Evidence Lower Bound<a class="headerlink" href="#evidence-lower-bound" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://i.imgur.com/hrMCglA.png" /></p>
+<p><img alt="" src="https://i.imgur.com/Pv9EAl1.png" /></p>
+</div>
+<div class="section" id="stochastic-gradient-variational-bayes-sgvb">
+<h2>Stochastic Gradient Variational Bayes(SGVB)<a class="headerlink" href="#stochastic-gradient-variational-bayes-sgvb" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://i.imgur.com/JVwYcWs.png" /></p>
+<p>where z(l) ∼ qφ(z|x(i))</p>
+<p><img alt="" src="https://i.imgur.com/gi35kNA.png" /></p>
+<p><img alt="" src="https://i.imgur.com/4GXcwFh.png" /></p>
+<p>when both the prior p0(z) = N (0, I and the posterior approximation qφ(z|x) are Gaussian and j is the dimensionality of z</p>
+<p><img alt="" src="https://i.imgur.com/TJsD18X.png" /></p>
+</div>
+<div class="section" id="reparameterization-tricks">
+<h2>Reparameterization Tricks<a class="headerlink" href="#reparameterization-tricks" title="Permalink to this headline">¶</a></h2>
+<p>z(l) ∼ qφ(z|x(i)) cannot differentiate</p>
+<p>Solution</p>
+<p><img alt="" src="https://i.imgur.com/EeMaSb4.png" /></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Sarah M Brown<br/>
+    
+        &copy; Copyright .<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
