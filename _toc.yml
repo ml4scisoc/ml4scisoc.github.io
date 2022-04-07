@@ -44,6 +44,7 @@ parts:
         - file: notes/2022-03-02
         - file: notes/2022-03-21
         - file: notes/2022-03-28
+        - file: notes/2022-04-07
   - caption: Reference
     chapters:
       - file: reference/paperpresentations
