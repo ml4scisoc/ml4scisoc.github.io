@@ -1,0 +1,82 @@
+# Why Interpretable models & and Example
+
+Lead scribe: Sarah
+
+## WHy Black box models?
+
+### Case: False Dichotomy of interpretable vs accurate
+
+story of choosing between a human surgeon with 15% chance death but explanation or robot with 3% chance death but no explanation. 
+
+### Complex != Better 
+
+
+### Black box problems
+
+- it can be hard to even compare the rates? who was in the population where it was 2% 
+- data leakage can be. inthere, for example it's possible to predict 
+
+
+### Shallow attempts at explaing
+
+- epxlanations for black boxes are not fully clear
+- sometimes they are wrong
+- none of these are well validated 
+
+
+### Explanable AI competition
+
+- data from FICO (HELOC)
+- goal: fit a good model, then generate explanations
+- Duke team found similarly accurate linear models to deep learning (1% error difference)
+- provided the set of mini models; decomposable; 
+- interactive online explanation tool for the model
+- provided interface for testing hypotheticals
+
+
+### Accuracy vs Interpretablity Tradeoff Fallacy
+
+- typical tradoff plot, but not necessarily true
+- slope in graph should be more flat
+
+
+### Conclusion
+
+- try interpretable first, the consider black box if needed
+
+
+## CORELS
+presented by: Surbhi
+
+### Motivation: COMPAS
+
+- proprietary
+- black box
+- biased
+
+### Goal : Itnerpretable and accurate
+    
+### Rule Lists
+
+- read liek English
+- small numbe rof eatures
+- predictive with built in explanation
+- in COMPAS a short rule list provides same performance 
+
+### CORELS
+
+- certifaibly optiaml rule lists
+- can sclae to 100k sampels and 100s of rules
+- can stop early and provide qualty of progress
+
+Objective: 
+- d rule list
+- objective has  normalized loss(d,x,y) number of mistakes
+- penalty for lenght of rule lists
+- lambda is coeff on lenght; sclaes like tolerance on errors
+
+
+Learning: 
+-Hier erchical lower bound
+- branch and bound
+- default and prefix 
