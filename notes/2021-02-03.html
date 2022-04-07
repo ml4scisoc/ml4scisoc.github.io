@@ -256,7 +256,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="2022-02-16.html">
-     2022-02-16
+     Fairness
     </a>
    </li>
    <li class="toctree-l2">
@@ -517,7 +517,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f86f172d3d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7fb1ccfd5350&gt;
 </pre></div>
 </div>
 <img alt="../_images/2021-02-03_3_1.png" src="../_images/2021-02-03_3_1.png" />
@@ -603,15 +603,15 @@ possibly multiple data</p></li>
  &#39;var_smoothing&#39;: 1e-09,
  &#39;classes_&#39;: array([0, 1, 2]),
  &#39;n_features_in_&#39;: 4,
- &#39;epsilon_&#39;: 3.2155070153061224e-09,
- &#39;theta_&#39;: array([[4.9974359 , 3.43333333, 1.46410256, 0.24102564],
-        [5.96      , 2.77142857, 4.25142857, 1.32285714],
-        [6.59736842, 2.96052632, 5.57631579, 1.98947368]]),
- &#39;var_&#39;: array([[0.11460881, 0.13196582, 0.03512163, 0.01216305],
-        [0.22925715, 0.09861225, 0.18078368, 0.0343347 ],
-        [0.43815097, 0.11975762, 0.34601801, 0.06778394]]),
- &#39;class_count_&#39;: array([39., 35., 38.]),
- &#39;class_prior_&#39;: array([0.34821429, 0.3125    , 0.33928571])}
+ &#39;epsilon_&#39;: 2.795685586734695e-09,
+ &#39;theta_&#39;: array([[5.01875   , 3.340625  , 1.46875   , 0.240625  ],
+        [5.96829268, 2.74146341, 4.28292683, 1.31707317],
+        [6.50769231, 2.96666667, 5.47692308, 2.04102564]]),
+ &#39;var_&#39;: array([[0.09777344, 0.11116211, 0.01777344, 0.00866211],
+        [0.28801904, 0.09120762, 0.20385485, 0.03507436],
+        [0.39558186, 0.0965812 , 0.30895464, 0.07113741]]),
+ &#39;class_count_&#39;: array([32., 41., 39.]),
+ &#39;class_prior_&#39;: array([0.28571429, 0.36607143, 0.34821429])}
 </pre></div>
 </div>
 </div>
@@ -623,7 +623,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([5. , 3.3, 1.4, 0.2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([4.6, 3.6, 1. , 0.2])
 </pre></div>
 </div>
 </div>
@@ -642,7 +642,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 2, 1, 0, 2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 2, 0, 0])
 </pre></div>
 </div>
 </div>
@@ -654,7 +654,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 2, 1, 0, 2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 2, 0, 0])
 </pre></div>
 </div>
 </div>
@@ -666,9 +666,9 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[11,  0,  0],
-       [ 0, 13,  2],
-       [ 0,  0, 12]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[18,  0,  0],
+       [ 0,  8,  1],
+       [ 0,  1, 10]])
 </pre></div>
 </div>
 </div>
@@ -701,7 +701,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9640316205533598
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9458498023715414
 </pre></div>
 </div>
 </div>
@@ -720,7 +720,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9640316205533598
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9458498023715414
 </pre></div>
 </div>
 </div>
@@ -734,12 +734,12 @@ possibly multiple data</p></li>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00        11
-           1       1.00      0.87      0.93        15
-           2       0.86      1.00      0.92        12
+           0       1.00      1.00      1.00        18
+           1       0.89      0.89      0.89         9
+           2       0.91      0.91      0.91        11
 
     accuracy                           0.95        38
-   macro avg       0.95      0.96      0.95        38
+   macro avg       0.93      0.93      0.93        38
 weighted avg       0.95      0.95      0.95        38
 </pre></div>
 </div>
@@ -752,44 +752,44 @@ weighted avg       0.95      0.95      0.95        38
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.00000000e+000, 1.38418913e-020, 1.80282497e-024],
-       [2.26696019e-113, 1.34327160e-001, 8.65672840e-001],
-       [1.12761546e-063, 9.99820311e-001, 1.79688967e-004],
-       [1.00000000e+000, 5.59433094e-020, 3.94919379e-024],
-       [1.20657771e-193, 5.46812057e-010, 9.99999999e-001],
-       [1.00000000e+000, 1.40278743e-019, 1.71827844e-023],
-       [9.62961141e-068, 9.99761828e-001, 2.38171953e-004],
-       [1.92145740e-116, 5.00346853e-001, 4.99653147e-001],
-       [1.00263322e-073, 9.98346886e-001, 1.65311433e-003],
-       [2.72132398e-058, 9.99947789e-001, 5.22110263e-005],
-       [1.66869251e-163, 9.76230601e-008, 9.99999902e-001],
-       [4.31568090e-087, 9.89039092e-001, 1.09609076e-002],
-       [6.77106460e-061, 9.99780718e-001, 2.19281582e-004],
-       [1.00000000e+000, 9.60347666e-019, 4.22386735e-023],
-       [3.65177049e-026, 9.99997330e-001, 2.67013828e-006],
-       [2.21018412e-191, 1.73224859e-008, 9.99999983e-001],
-       [2.59337780e-171, 2.24923115e-006, 9.99997751e-001],
-       [1.34834870e-085, 9.89867937e-001, 1.01320625e-002],
-       [1.00000000e+000, 1.04095201e-016, 1.44870926e-020],
-       [1.00000000e+000, 6.33981825e-018, 6.62178318e-022],
-       [6.00358223e-132, 1.07220881e-002, 9.89277912e-001],
-       [3.24417695e-120, 4.92514075e-002, 9.50748592e-001],
-       [3.04186532e-051, 9.99986319e-001, 1.36808951e-005],
-       [7.91064212e-095, 7.62653609e-001, 2.37346391e-001],
-       [1.00000000e+000, 1.42710340e-019, 8.67704583e-024],
-       [8.80954522e-036, 9.99997979e-001, 2.02142292e-006],
-       [1.00000000e+000, 4.06735480e-021, 7.94902588e-025],
-       [2.31697105e-165, 1.78278042e-007, 9.99999822e-001],
-       [1.00000000e+000, 6.80487453e-019, 1.26854682e-021],
-       [1.30638593e-112, 1.04022818e-001, 8.95977182e-001],
-       [1.00000000e+000, 6.80107096e-021, 1.01837356e-024],
-       [1.39416616e-157, 1.57850163e-004, 9.99842150e-001],
-       [7.82700668e-191, 7.38335975e-010, 9.99999999e-001],
-       [5.90325167e-071, 9.99820637e-001, 1.79362531e-004],
-       [1.43107650e-169, 9.30667298e-008, 9.99999907e-001],
-       [1.27942904e-192, 6.64469677e-008, 9.99999934e-001],
-       [1.00000000e+000, 4.21412303e-020, 6.17022235e-024],
-       [4.46386725e-206, 1.19305550e-011, 1.00000000e+000]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.00000000e+000, 9.05758090e-021, 4.46414522e-026],
+       [1.00000000e+000, 8.44945002e-013, 1.62027495e-018],
+       [1.29449038e-252, 1.75734182e-003, 9.98242658e-001],
+       [1.00000000e+000, 4.71620685e-015, 6.32133810e-021],
+       [1.00000000e+000, 6.59500068e-020, 7.32192130e-026],
+       [1.00000000e+000, 2.13734478e-021, 6.11113749e-026],
+       [0.00000000e+000, 1.66395587e-010, 1.00000000e+000],
+       [5.63209376e-197, 7.98904536e-002, 9.20109546e-001],
+       [2.77946773e-109, 9.99749791e-001, 2.50208608e-004],
+       [4.01181304e-321, 7.46811173e-006, 9.99992532e-001],
+       [1.00000000e+000, 4.50228639e-011, 2.77956392e-017],
+       [4.66013228e-159, 7.97782015e-001, 2.02217985e-001],
+       [1.00000000e+000, 1.25084224e-018, 1.92262878e-024],
+       [4.44344169e-176, 5.75299346e-001, 4.24700654e-001],
+       [1.00000000e+000, 8.38514381e-019, 8.38156611e-025],
+       [1.00000000e+000, 1.87671027e-020, 6.15244112e-026],
+       [1.00000000e+000, 1.35578134e-019, 7.16207229e-025],
+       [1.00000000e+000, 2.47656711e-020, 4.20186294e-026],
+       [0.00000000e+000, 1.01307029e-006, 9.99998987e-001],
+       [1.00000000e+000, 8.28525247e-019, 3.86788932e-025],
+       [1.00000000e+000, 7.84338253e-018, 1.96664057e-022],
+       [0.00000000e+000, 2.22011206e-011, 1.00000000e+000],
+       [1.00000000e+000, 2.93993983e-019, 7.43137613e-025],
+       [4.26392892e-282, 1.54246069e-007, 9.99999846e-001],
+       [0.00000000e+000, 2.71454883e-010, 1.00000000e+000],
+       [1.62703084e-296, 4.67104459e-004, 9.99532896e-001],
+       [2.37666097e-103, 9.99958045e-001, 4.19545760e-005],
+       [1.00000000e+000, 2.10761718e-015, 1.36810732e-021],
+       [4.29442078e-263, 1.26505601e-003, 9.98734944e-001],
+       [0.00000000e+000, 7.07582656e-008, 9.99999929e-001],
+       [3.93686447e-129, 9.99864622e-001, 1.35378352e-004],
+       [5.44631902e-097, 9.99962163e-001, 3.78367359e-005],
+       [5.13760366e-244, 5.31210032e-001, 4.68789968e-001],
+       [3.29320386e-113, 9.99692160e-001, 3.07840488e-004],
+       [1.00000000e+000, 1.31490589e-019, 1.30142932e-025],
+       [1.00000000e+000, 3.39042131e-022, 9.98744100e-027],
+       [1.30029166e-045, 9.99999350e-001, 6.49737857e-007],
+       [1.00000000e+000, 3.70809600e-020, 9.68429726e-025]])
 </pre></div>
 </div>
 </div>
