@@ -1,0 +1,44 @@
+# 2022-03-07
+Lead Scribe Emmely
+
+## Gaussian Mixture Models 
+Presented by Alex
+
+### Motivating GMM: Weakness of K-Means:
+* K-means has no probability
+* Important observation for k-means is that these clusters models must be circular
+* take some data and transform it, the clusters assignments end up becoming muddled
+* k-means tries to force fit the data into four circular clusters
+* Lack of probabilistic under cluster assignment
+* Lack of lexibility in cluster shape
+### Generalizing E-M: Gaussian Mixture Models
+* A GMM attempts to find a mixture of multi-dimmensional Gaussian probability distributions that best model any inut dataset
+* GMM's can be used for finding clusters
+* Gaussian is very similar to k-means: it uses an expectaion-maximization approach which qualitatively does the folowing:
+1. Choose the starting guesses for the location and shape
+2. Repeat until converged
+    * Expectation-step: for each point, find weights encoding the probability of membership in each cluster
+    *  Maximization-step: for each cluster, update its location, normalization, and shape based on all data points
+ ### GMM as Density Estimation
+* fundamnetally it is  an algorithm for density estimation
+
+## Latent Dirichlet Allocation: Topic Models
+Presented by Lily
+
+### Intro
+* Goal to find short descriptions of the members of a collection that enable 
+* generative probabilistic model of corpus
+    * Modeling Discrete data (text corpus)
+    * topic modeling
+    * has a three level hierachy
+        * Text corpra → documents
+        * Documents →
+        * Word →
+### Simplifying Assumptions
+* the dimensionality "k" of the Djrichlet discribution is assumed known and fixed
+
+### LDA vs. Disrichlet
+
+### LDA and Exchangeability
+* A finite set of random variables {z1...,zn} is said to be *exchangeable* if the joint distribution is invariant to permuation. if pi is a permuation of the integers from 1 to N:
+    * *p(z1,...,zn) = p(z_n(1),...,z_n(N))*
