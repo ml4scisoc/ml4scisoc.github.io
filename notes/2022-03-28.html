@@ -1,0 +1,895 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLSS &#8212; Machine Learning for Science &amp; Society</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Machine Learning for Science & Society</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about.html">
+   Machine Learning for Science &amp; Society
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/index.html">
+   Basic Facts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/schedule.html">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus/learning.html">
+   Learning Outcomes and Evaluation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Notes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2021-01-00-intro.html">
+   Spring 2021
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../syllabus/schedule-2021.html">
+     Schedule
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-01-27.html">
+     Class 1: Introductions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-01.html">
+     ML and Probability Review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-03.html">
+     Class 3: ML Pipelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-08.html">
+     Class 4: Missing Data: Basic techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-10.html">
+     Missing Data 2:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-15.html">
+     Missing Data 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-17.html">
+     MIssing data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-01.html">
+     Elastic Net
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-03.html">
+     Multiobjective
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-08.html">
+     Latent Variable Models: GMM &amp; Topic Models
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-10.html">
+     Latent Variable Models:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-15.html">
+     Semi-supervised learning and noisy labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-03-17.html">
+     Noisy labels as a Bias model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2021-02-24.html">
+     Comparison of Fairness Interventions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2022-01-00-intro.html">
+   Spring 2022
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-24.html">
+     Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-26.html">
+     2022-01-26
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-01-31.html">
+     Scientific Method &amp; Philosphy of ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-02.html">
+     Roles for Computing in Social Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-07.html">
+     MLSS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-09.html">
+     MLSS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-16.html">
+     2022-02-16
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2022-02-23.html">
+     2022-02-23
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/paperpresentations.html">
+   Preparing to present a paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/notes.html">
+   Posting Notes
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notes/2022-03-28.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2022-03-28.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2022-03-28.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   MLSS
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   2022-03-28
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-survey-on-semi-supervised-learning">
+     A Survey on Semi-Supervised Learning
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-with-noisy-labels">
+     Learning with Noisy Labels
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>MLSS</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   MLSS
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   2022-03-28
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-survey-on-semi-supervised-learning">
+     A Survey on Semi-Supervised Learning
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-with-noisy-labels">
+     Learning with Noisy Labels
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="mlss">
+<h1>MLSS<a class="headerlink" href="#mlss" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>2022-03-28<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Lead Scribe - Chan</p>
+<div class="section" id="a-survey-on-semi-supervised-learning">
+<h2>A Survey on Semi-Supervised Learning<a class="headerlink" href="#a-survey-on-semi-supervised-learning" title="Permalink to this headline">¶</a></h2>
+<p>Presented by Derek</p>
+<ul class="simple">
+<li><p>Semi-supervised learning</p></li>
+<li><p>In this survey</p>
+<ul>
+<li><p>attempting to give a comprehensive oversew of the state  of semi-supervised learning</p></li>
+<li><p>new taxonomy for semi-supervised classfication methods</p></li>
+</ul>
+</li>
+<li><p>Background</p></li>
+<li><p>Assumptoions SSL</p>
+<ul>
+<li><p>Underlying marginal data distribution (p(x) over the input space contains info about the posterior distribution p(y|x)</p></li>
+<li><p>Multiple assumptions based on interaction of p(x) and p(y|x)</p></li>
+<li><p>assumption –&gt; how does p(x) tells us something about p(y|x)?</p>
+<ul>
+<li><p>not time-series data</p></li>
+<li><p>points are not related to each other</p></li>
+<li><p>samples are not conditional to each other.</p></li>
+<li><p>classes are seperable</p></li>
+</ul>
+</li>
+<li><p>Smoothness</p>
+<ul>
+<li><p>For two input points x,x’ that are close in the input space, the labels y,y’ should be the same</p></li>
+</ul>
+</li>
+<li><p>Low-Density</p>
+<ul>
+<li><p>implies the decision bounday of a classifer should pass through low density regions in the input space</p>
+<ul>
+<li><p>where few points are observed</p></li>
+</ul>
+</li>
+<li><p>smoothness assumption is not violated</p>
+<ul>
+<li><p>but if bounday is in high density, could violate the smoothness assumption</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Manifold</p>
+<ul>
+<li><p>manihold hypothesis - data lives in a lower dimension than we expect.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Connection to Clustering</p>
+<ul>
+<li><p>cluster assumption is often included</p></li>
+</ul>
+</li>
+<li><p>When does SSL work?</p>
+<ul>
+<li><p>algorithm needs to be able to extract the info relating p(x) to p(y|x) [hard to answer]</p></li>
+</ul>
+</li>
+<li><p>Empirical Eval of SSL</p>
+<ul>
+<li><p>Many decision influence the relative perforamce of algorithms</p>
+<ul>
+<li><p>Data set partitioning, hyperparameter tuning</p></li>
+<li><p>With SSL we also have</p>
+<ul>
+<li><p>what should be labeled and what should not be</p></li>
+<li><p>can choose to eval performance on unlabeled data or on a disjoint set.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Toy data sets are usually used to show biability of a new approach</p>
+<ul>
+<li><p>Data set choice can have large impact on performance.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Taxonomy
+<img alt="" src="https://i.imgur.com/NQ6iD44.png" /></p></li>
+<li><p>Inductive Methods</p>
+<ul>
+<li><p>wrapper methods</p>
+<ul>
+<li><p>train classifers on labeled data –&gt; use predictions to generate additional labeled data -&gt; retrain on the pseudo-labeled data in addtion to existing labeled data.</p></li>
+<li><p>among the oldest and most widely known algorithms for SSL</p></li>
+<li><p>Advantage: can be used with ~any supervised base learner</p></li>
+<li><p>Broken into self training, co-training, and pseudo-labelled boosting methods.</p>
+<ul>
+<li><p>self training</p>
+<ul>
+<li><p>most basic pseudo labelling approach</p></li>
+<li><p>single supervised classifier iteratively trained on both labelled data and data that’s been pseudo labelled</p></li>
+<li><p>Many design decisions</p>
+<ul>
+<li><p>Selection of data to pseudo label</p></li>
+<li><p>Re-use of pseudo labelled data</p></li>
+<li><p>Stopping criteria</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>co-training</p>
+<ul>
+<li><p>2 or more supervised classifiers that are iteratively trained on the labelled data, adding most confident predictions to the labeled set of the other supervised classifier at each iteration.</p></li>
+<li><p>important that base learners are not strongly correlated in their predictions (classifier diversity)</p></li>
+<li><p>single view and multi view</p></li>
+<li><p>co-regularization</p></li>
+</ul>
+</li>
+<li><p>Boosting</p>
+<ul>
+<li><p>bagging</p>
+<ul>
+<li><p>each base learner is given a set of i data points, which are sampled uniformly at random with replacement from the original data set</p></li>
+</ul>
+</li>
+<li><p>boosting</p>
+<ul>
+<li><p>each base learner is dependent on previous base learners</p></li>
+</ul>
+</li>
+<li><p>SSMBoost</p>
+<ul>
+<li><p>AdaBoost exteneded to SSL setting</p></li>
+</ul>
+</li>
+<li><p>ASSEMBLE</p>
+<ul>
+<li><p>gets rid of base learners</p></li>
+</ul>
+</li>
+<li><p>SemiBoost</p>
+<ul>
+<li><p>Relies on the manifold assumption, using principles from graph-based methods</p></li>
+</ul>
+</li>
+<li><p>Other SSL Boosting Methods</p>
+<ul>
+<li><p>RegBoost</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>unsupervised preprocessing</p>
+<ul>
+<li><p>Uses unlabelled and labelled data in two separate stages</p>
+<ul>
+<li><p>Feature extraction</p>
+<ul>
+<li><p>Attempts to find a transformation of input data such that performance of the classifier improves or such that its construction becomes computationally more efficient</p></li>
+<li><p>Many feature extraction methods operate without supervision (like PCA), others operate on labelled data and extract features with high predictive power</p></li>
+<li><p>Relates to autoencoding (like we saw last week)
+<img alt="" src="https://i.imgur.com/4yvFFXf.png" /></p></li>
+</ul>
+</li>
+<li><p>Cluster-then-label</p>
+<ul>
+<li><p>Form a group of methods that join clustering and classification processes</p></li>
+<li><p>First apply an unsupervised or semi-supervised clustering algorithm to all data, then uses resulting clusters to guide classification</p></li>
+</ul>
+</li>
+<li><p>Pre-Training</p>
+<ul>
+<li><p>Unlabelled data used to guide decision boundary towards potentially interesting regions before applying supervised learning</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>intrinsically semi-supervised methods</p>
+<ul>
+<li><p>Don’t rely on intermediate steps or supervised base learners</p></li>
+<li><p>Extensions of existing supervised methods to include unlabeled samples in the objective function</p></li>
+<li><p>Maximum-margin methods
+<img alt="" src="https://i.imgur.com/LTTaRUB.png" /></p>
+<ul>
+<li><p>SVMs</p></li>
+<li><p>Semi Supervised SVMs</p></li>
+<li><p>Gaussian Processes</p></li>
+<li><p>Density Regularization</p></li>
+<li><p>Pseudo-labeling as a form of margin maximization</p></li>
+</ul>
+</li>
+<li><p>Perturbation-based methods (PB)</p>
+<ul>
+<li><p>when we perturb a data point with some noise, the predictions for noisy and clean inputs should be similar</p>
+<ul>
+<li><p>smoothness assumption</p></li>
+</ul>
+</li>
+<li><p>Methods of incorporating smoothness assumption into a given learning algorithm</p>
+<ul>
+<li><p>Apply noise to input data and incorporate the difference between clean and noisy into the loss function</p></li>
+<li><p>Implicitly apply noise to data points by perturbing the classifier</p></li>
+</ul>
+</li>
+<li><p>Semi-Supervised Neural Networks</p>
+<ul>
+<li><p>Simplicity and efficiency of back propagation makes it easy to add an unsupervised component to the loss function</p></li>
+<li><p>Because NNs are hierarchical, they are also viable candidates for semi-supervised approaches</p></li>
+</ul>
+</li>
+<li><p>Ladder networks</p>
+<ul>
+<li><p>Extends a feedforward network to incorporate unlabelled data by using the feedforward part of the network as the encoder of a denoising autoencoder</p></li>
+<li><p>Adding a decoder, and including a term in the cost function to penalize the reconstruction cost</p></li>
+</ul>
+</li>
+<li><p>Pseudo-ensembles</p>
+<ul>
+<li><p>Perturbing the neural network model itself</p></li>
+<li><p>Robustness through penalizing the differences between the activations of perturbed network and those of the original network for the same input</p></li>
+<li><p>Unperturbed parent model is perturbed to obtain one or more child models</p></li>
+</ul>
+</li>
+<li><p>⨅ models</p>
+<ul>
+<li><p>Computing perturbed models directly</p></li>
+<li><p>Using dropout and penalizing differences in the final layer activation of the networks using squared loss</p></li>
+</ul>
+</li>
+<li><p>Mean teacher</p>
+<ul>
+<li><p>Average weights = teacher</p></li>
+<li><p>latest model = student</p></li>
+</ul>
+</li>
+<li><p>Temporal Ensembling</p></li>
+<li><p>virtual adversarial training</p></li>
+<li><p>semi-supervised mixup</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Manifolds</p>
+<ul>
+<li><p>an m-dim manifold is a subspace of the original input</p></li>
+<li><p>Manifold regularization</p>
+<ul>
+<li><p>Introduce regularization term that captures the fact that manifolds represent lower dimension Euclidean space</p></li>
+</ul>
+</li>
+<li><p>Manifold approximation</p>
+<ul>
+<li><p>Manifold explicitly approximated, then used in a classification task</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Generative models</p>
+<ul>
+<li><p>model that process the generation of data</p></li>
+<li><p>Mixture models</p>
+<ul>
+<li><p>When prior knowledge about p(x,y) is available, GM can be strong</p></li>
+<li><p>Data is composed of k Gaussian distributions → fix model as a mixture of k gaussian components</p></li>
+</ul>
+</li>
+<li><p>Generative adversarial networks</p></li>
+<li><p>Variational autoencoders</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Transductive Methods</p>
+<ul>
+<li><p>do not construct a classifer for entire input space</p></li>
+<li><p>Limted to exactly those objects encountered during training phase.</p></li>
+<li><p>info must be propagated through direct connections between data points (graph-based approaches)</p></li>
+<li><p>cannot distinguish between training and testing phase</p></li>
+<li><p>General Framework for graph based method</p>
+<ul>
+<li><p>graph construction</p>
+<ul>
+<li><p>creation</p></li>
+<li><p>weighing</p></li>
+<li><p>Most important aspect of graph-based methods</p>
+<ul>
+<li><p>Form edges between nods (adj. matrix)</p></li>
+<li><p>attaching weights to them (weight matrix)</p></li>
+</ul>
+</li>
+<li><p>Adj. matrix construction</p>
+<ul>
+<li><p>KNN, ε-neighborhood, b-matching</p>
+<ul>
+<li><p>connects nodes to all nodes to which distance is at most ε</p></li>
+<li><p>find subsets of edges in complete graph such that each each node has degree b and the sum of edge weights is maxed.</p></li>
+</ul>
+</li>
+<li><p>Graph weighting</p></li>
+<li><p>Simultaneous graph</p></li>
+</ul>
+</li>
+<li><p>Inference</p>
+<ul>
+<li><p>forming predictions for the unlabelled data points</p></li>
+<li><p>Hard label assignments: graph min-cut</p></li>
+<li><p>Probabilistic label assignments: Markov random fields</p></li>
+<li><p>Efficient Probabilistic label assignments: Gaussian random fields</p>
+<ul>
+<li><p>like MRFs</p></li>
+</ul>
+</li>
+<li><p>Handling label noise and irregular graphs</p>
+<ul>
+<li><p>approach that addresses two issues</p>
+<ul>
+<li><p>handling label noise</p></li>
+<li><p>influence of nodes with high degree in irregular graphs is large</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Further research on graph based inference</p>
+<ul>
+<li><p>absorption</p></li>
+<li><p>class imbalance sensitivity</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Scalable transductive learning</p></li>
+</ul>
+</li>
+<li><p>Classification in network data</p>
+<ul>
+<li><p>represented as graphs</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="learning-with-noisy-labels">
+<h2>Learning with Noisy Labels<a class="headerlink" href="#learning-with-noisy-labels" title="Permalink to this headline">¶</a></h2>
+<p>Presented by Derek</p>
+<ul class="simple">
+<li><p>Intro</p>
+<ul>
+<li><p>design supervised learning algo. learning from noisy labels</p></li>
+<li><p>approaches</p>
+<ul>
+<li><p>modified/Proxy loss is an unbiased estimate of the loss function</p></li>
+<li><p>Based on the idea that the probability of misclassification under noisy distribution differes from clean distribution where a given threshold is used to decide the label.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Problem Setup and Background</p>
+<ul>
+<li><p>Ỹ–&gt; incorrect data</p></li>
+<li><p>not every single label is wrong (&lt;1)</p></li>
+<li><p>𝑓 is a decision function</p></li>
+<li><p>important quantities associated with 𝑓</p></li>
+<li><p>l is a convex function calibrated to a loss</p></li>
+<li><p>In the event 𝑓 is not quantified in a minimization, the minimization is overall measurable functions.</p></li>
+</ul>
+</li>
+<li><p>Methods of Unbiased Estimators</p>
+<ul>
+<li><p><img alt="" src="https://i.imgur.com/XLLTnxG.png" /></p></li>
+<li><p><img alt="" src="https://i.imgur.com/enWXyNj.png" /></p></li>
+<li><p><img alt="" src="https://i.imgur.com/U43nsuB.png" /></p></li>
+</ul>
+</li>
+<li><p>Method of Label-Dependent Costs</p>
+<ul>
+<li><p><img alt="" src="https://i.imgur.com/X5cFSE7.png" /></p></li>
+<li><p><img alt="" src="https://i.imgur.com/YNWNFIq.png" /></p></li>
+<li><p><img alt="" src="https://i.imgur.com/Rx2gnje.png" /></p></li>
+<li><p>Proposed Proxy Surrogate Losses</p></li>
+<li><p>Given a surrogate loss function and this decomposition <img alt="" src="https://i.imgur.com/7jpgBp7.png" /></p></li>
+<li><p><img alt="" src="https://i.imgur.com/laoqiBU.png" /></p></li>
+</ul>
+</li>
+<li><p>Conclusions</p>
+<ul>
+<li><p>Proposed methods are competitive and able to tolerate moderate-high noise</p></li>
+<li><p>Methods can benefit from knowing the noise rates</p></li>
+<li><p>Algorithms give a new family of methods applicable to positive unbalanced learning problems</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Sarah M Brown<br/>
+    
+        &copy; Copyright .<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
