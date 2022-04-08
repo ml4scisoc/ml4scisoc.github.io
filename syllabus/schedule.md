@@ -114,32 +114,33 @@ and recent publications.
 * - 2021-04-06
   - A Case for Interpretability over Explanation
   - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
-  - Paper Presentation by
-* - 2021-04-11
-  - Models for Explanation
-  - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279) and [A unified approach to interpreting model predictions](https://dl.acm.org/doi/10.5555/3295222.3295230)
   - Paper Presentation by Alex and Surbhi
 * - 2021-04-13
+  - Models for Explanation
+  - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)
+  - Paper Presentation Dereck
+* - 2021-04-18
   - Choosing Explanations and using explanations
   - [How can I choose an explainer? An Application-grounded
 Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.3445941) [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566)
-  - Paper Presentation by
-* - 2021-04-18
+  - Paper Presentation by Alex and Chan
+* - 2021-04-20
   - What does Interpretable mean
   - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
-  - Paper Presentation by
-* - 2021-04-20
-  - 3 Project Presentations
-  - projects
-  - Paper Presentation by
+  - Paper Presentation by Sarah
 * - 2021-04-25
   - 3 Project Presentations
-  - projects
-  - presentations with peer feedback
+  - projects 
+  - Paper Presentation by Alex, Dereck, and Chamudi
 * - 2021-04-27
-  - 2 Project Presentations and Project Reflections
+  - 3 Project Presentations
   - projects
-  - presentations with revision plans
+  - presentations by Emmely and Lily
+* - 2021-05-02
+  - 2 Project Presentations Chan  and Surbhi
+  - projects
+  - presentations with peer feedback; discuss revision plans; overall course review
+
 ``````
 
 

@@ -96,27 +96,30 @@ The final project is a chance to dive deeply into one of the course topics. It h
   - Checkin
   - Consultation meeting and prelim result
   - completion
-* - 2021-04-13
+* - 2021-04-20
   - Rough draft
   - Draft ready for peers to read
   - feedback only, per paper specs
-* - 2021-04-x
+* - 2021-04-25+
   - Presentation
   - talk in class
   - specification
-* - 2021-04-26
+* - 2021-05-02*
   - revision plan
   - plan for final revision, minor extensions
   - feedback only, per paper specs
-* - 2021-05-x
+* - 2021-05-09
   - final paper
   - final paper submitted for grading
   - specification
-* - 2021-05-x
+* - 2021-05-09
   - final reflection
   - final paper submitted for grading
   - completion
 ```
+
++presentation dates are on the [schedule](schedule)
+*if presenting on 5/2, revision plan is due 5/4*
 
 ### Proposal Specifications
 
@@ -139,10 +142,6 @@ The proposal will be graded on if it meets the specification or not, but you wil
 - describe what you will do in your project
 - describe what the end outcome of your project.
 
-### Checkin Specifications
-
-- scheduled on time
-- at least one dimension of progress from proposal
 
 ### Presentation Specifications
 
@@ -153,6 +152,9 @@ Your presentation should:
 - clearly identify what you did
 - describe findings
 - include concluding remarks on reflection/possible extensions
+- be 15-20 minutes long
+
+there will be a 5-10 minute Q&A after
 
 ### Paper Specifications
 
@@ -169,7 +171,15 @@ For it to meet specification it must:
 - summarize relevant course-related literature for your project
 - include clear description of what was accomplished
 - include a clear summary of results (may include null results/ failed findings)
+- include a conclusion that suggests possible next directions
 
+
+### Reflection
+
+Add to your grading contract repo:
+
+- summarize what you learned in your project
+- any challenges and how you over came them/ or wish you had asked for more help
 
 
 ## Translation Mini Project  
