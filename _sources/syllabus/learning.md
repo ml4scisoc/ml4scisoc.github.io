@@ -162,7 +162,7 @@ Your final paper should include a concise problem statement, a complete literatu
 
 
 For it to meet specification it must:
-- be the right length
+- be the 4-5 pages + references
 - be the right format
 - include clearly marked sections indicating the required content
 - be written clearly
