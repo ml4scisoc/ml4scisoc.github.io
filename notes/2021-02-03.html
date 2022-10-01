@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Class 3: ML Pipelines &#8212; Machine Learning for Science &amp; Society</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,12 +37,13 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -63,7 +62,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -72,9 +85,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -92,14 +106,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../about.html">
-   Machine Learning for Science &amp; Society
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../about.html">
+                    Machine Learning for Science & Society
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Syllabus
  </span>
@@ -306,112 +321,243 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notes/2021-02-03.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notes/2021-02-03.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/ml4scisoc/ml4scisoc.github.io"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-03.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-03.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ml4scisoc/ml4scisoc.github.io/main?urlpath=tree/notes/2021-02-03.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ml4scisoc/ml4scisoc.github.io/main?urlpath=tree/notes/2021-02-03.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ml4scisoc/ml4scisoc.github.io"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ml4scisoc/ml4scisoc.github.io/issues/new?title=Issue%20on%20page%20%2Fnotes/2021-02-03.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ml4scisoc/ml4scisoc.github.io/edit/main/notes/2021-02-03.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notes/2021-02-03.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notes/2021-02-03.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-when-using-ml">
    Goals when using ML
@@ -424,12 +570,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Class 3: ML Pipelines</h1>
@@ -458,13 +603,14 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="class-3-ml-pipelines">
-<h1>Class 3: ML Pipelines<a class="headerlink" href="#class-3-ml-pipelines" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="goals-when-using-ml">
-<h2>Goals when using ML<a class="headerlink" href="#goals-when-using-ml" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="class-3-ml-pipelines">
+<h1>Class 3: ML Pipelines<a class="headerlink" href="#class-3-ml-pipelines" title="Permalink to this headline">#</a></h1>
+<section id="goals-when-using-ml">
+<h2>Goals when using ML<a class="headerlink" href="#goals-when-using-ml" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>Understand about the data (data science/ actual science)
 probability
@@ -478,9 +624,9 @@ varies</p></li>
 run multiple algorithms on the same data
 possibly multiple data</p></li>
 </ol>
-</div>
-<div class="section" id="basic-setup">
-<h2>Basic setup<a class="headerlink" href="#basic-setup" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="basic-setup">
+<h2>Basic setup<a class="headerlink" href="#basic-setup" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>test train</p></li>
 <li><p>training parameters</p></li>
@@ -502,11 +648,6 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matplotlib is building the font cache; this may take a moment.
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -522,7 +663,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f3c71d72350&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7ff90e470ed0&gt;
 </pre></div>
 </div>
 <img alt="../_images/2021-02-03_3_1.png" src="../_images/2021-02-03_3_1.png" />
@@ -608,15 +749,15 @@ possibly multiple data</p></li>
  &#39;var_smoothing&#39;: 1e-09,
  &#39;classes_&#39;: array([0, 1, 2]),
  &#39;n_features_in_&#39;: 4,
- &#39;epsilon_&#39;: 3.0820280612244895e-09,
- &#39;theta_&#39;: array([[5.02368421, 3.42368421, 1.48684211, 0.25526316],
-        [5.97222222, 2.82222222, 4.29444444, 1.34722222],
-        [6.54210526, 2.96578947, 5.52894737, 2.02105263]]),
- &#39;var_&#39;: array([[0.10180748, 0.15286011, 0.02430056, 0.01141967],
-        [0.24978395, 0.0767284 , 0.22219136, 0.04027006],
-        [0.41822715, 0.10593491, 0.28205679, 0.07797784]]),
- &#39;class_count_&#39;: array([38., 36., 38.]),
- &#39;class_prior_&#39;: array([0.33928571, 0.32142857, 0.33928571])}
+ &#39;epsilon_&#39;: 3.213367346938776e-09,
+ &#39;theta_&#39;: array([[5.0025641 , 3.42051282, 1.45384615, 0.23333333],
+        [5.94411765, 2.75294118, 4.27941176, 1.32647059],
+        [6.58461538, 3.03076923, 5.54358974, 2.07948718]]),
+ &#39;var_&#39;: array([[0.14127548, 0.14829718, 0.02248521, 0.00683761],
+        [0.23599481, 0.09837371, 0.17281142, 0.03900519],
+        [0.3992505 , 0.09341223, 0.32194609, 0.06624589]]),
+ &#39;class_count_&#39;: array([39., 34., 39.]),
+ &#39;class_prior_&#39;: array([0.34821429, 0.30357143, 0.34821429])}
 </pre></div>
 </div>
 </div>
@@ -628,7 +769,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([5.1, 3.7, 1.5, 0.4])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([6.4, 3.2, 4.5, 1.5])
 </pre></div>
 </div>
 </div>
@@ -647,7 +788,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 2, 0, 0, 2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 0, 1, 1, 0])
 </pre></div>
 </div>
 </div>
@@ -659,7 +800,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 2, 0, 0, 2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 0, 1, 2, 0])
 </pre></div>
 </div>
 </div>
@@ -671,9 +812,9 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[12,  0,  0],
-       [ 0, 14,  0],
-       [ 0,  0, 12]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[11,  0,  0],
+       [ 0, 16,  0],
+       [ 0,  2,  9]])
 </pre></div>
 </div>
 </div>
@@ -685,7 +826,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9473684210526315
 </pre></div>
 </div>
 </div>
@@ -706,7 +847,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9466403162055336
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9553359683794467
 </pre></div>
 </div>
 </div>
@@ -725,7 +866,7 @@ possibly multiple data</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9466403162055336
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9553359683794467
 </pre></div>
 </div>
 </div>
@@ -739,13 +880,13 @@ possibly multiple data</p></li>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00        12
-           1       1.00      1.00      1.00        14
-           2       1.00      1.00      1.00        12
+           0       1.00      1.00      1.00        11
+           1       0.89      1.00      0.94        16
+           2       1.00      0.82      0.90        11
 
-    accuracy                           1.00        38
-   macro avg       1.00      1.00      1.00        38
-weighted avg       1.00      1.00      1.00        38
+    accuracy                           0.95        38
+   macro avg       0.96      0.94      0.95        38
+weighted avg       0.95      0.95      0.95        38
 </pre></div>
 </div>
 </div>
@@ -757,50 +898,50 @@ weighted avg       1.00      1.00      1.00        38
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.00000000e+000, 2.43315714e-016, 2.21152886e-023],
-       [3.00273258e-165, 3.53266591e-002, 9.64673341e-001],
-       [1.00000000e+000, 1.33559793e-017, 1.05208590e-024],
-       [1.00000000e+000, 2.17961837e-017, 4.03261754e-024],
-       [5.06048063e-253, 2.99792590e-006, 9.99997002e-001],
-       [1.00000000e+000, 4.18776854e-018, 2.15992863e-025],
-       [1.71096343e-112, 9.90400846e-001, 9.59915444e-003],
-       [1.00000000e+000, 1.00022925e-016, 3.30854120e-024],
-       [1.32500470e-070, 9.99957111e-001, 4.28894706e-005],
-       [7.28508609e-112, 9.97632515e-001, 2.36748537e-003],
-       [2.20816288e-082, 9.99735809e-001, 2.64191313e-004],
-       [1.31938970e-193, 4.31041336e-003, 9.95689587e-001],
-       [1.00000000e+000, 5.33700716e-020, 4.14586450e-027],
-       [6.63287119e-203, 2.08764523e-006, 9.99997912e-001],
-       [1.77188662e-262, 4.66130591e-006, 9.99995339e-001],
-       [1.00000000e+000, 3.81060791e-018, 1.79461781e-025],
-       [2.85123372e-114, 9.86983283e-001, 1.30167169e-002],
-       [4.43038835e-169, 3.97592974e-002, 9.60240703e-001],
-       [6.02630295e-114, 9.89782733e-001, 1.02172673e-002],
-       [1.48288567e-178, 1.07541546e-003, 9.98924585e-001],
-       [3.29624452e-078, 9.99905701e-001, 9.42987763e-005],
-       [1.00000000e+000, 2.09416047e-019, 1.71171265e-025],
-       [3.22585424e-069, 9.99973708e-001, 2.62915526e-005],
-       [1.00000000e+000, 1.08399789e-018, 3.94452050e-026],
-       [1.00000000e+000, 2.84103549e-018, 6.01873974e-025],
-       [6.10176667e-140, 5.38427171e-001, 4.61572829e-001],
-       [4.31755825e-083, 9.99792715e-001, 2.07284820e-004],
-       [5.26784181e-146, 2.91502178e-001, 7.08497822e-001],
-       [1.52209090e-045, 9.99997315e-001, 2.68502425e-006],
-       [2.59599516e-078, 9.99902598e-001, 9.74018248e-005],
-       [1.30332744e-228, 3.48886033e-006, 9.99996511e-001],
-       [1.00000000e+000, 2.90740210e-019, 1.00032813e-026],
-       [2.63606379e-314, 4.10771911e-009, 9.99999996e-001],
-       [3.15220123e-038, 9.99999040e-001, 9.60367615e-007],
-       [1.00000000e+000, 4.37581718e-017, 1.98159006e-024],
-       [8.24753740e-097, 9.96523986e-001, 3.47601373e-003],
-       [8.38078528e-280, 4.72833685e-010, 1.00000000e+000],
-       [9.72642557e-294, 8.28980467e-012, 1.00000000e+000]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.28184693e-142, 9.57495594e-001, 4.25044057e-002],
+       [1.00000000e+000, 3.14271522e-012, 1.49238202e-018],
+       [8.12921635e-110, 9.99859962e-001, 1.40037570e-004],
+       [1.94119019e-174, 9.87163002e-001, 1.28369977e-002],
+       [1.00000000e+000, 3.60844917e-018, 7.37459553e-025],
+       [1.00000000e+000, 2.01767457e-020, 2.56080880e-026],
+       [1.00000000e+000, 3.15222006e-020, 1.34451200e-026],
+       [2.88854595e-162, 6.78158947e-001, 3.21841053e-001],
+       [1.29193333e-123, 9.99862330e-001, 1.37669745e-004],
+       [4.67824654e-217, 2.55310537e-002, 9.74468946e-001],
+       [1.73651047e-273, 2.04952508e-006, 9.99997950e-001],
+       [7.19499559e-050, 9.99999874e-001, 1.25910384e-007],
+       [1.32937292e-264, 2.72395135e-004, 9.99727605e-001],
+       [3.54109788e-266, 2.28253783e-006, 9.99997717e-001],
+       [0.00000000e+000, 7.16193675e-012, 1.00000000e+000],
+       [3.41360337e-059, 9.99999526e-001, 4.74450631e-007],
+       [1.00000000e+000, 3.92384440e-023, 5.31798653e-028],
+       [1.12459412e-116, 9.99538909e-001, 4.61090593e-004],
+       [1.00000000e+000, 3.97938172e-019, 1.54979852e-025],
+       [1.04468384e-188, 6.90409804e-001, 3.09590196e-001],
+       [1.90297361e-238, 1.00589380e-003, 9.98994106e-001],
+       [2.25895545e-149, 8.42382227e-001, 1.57617773e-001],
+       [1.00095753e-140, 9.93522624e-001, 6.47737623e-003],
+       [1.28240261e-130, 9.86610480e-001, 1.33895203e-002],
+       [8.68436821e-221, 1.63239019e-002, 9.83676098e-001],
+       [2.43204261e-133, 9.99400387e-001, 5.99612987e-004],
+       [7.02044720e-045, 9.99999696e-001, 3.04444644e-007],
+       [4.87715922e-142, 9.91656612e-001, 8.34338835e-003],
+       [1.03872133e-077, 9.99999051e-001, 9.49075016e-007],
+       [1.00000000e+000, 3.72434919e-011, 5.58409932e-017],
+       [1.00000000e+000, 1.39427325e-022, 1.44444585e-027],
+       [6.12362157e-248, 2.46358066e-004, 9.99753642e-001],
+       [1.00000000e+000, 3.84284644e-021, 6.24913881e-027],
+       [7.14357030e-210, 5.41729244e-001, 4.58270756e-001],
+       [1.00000000e+000, 1.44153878e-013, 1.14606888e-019],
+       [6.26942434e-101, 9.99936809e-001, 6.31910966e-005],
+       [1.00000000e+000, 1.01816348e-017, 2.09605998e-023],
+       [8.15327468e-305, 1.38658356e-007, 9.99999861e-001]])
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -824,9 +965,11 @@ weighted avg       1.00      1.00      1.00        38
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="2021-02-01.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -842,24 +985,28 @@ weighted avg       1.00      1.00      1.00        38
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sarah M Brown<br/>
+  
+      &copy; Copyright .<br/>
+</p>
+        </footer>
+    </div>
     
-      By Sarah M Brown<br/>
-    
-        &copy; Copyright .<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
