@@ -1,5 +1,8 @@
 # Learning Outcomes and Evaluation
 
+```{important}
+This will change for spring 2023
+```
 
 This course has goals with respect to the knowledge and research skills.  
 
