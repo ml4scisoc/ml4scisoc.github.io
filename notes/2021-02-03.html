@@ -648,6 +648,20 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1684</span><span class="o">/</span><span class="mf">2975186671.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sklearn&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -661,12 +675,6 @@ possibly multiple data</p></li>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">iris_df</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;species&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7ff90e470ed0&gt;
-</pre></div>
-</div>
-<img alt="../_images/2021-02-03_3_1.png" src="../_images/2021-02-03_3_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -682,20 +690,10 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150, 4)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150,)
 </pre></div>
 </div>
 </div>
@@ -720,20 +718,10 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;priors&#39;: None, &#39;var_smoothing&#39;: 1e-09}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GaussianNB()
 </pre></div>
 </div>
 </div>
@@ -744,32 +732,10 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;priors&#39;: None,
- &#39;var_smoothing&#39;: 1e-09,
- &#39;classes_&#39;: array([0, 1, 2]),
- &#39;n_features_in_&#39;: 4,
- &#39;epsilon_&#39;: 3.213367346938776e-09,
- &#39;theta_&#39;: array([[5.0025641 , 3.42051282, 1.45384615, 0.23333333],
-        [5.94411765, 2.75294118, 4.27941176, 1.32647059],
-        [6.58461538, 3.03076923, 5.54358974, 2.07948718]]),
- &#39;var_&#39;: array([[0.14127548, 0.14829718, 0.02248521, 0.00683761],
-        [0.23599481, 0.09837371, 0.17281142, 0.03900519],
-        [0.3992505 , 0.09341223, 0.32194609, 0.06624589]]),
- &#39;class_count_&#39;: array([39., 34., 39.]),
- &#39;class_prior_&#39;: array([0.34821429, 0.30357143, 0.34821429])}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([6.4, 3.2, 4.5, 1.5])
 </pre></div>
 </div>
 </div>
@@ -787,20 +753,10 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 0, 1, 1, 0])
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_test</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 0, 1, 2, 0])
 </pre></div>
 </div>
 </div>
@@ -811,22 +767,10 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[11,  0,  0],
-       [ 0, 16,  0],
-       [ 0,  2,  9]])
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9473684210526315
 </pre></div>
 </div>
 </div>
@@ -846,11 +790,6 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9553359683794467
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -865,11 +804,6 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9553359683794467
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -877,65 +811,10 @@ possibly multiple data</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00        11
-           1       0.89      1.00      0.94        16
-           2       1.00      0.82      0.90        11
-
-    accuracy                           0.95        38
-   macro avg       0.96      0.94      0.95        38
-weighted avg       0.95      0.95      0.95        38
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gnb</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.28184693e-142, 9.57495594e-001, 4.25044057e-002],
-       [1.00000000e+000, 3.14271522e-012, 1.49238202e-018],
-       [8.12921635e-110, 9.99859962e-001, 1.40037570e-004],
-       [1.94119019e-174, 9.87163002e-001, 1.28369977e-002],
-       [1.00000000e+000, 3.60844917e-018, 7.37459553e-025],
-       [1.00000000e+000, 2.01767457e-020, 2.56080880e-026],
-       [1.00000000e+000, 3.15222006e-020, 1.34451200e-026],
-       [2.88854595e-162, 6.78158947e-001, 3.21841053e-001],
-       [1.29193333e-123, 9.99862330e-001, 1.37669745e-004],
-       [4.67824654e-217, 2.55310537e-002, 9.74468946e-001],
-       [1.73651047e-273, 2.04952508e-006, 9.99997950e-001],
-       [7.19499559e-050, 9.99999874e-001, 1.25910384e-007],
-       [1.32937292e-264, 2.72395135e-004, 9.99727605e-001],
-       [3.54109788e-266, 2.28253783e-006, 9.99997717e-001],
-       [0.00000000e+000, 7.16193675e-012, 1.00000000e+000],
-       [3.41360337e-059, 9.99999526e-001, 4.74450631e-007],
-       [1.00000000e+000, 3.92384440e-023, 5.31798653e-028],
-       [1.12459412e-116, 9.99538909e-001, 4.61090593e-004],
-       [1.00000000e+000, 3.97938172e-019, 1.54979852e-025],
-       [1.04468384e-188, 6.90409804e-001, 3.09590196e-001],
-       [1.90297361e-238, 1.00589380e-003, 9.98994106e-001],
-       [2.25895545e-149, 8.42382227e-001, 1.57617773e-001],
-       [1.00095753e-140, 9.93522624e-001, 6.47737623e-003],
-       [1.28240261e-130, 9.86610480e-001, 1.33895203e-002],
-       [8.68436821e-221, 1.63239019e-002, 9.83676098e-001],
-       [2.43204261e-133, 9.99400387e-001, 5.99612987e-004],
-       [7.02044720e-045, 9.99999696e-001, 3.04444644e-007],
-       [4.87715922e-142, 9.91656612e-001, 8.34338835e-003],
-       [1.03872133e-077, 9.99999051e-001, 9.49075016e-007],
-       [1.00000000e+000, 3.72434919e-011, 5.58409932e-017],
-       [1.00000000e+000, 1.39427325e-022, 1.44444585e-027],
-       [6.12362157e-248, 2.46358066e-004, 9.99753642e-001],
-       [1.00000000e+000, 3.84284644e-021, 6.24913881e-027],
-       [7.14357030e-210, 5.41729244e-001, 4.58270756e-001],
-       [1.00000000e+000, 1.44153878e-013, 1.14606888e-019],
-       [6.26942434e-101, 9.99936809e-001, 6.31910966e-005],
-       [1.00000000e+000, 1.01816348e-017, 2.09605998e-023],
-       [8.15327468e-305, 1.38658356e-007, 9.99999861e-001]])
 </pre></div>
 </div>
 </div>
