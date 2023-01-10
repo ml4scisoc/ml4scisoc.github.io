@@ -2,8 +2,8 @@
 # Machine Learning for Science & Society
 
 
-- Spring 2022
-- time: MW 3:00-4:15pm
+- Spring 2023
+- time: TTh 5-6:15pm
 - Professor: [Sarah Brown](http://sarahmbrown.org/)
 - course number: CSC 592: Topics in Computer Science
 - Credits: 4
