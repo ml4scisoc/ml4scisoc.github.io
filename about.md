@@ -2,12 +2,12 @@
 # Machine Learning for Science & Society
 
 
-- Spring 2023
+- Spring 2024
 - time: TTh 5-6:15pm
 - Professor: [Sarah Brown](http://sarahmbrown.org/)
 - course number: CSC 592: Topics in Computer Science
 - Credits: 4
-- Location: Tyler Hall 108
+- Location: TBA
 
 
 In this class, we will address the challenges in applying machine learning to scientific research and in high stakes social contexts. On the science side, we will examine the role of ML in research, in particular how it works within knowledge production and how to evaluate ML in line with domain norms. On the social side, we will consider how to ensure ML-based algorithmic decision making systems uphold social values, with a focus on fairness. While these two applications are distinct, many of the challenges translate into common technical problems. Some of the common challenges include:
