@@ -1,8 +1,8 @@
 # Schedule
 
-We meet in Tyler 108, MW 3-4:15pm.
 
-This course will proceed in three main parts: overview, deep dives, and wrap up.
+
+This course will proceed in three main parts: overview, deep dives, and conclusion.
 
 ## Structure
 
@@ -25,7 +25,7 @@ During this time students will have milestones where they need to complete inter
 
 <!-- In the end of the course, we will focus on integrating ideas across multiple topics. -->
 
-We will also workshop students' projects, giving substantive feedback prior to the final submissions.
+We will wrap up by discussion students' projects in class time, giving substantive feedback prior to the final submissions.
 
 Final projects will be evaluated through a presentation and paper
 
