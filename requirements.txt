@@ -4,4 +4,4 @@ numpy
 pandas
 seaborn
 pyppeteer
-sklearn
+
