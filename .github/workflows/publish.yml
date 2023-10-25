@@ -17,13 +17,13 @@ jobs:
   deploy-book:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4.1.1
 
     # Install dependencies
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4.7.1
       with:
-        python-version: 3.7
+        python-version: 3.11
 
     - name: Install dependencies
       run: |
@@ -37,7 +37,7 @@ jobs:
         jupyter-book build .
 
     # Push the book's HTML to github-pages
-    - name: GitHub Pages action
+    - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
