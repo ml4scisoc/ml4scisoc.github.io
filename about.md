@@ -71,7 +71,7 @@ By the of this course students will be able to:
 ## Prerequisites
 
 To be successful in this class students should have:
-- past experience with machine
+- past experience with machine learning
 - basic programming skills
 - familiarity with concepts in probability, linear algebra, and calculus that appear in ML
 
