@@ -2,11 +2,12 @@
 
 ## Meetings
 
-This class will meet on Monday and Wednesday 3-4:15pm in person.
+This class will meet on Tuesday and Thursday 5-6:15pm in person.
 <!-- 
 ```{tip}
 You can [subscribe to the Brightspace Calendar](https://documentation.brightspace.com/EN/le/calendar/learner/subscribe_to_calendar.htm) to access it in your favorite calendaring tool.
-``` -->
+```
+ -->
 
 ## Instructor
 
