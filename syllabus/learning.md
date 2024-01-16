@@ -1,8 +1,6 @@
 # Learning Outcomes and Evaluation
 
-```{important}
-This will change for spring 2023
-```
+
 
 This course has goals with respect to the knowledge and research skills.  
 
@@ -15,6 +13,13 @@ By the end of the course students will be able to:
 - Communicate about ML and its limitations work to varied audiences
 - Apply ML to scientific and social data responsibly
 
+## Use of AI
+
+All work submitted in this course must be of quality and form expected for research publication.  
+
+All work must adhere to the [ACM Policy on Authorship](https://www.acm.org/publications/policies/new-acm-policy-on-authorship)
+
+All work must be clear, concise, and include appropriate citations. 
 
 
 ## Activities
@@ -31,14 +36,10 @@ By the end of the course students will be able to:
 
 ## Evaluation
 
-The grading scheme is rooted in achieving the learning outcomes and finalized
-with a grading contract.  Each student will submit a grading contract in the
-first two weeks and then if all work meets the specification, will earn the
-contracted grade.
 
-The following describes each activity in the course and the specification for it.
+The following describes each activity in the course and the specification for it. These specifications define how to get an A.  As each milestone approaches, more detailed information about evaluation will be provided as appropriate. 
 
-### Discussions, Exercises, and Notes
+### Discussions, Exercises, and Notes (20%)
 
 For each topic we cover in class, you should engage fully in the class discussion
 and practice exercises that are provided if applicable.
@@ -48,21 +49,23 @@ To demonstrate engagement you must:
 - contribute to the discussion (comments and questions both count)
 - contribute to annotated class notes
 
+Each class session will be evaluated on if you contribute to discussion or not. This includes both asking questions and answering questions.
 
 
-### Presentations
+### Presentations (20%)
 
 
 Presenting papers and participating in class will contribute to demonstrating a basic awareness at each of learning objective.
 
-
-Each class session will be evaluated on if you contribute to discussion or not. This includes both asking questions and answering questions.
+```{warning}
+Dr. Brown will present the first few papers, to give an example
+```
 
 Each time you present  will be evaluated on specification, your presentation should:
 - summarize the key takeaways for the reading(s) in your own words
 - summarize key details for understanding to facilitate the discussion
 - discussion of strengths and weaknesses of the paper & method
-- describe how this paper relates to bigger ideas in the course or your own work
+- describe how this paper relates to bigger ideas in the course and (if applicable) your own work
 
 You'll present 2-3 times and you will be expected to improve each time, not to be perfect.  
 
@@ -71,7 +74,7 @@ The goal is that you guide the discussion by doing the above and opening the flo
 
 
 
-### Project
+### Project (60%)
 
 The final project is a chance to dive deeply into one of the course topics. It has the following timeline. Percentages below are of the total grade.
 
@@ -81,52 +84,57 @@ The final project is a chance to dive deeply into one of the course topics. It h
 
 * - Date
   - Milestone
-  - Submission format
+  - Content and Format
+  - Weight
   - Evaluation
-* - 2022-02-18
+* - 2022-02-16
   - Area Selection
   - Consultation meeting and general questions
+  - 2%
   - feedback only
 * - 2021-03-02
   - Topic Selection
-  - Objectives and scope of work
-  - completion or scope adjustment
-* - 2021-03-10
+  - Objective  and scope of work as bulleted lists or paragraph
+  - 2%
+  - on completion or scope adjustment/mandatory revisions
+* - 2021-03-08
   - Proposal
-  - Problem statement, lit review, method
-  - specification, with revisions
-* - 2021-04-02
+  - Problem statement, lit review, method, detials below
+  - 10%
+  - specification, with revisions until approval
+* - 2021-04-05
   - Checkin
-  - Consultation meeting and prelim result
+  - Consultation meeting and prelim results
+  - 3%
   - completion
-* - 2021-04-20
-  - Rough draft
+* - 2021-04-18
+  - Paper Rough draft
   - Draft ready for peers to read
-  - feedback only, per paper specs
-* - 2021-04-25+
+  - 5%
+  - completion + feedback, per paper specification
+* - 2021-04-23/25
   - Presentation
-  - talk in class
+  - talk in class, slides submitted for comment
+  - 15%
   - specification
-* - 2021-05-02*
-  - revision plan
-  - plan for final revision, minor extensions
-  - feedback only, per paper specs
-* - 2021-05-09
+* - 2021-05-07
   - final paper
   - final paper submitted for grading
+  - 20%
   - specification
-* - 2021-05-09
+* - 2021-05-07
   - final reflection
   - final paper submitted for grading
+  - 3%
   - completion
 ```
 
-+presentation dates are on the [schedule](schedule)
-*if presenting on 5/2, revision plan is due 5/4*
+<!-- +presentation dates are on the [schedule](schedule) -->
+<!-- *if presenting on 5/2, revision plan is due 5/4* -->
 
 ### Proposal Specifications
 
-Submit a 1.5- 2page proposal in the ACM Proceedings format.  
+Submit a 1.5- 2page proposal in the ACM Proceedings (2-column) format.  
 
 Your proposal should include a concise problem statement, a preliminary literature review that situates your project, a description of method(s) you will use to answer your questions in your project, and the expected outcomes of your project. 
 
@@ -136,14 +144,14 @@ The proposal will be graded on if it meets the specification or not, but you wil
 
 - be the right length
 - be the right format
-- include all sections
+- include all required sections
 - be written clearly
 - describe the problem, clearly identifying what the specific goals of your project are
 - describe a tractable project
 - summarize relevant literature for the problem context
 - summarize relevant course-related literature for your project
-- describe what you will do in your project
-- describe what the end outcome of your project.
+- describe what you will do in your project (methods/process)
+- describe the expected outcome of your project.
 
 
 ### Presentation Specifications
@@ -161,11 +169,11 @@ there will be a 5-10 minute Q&A after
 
 ### Paper Specifications
 
-Your final paper should include a concise problem statement, a complete literature review that situates your project, a description of method(s) used your project, findings, and a discussion or future work section. 
+Your final paper should include a concise problem statement, a complete literature review that situates your project, a description of method(s) used your project, findings/r4esults, a discussion or future work section, and conclusion. 
 
 
 For it to meet specification it must:
-- be the 4-5 pages + references
+- be 4-5 pages + references
 - be the right format
 - include clearly marked sections indicating the required content
 - be written clearly
@@ -179,29 +187,15 @@ For it to meet specification it must:
 
 ### Reflection
 
-Add to your grading contract repo:
+You will also submit a short reflection outside of your paper
 
 - summarize what you learned in your project
 - any challenges and how you over came them/ or wish you had asked for more help
 
 
-## Translation Mini Project  
+<!-- ## Translation Mini Project 
 
-For this assignment you can choose any topic other than the one your project is for and produce a short demo, illustration, or replication that makes some aspect of the the topic accessible for a broader audience.
-
-For this, you must submit a one paragraph proposal that describes your demo  Once that's approved that it will count, you have two weeks to build your demo or replication. The latest your demo may be submitted is at the same time as your final project.
-
-The proposal will be graded on specification and may be resubmitted until successful.
-Your demo proposal must:
-- state the topic from class your demo relates to
-- state the format/medium your demo will take:
-  - illustration, replication, interactive visualization, etc
-- describe the target audience (a particular type of scientists, impacted people, software engineers, layperson, etc)
-- describes what your demo will do by answering the relevant questions from the list below:
-  - what will a person learn by reading/ using your demo?
-  - if it's interactive what will vary? what will be the inputs?
-  - what specific result will you replicate?
-- describe a demo that is an appropriate scope (not too large or too small)
+For one paper that you present, you will produce a short demo, illustration, or replication that makes some aspect of the the topic accessible for a broader audience.
 
 
 The demo will be graded on specification and can be revised and resubmitted one time.
@@ -211,4 +205,4 @@ Your demo must:
 - meet the description in the proposal
 
 With your demo or after, submit a one paragraph reflection describing what you learned doing this exercise.
-The reflection will be graded on completion.
+The reflection will be graded on completion. -->
