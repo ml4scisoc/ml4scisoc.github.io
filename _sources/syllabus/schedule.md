@@ -55,11 +55,11 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
   - introductions, expectation setting
 * - 2022-01-25
   - Probability Review
-  - Model Based ML, chapter 1
+  - Model Based ML book: intro & chapter 1 and start of fairml book ch 2.
   - reading discussion, setting up
 * - 2022-01-30
   - Setting the Stage
-  - [The Scientific Method in the Science of Machine Learning](https://arxiv.org/abs/1904.10922) and [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/abs/1912.01172)
+  - [The Scientific Method in the Science of Machine Learning](https://arxiv.org/abs/1904.10922), [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/abs/1912.01172) and [Integrating Explanation and Prediction in Computational Social Sciences](https://www.nature.com/articles/s41586-021-03659-0) 
   - Paper Presentation by Dr. Brown
 * - 2022-02-01
   - Meta issues
