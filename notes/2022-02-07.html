@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Missing data Intro &#8212; Machine Learning for Science &amp; Society</title>
   
@@ -29,39 +28,43 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/2022-02-07';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -161,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -470,17 +484,17 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="missing-data-intro">
-<h1>Missing data Intro<a class="headerlink" href="#missing-data-intro" title="Permalink to this heading">#</a></h1>
+<h1>Missing data Intro<a class="headerlink" href="#missing-data-intro" title="Link to this heading">#</a></h1>
 <p>Lead Scribe: Surbhi Rathore</p>
 <section id="opening-notes">
-<h2>Opening Notes<a class="headerlink" href="#opening-notes" title="Permalink to this heading">#</a></h2>
+<h2>Opening Notes<a class="headerlink" href="#opening-notes" title="Link to this heading">#</a></h2>
 <p>Handling missing data.</p>
 </section>
 <section id="paper-handling-missing-values-when-applying-classification-models">
-<h2>Paper - Handling Missing Values when Applying Classification Models<a class="headerlink" href="#paper-handling-missing-values-when-applying-classification-models" title="Permalink to this heading">#</a></h2>
+<h2>Paper - Handling Missing Values when Applying Classification Models<a class="headerlink" href="#paper-handling-missing-values-when-applying-classification-models" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf">paper</a> – Presented by Emmely</p>
 <section id="analysis-over-different-treatments-of-missing-values-at-prediction-time">
-<h3>Analysis over different treatments of missing values at prediction time.<a class="headerlink" href="#analysis-over-different-treatments-of-missing-values-at-prediction-time" title="Permalink to this heading">#</a></h3>
+<h3>Analysis over different treatments of missing values at prediction time.<a class="headerlink" href="#analysis-over-different-treatments-of-missing-values-at-prediction-time" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Alternative courses of action when features are missing:</p>
 <ul>
@@ -499,32 +513,32 @@ document.write(`
 <li><p>Missing Completely At Random (MCAR) : refers to the scenario where missingness of feature values is independent of the feature values (observed or not). (missing values have nothing to to do with feature values)</p></li>
 </ul>
 <section id="comparison-of-pvi-dbi-and-reduced-modeling">
-<h4>Comparison of PVI, DBI and Reduced Modeling<a class="headerlink" href="#comparison-of-pvi-dbi-and-reduced-modeling" title="Permalink to this heading">#</a></h4>
+<h4>Comparison of PVI, DBI and Reduced Modeling<a class="headerlink" href="#comparison-of-pvi-dbi-and-reduced-modeling" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Reduced-feature modeling performs consistently outperforms the other two method.</p></li>
 </ul>
 </section>
 <section id="low-and-high-feature-imputability-result">
-<h4>LOW and HIGH FEATURE IMPUTABILITY Result<a class="headerlink" href="#low-and-high-feature-imputability-result" title="Permalink to this heading">#</a></h4>
+<h4>LOW and HIGH FEATURE IMPUTABILITY Result<a class="headerlink" href="#low-and-high-feature-imputability-result" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>PVI is better for higher feature imputability, and DBI is better for lower feature imputability. Value imputation generally preferable for high feature imputability, and DBI generally better for low feature imputability.</p></li>
 </ul>
 </section>
 <section id="reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum">
-<h4>REDUCED-FEATURE MODELING SHOULD HAVE ADVANTAGES ALL ALONG THE IMPUTABILITY SPECTRUM<a class="headerlink" href="#reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum" title="Permalink to this heading">#</a></h4>
+<h4>REDUCED-FEATURE MODELING SHOULD HAVE ADVANTAGES ALL ALONG THE IMPUTABILITY SPECTRUM<a class="headerlink" href="#reduced-feature-modeling-should-have-advantages-all-along-the-imputability-spectrum" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Reduced modeling is a lower-dimensional learning problem than the modeling to which imputation methods are applied, it will tend to have lower variance and thereby may exhibit lower generalization error.</p></li>
 </ul>
 </section>
 <section id="evaluation-with-naturally-occurring-missing-values">
-<h4>Evaluation with “Naturally Occurring” Missing Values<a class="headerlink" href="#evaluation-with-naturally-occurring-missing-values" title="Permalink to this heading">#</a></h4>
+<h4>Evaluation with “Naturally Occurring” Missing Values<a class="headerlink" href="#evaluation-with-naturally-occurring-missing-values" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>By “naturally occurring,” we mean that these are data sets from real classification problems, where the missingness is due to processes of the domain outside the control.</p></li>
 </ul>
 </section>
 </section>
 <section id="conclusions">
-<h3>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h3>
+<h3>Conclusions<a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h3>
 <blockquote class="epigraph">
 <div><p>Reduced-feature models are preferable both to distribution-based imputation and
 to predictive value imputation.Reduced models undertake a lower-variance learning
@@ -535,17 +549,17 @@ suboptimal accuracy.</p>
 </section>
 </section>
 <section id="paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem">
-<h2>Paper - Missing data imputation using statistical and machine learning methods in a real breast cancer problem<a class="headerlink" href="#paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&amp;rep=rep1&amp;type=pdf">paper</a> – Presented by Chan</p>
+<h2>Paper - Missing data imputation using statistical and machine learning methods in a real breast cancer problem<a class="headerlink" href="#paper-missing-data-imputation-using-statistical-and-machine-learning-methods-in-a-real-breast-cancer-problem" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&amp;amp;rep=rep1&amp;amp;type=pdf">paper</a> – Presented by Chan</p>
 <section id="the-el-alamo-i-breast-cancer-dataset">
-<h3>The ‘‘El Alamo-I’’ breast cancer dataset<a class="headerlink" href="#the-el-alamo-i-breast-cancer-dataset" title="Permalink to this heading">#</a></h3>
+<h3>The ‘‘El Alamo-I’’ breast cancer dataset<a class="headerlink" href="#the-el-alamo-i-breast-cancer-dataset" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>one of the largest databases on breast cancer in Spain.</p></li>
 <li><p>The missing data represent 5:61% of the overall data set.</p></li>
 </ul>
 </section>
 <section id="statistical-methods">
-<h3>Statistical methods<a class="headerlink" href="#statistical-methods" title="Permalink to this heading">#</a></h3>
+<h3>Statistical methods<a class="headerlink" href="#statistical-methods" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The statistical imputation methods include mean imputation, hot-deck, and MI methods based on regression and the expectation maximisation (EM) algorithm.</p>
 <ul>
@@ -563,7 +577,7 @@ suboptimal accuracy.</p>
 </ul>
 </section>
 <section id="machine-learning-methods">
-<h3>Machine learning methods<a class="headerlink" href="#machine-learning-methods" title="Permalink to this heading">#</a></h3>
+<h3>Machine learning methods<a class="headerlink" href="#machine-learning-methods" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Imputation methods based on machine learning are sophisticated procedures that generally consist of creating a predictive model to estimate values that will substitute the missing items.</p></li>
 <li><p>These approaches model the missing data estimation based on information available in the data set.</p></li>
@@ -606,7 +620,7 @@ suboptimal accuracy.</p>
 </li>
 </ul>
 <section id="model-evaluation">
-<h4>Model evaluation<a class="headerlink" href="#model-evaluation" title="Permalink to this heading">#</a></h4>
+<h4>Model evaluation<a class="headerlink" href="#model-evaluation" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>The accuracy of the prognosis models is evaluated by testing two main properties:</p>
 <ul>
@@ -618,7 +632,7 @@ suboptimal accuracy.</p>
 </section>
 </section>
 <section id="id1">
-<h3>Conclusions<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>Conclusions<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <blockquote class="epigraph">
 <div><p>machine learning techniques may be the best approach to imputing missing values,
 as they led to statistically significant improvements in prediction accuracy.
@@ -628,7 +642,7 @@ Also, these results might not generalise to different data sets</p>
 </section>
 </section>
 <section id="closing">
-<h2>closing<a class="headerlink" href="#closing" title="Permalink to this heading">#</a></h2>
+<h2>closing<a class="headerlink" href="#closing" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Volunteers for paper presentation: Chamudi &amp; Lily</p></li>
 </ul>

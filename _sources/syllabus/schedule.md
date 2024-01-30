@@ -69,7 +69,7 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
   - Missing Data: Intro strategies
   - [Handling Missing Values when Applying Classification Models](https://www.jmlr.org/papers/volume8/saar-tsechansky07a/saar-tsechansky07a.pdf) &
   [Missing data imputation using statistical and machine learning methods in a real
-  breast cancer problem](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.701.4234&rep=rep1&type=pdf)
+  breast cancer problem](https://www.sciencedirect.com/science/article/pii/S0933365710000679)
   - Paper discussion led by TBD
 * - 2022-02-09
   - Missing data with graphical models and causal reasoning

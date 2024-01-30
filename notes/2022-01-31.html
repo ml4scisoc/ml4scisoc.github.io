@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Scientific Method &amp; Philosphy of ML &#8212; Machine Learning for Science &amp; Society</title>
   
@@ -29,39 +28,43 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/2022-01-31';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -161,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -466,10 +480,10 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="scientific-method-philosphy-of-ml">
-<h1>Scientific Method &amp; Philosphy of ML<a class="headerlink" href="#scientific-method-philosphy-of-ml" title="Permalink to this heading">#</a></h1>
+<h1>Scientific Method &amp; Philosphy of ML<a class="headerlink" href="#scientific-method-philosphy-of-ml" title="Link to this heading">#</a></h1>
 <p>Lead Scribe: Derek Jacobs</p>
 <section id="admin">
-<h2>admin<a class="headerlink" href="#admin" title="Permalink to this heading">#</a></h2>
+<h2>admin<a class="headerlink" href="#admin" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>grading contract will be posted in time for Wednesday</p></li>
 <li><p>notes &amp; posting <a class="reference external" href="https://github.com/ml4scisoc/ml4scisoc.github.io/pull/4">example</a></p></li>
@@ -477,23 +491,23 @@ document.write(`
 </ul>
 </section>
 <section id="opening-notes">
-<h2>Opening Notes<a class="headerlink" href="#opening-notes" title="Permalink to this heading">#</a></h2>
+<h2>Opening Notes<a class="headerlink" href="#opening-notes" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>set the stage for how we think about other work and setting up your projects</p></li>
 </ul>
 </section>
 <section id="scientific-method-in-the-science-of-machine-learning">
-<h2>Scientific Method in the Science of Machine Learning<a class="headerlink" href="#scientific-method-in-the-science-of-machine-learning" title="Permalink to this heading">#</a></h2>
+<h2>Scientific Method in the Science of Machine Learning<a class="headerlink" href="#scientific-method-in-the-science-of-machine-learning" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://arxiv.org/abs/1904.10922">paper</a></p>
 <section id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h3>
+<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>ML is having a hard time explaining some results</p></li>
 <li><p>Replications are failing</p></li>
 </ul>
 </section>
 <section id="scientific-method">
-<h3>Scientific Method<a class="headerlink" href="#scientific-method" title="Permalink to this heading">#</a></h3>
+<h3>Scientific Method<a class="headerlink" href="#scientific-method" title="Link to this heading">#</a></h3>
 <blockquote class="epigraph">
 <div><p>Starting from the assumption that there exists accessible ground truth, the scientific method is a systematic framework for experimentation that allows researchers to make objective statements about
 phenomena and gain knowledge of the fundamental workings of a system under investigation.</p>
@@ -578,7 +592,7 @@ distribution.</p>
 </ul>
 </section>
 <section id="case-study">
-<h3>Case study<a class="headerlink" href="#case-study" title="Permalink to this heading">#</a></h3>
+<h3>Case study<a class="headerlink" href="#case-study" title="Link to this heading">#</a></h3>
 <p>HEP:</p>
 <ul class="simple">
 <li><p>proposed thoery</p></li>
@@ -611,7 +625,7 @@ distribution.</p>
 </ul>
 </section>
 <section id="recommendations">
-<h3>Recommendations<a class="headerlink" href="#recommendations" title="Permalink to this heading">#</a></h3>
+<h3>Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading">#</a></h3>
 <p><strong>1. formulate hypotheses first
 2. statistical testing</strong>
 3. operate in controlled,
@@ -623,7 +637,7 @@ reproducible, and verifiable settings
 </section>
 </section>
 <section id="value-laden-shifts-in-ml">
-<h2>Value Laden Shifts in ML<a class="headerlink" href="#value-laden-shifts-in-ml" title="Permalink to this heading">#</a></h2>
+<h2>Value Laden Shifts in ML<a class="headerlink" href="#value-laden-shifts-in-ml" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://arxiv.org/abs/1912.01172">paper</a>
 &#64;brownsarahm reminder from lily
 <strong>talk on incorporating ethics into teaching data structs - environmental cost of algorithms</strong></p>
@@ -639,7 +653,7 @@ reproducible, and verifiable settings
 </li>
 </ul>
 <section id="model-types-as-organizing">
-<h3>Model types as organizing<a class="headerlink" href="#model-types-as-organizing" title="Permalink to this heading">#</a></h3>
+<h3>Model types as organizing<a class="headerlink" href="#model-types-as-organizing" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>many researchers self-organize in types; eg for revieing, workshops etc</p>
 <ul>
@@ -702,13 +716,13 @@ reproducible, and verifiable settings
 </ul>
 </section>
 <section id="model-type-is-self-reinforcing">
-<h3>Model type is self-reinforcing<a class="headerlink" href="#model-type-is-self-reinforcing" title="Permalink to this heading">#</a></h3>
+<h3>Model type is self-reinforcing<a class="headerlink" href="#model-type-is-self-reinforcing" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>comparing them is influenced by the model type points above (problems, prerequisites)</p></li>
 </ul>
 </section>
 <section id="comparison-between-types-is-value-laden">
-<h3>Comparison between types is value laden<a class="headerlink" href="#comparison-between-types-is-value-laden" title="Permalink to this heading">#</a></h3>
+<h3>Comparison between types is value laden<a class="headerlink" href="#comparison-between-types-is-value-laden" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Applied to ImageNet</p>
 <ul>
@@ -756,7 +770,7 @@ of values.</p>
 </ul>
 </section>
 <section id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h3>
 <blockquote class="epigraph">
 <div><p>A related question inspired by these issues is who should make
 decisions in what values are furthered? Who gets to have a voice?
@@ -769,7 +783,7 @@ question.</p>
 </section>
 </section>
 <section id="overall-paper-thoughts">
-<h2>Overall Paper thoughts<a class="headerlink" href="#overall-paper-thoughts" title="Permalink to this heading">#</a></h2>
+<h2>Overall Paper thoughts<a class="headerlink" href="#overall-paper-thoughts" title="Link to this heading">#</a></h2>
 <div class="admonition-discuss admonition">
 <p class="admonition-title">Discuss</p>
 <p>General thoughts?</p>
@@ -800,14 +814,14 @@ question.</p>
 </ul>
 </section>
 <section id="meta-points">
-<h2>Meta points<a class="headerlink" href="#meta-points" title="Permalink to this heading">#</a></h2>
+<h2>Meta points<a class="headerlink" href="#meta-points" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>(science) scientific mehtod one is a workshop paper (approx length of your project papers)</p></li>
 <li><p>this is a position paper (it’s not about new experimental results as much as the classic research arguing a position apper)</p></li>
 </ul>
 </section>
 <section id="next-class">
-<h2>next class<a class="headerlink" href="#next-class" title="Permalink to this heading">#</a></h2>
+<h2>next class<a class="headerlink" href="#next-class" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>volunteer: Emmely</p>
 <ul>

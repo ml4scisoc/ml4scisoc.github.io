@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Class 4: Missing Data: Basic techniques &#8212; Machine Learning for Science &amp; Society</title>
   
@@ -29,39 +28,43 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/2021-02-08';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -161,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -464,16 +478,16 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="class-4-missing-data-basic-techniques">
-<h1>Class 4: Missing Data: Basic techniques<a class="headerlink" href="#class-4-missing-data-basic-techniques" title="Permalink to this heading">#</a></h1>
+<h1>Class 4: Missing Data: Basic techniques<a class="headerlink" href="#class-4-missing-data-basic-techniques" title="Link to this heading">#</a></h1>
 <section id="evaluation-of-missing-data-at-training">
-<h2>Evaluation of missing data at training<a class="headerlink" href="#evaluation-of-missing-data-at-training" title="Permalink to this heading">#</a></h2>
+<h2>Evaluation of missing data at training<a class="headerlink" href="#evaluation-of-missing-data-at-training" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>mulitple imputation</p></li>
 <li><p>ML based was better than imputation which is better than dropping samples</p></li>
 <li><p>example datasets: 45% of patients have at least 1 missing value</p></li>
 </ul>
 <section id="imputation">
-<h3>Imputation<a class="headerlink" href="#imputation" title="Permalink to this heading">#</a></h3>
+<h3>Imputation<a class="headerlink" href="#imputation" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Mean imputation:</p>
 <ul>
@@ -493,7 +507,7 @@ document.write(`
 </ul>
 </section>
 <section id="imputation-ml">
-<h3>Imputation ML<a class="headerlink" href="#imputation-ml" title="Permalink to this heading">#</a></h3>
+<h3>Imputation ML<a class="headerlink" href="#imputation-ml" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>MLP</p>
 <ul>
@@ -515,7 +529,7 @@ document.write(`
 </ul>
 </section>
 <section id="testing">
-<h3>Testing<a class="headerlink" href="#testing" title="Permalink to this heading">#</a></h3>
+<h3>Testing<a class="headerlink" href="#testing" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Train NN based on data imputed with each technie</p></li>
 </ul>
@@ -526,7 +540,7 @@ document.write(`
 </ul>
 </section>
 <section id="discussion-questions">
-<h3>Discussion  &amp; Questions<a class="headerlink" href="#discussion-questions" title="Permalink to this heading">#</a></h3>
+<h3>Discussion  &amp; Questions<a class="headerlink" href="#discussion-questions" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>interesting that even simple methods provide improvement</p></li>
 <li><p>SOM is sort of unclear how does that work?</p></li>
@@ -535,14 +549,14 @@ document.write(`
 </section>
 </section>
 <section id="handling-missing-values-at-application-time">
-<h2>Handling missing values At application time<a class="headerlink" href="#handling-missing-values-at-application-time" title="Permalink to this heading">#</a></h2>
+<h2>Handling missing values At application time<a class="headerlink" href="#handling-missing-values-at-application-time" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>reduced models vs imputation.</p></li>
 <li><p>broad approach</p></li>
 <li><p>15 common datasets</p></li>
 </ul>
 <section id="techniques">
-<h3>Techniques:<a class="headerlink" href="#techniques" title="Permalink to this heading">#</a></h3>
+<h3>Techniques:<a class="headerlink" href="#techniques" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Discard</p></li>
 <li><p>Acquire missing values</p></li>
@@ -562,14 +576,14 @@ document.write(`
 <p>Feature imputability impacts the distribution or predictive type of imputation</p>
 </section>
 <section id="more-complex-model">
-<h3>More complex model<a class="headerlink" href="#more-complex-model" title="Permalink to this heading">#</a></h3>
+<h3>More complex model<a class="headerlink" href="#more-complex-model" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>decision tree with bagging</p></li>
 <li><p>again, reduced model is the best strategy</p></li>
 </ul>
 </section>
 <section id="hybrid-models-for-efficient-prediction">
-<h3>Hybrid Models for efficient prediction<a class="headerlink" href="#hybrid-models-for-efficient-prediction" title="Permalink to this heading">#</a></h3>
+<h3>Hybrid Models for efficient prediction<a class="headerlink" href="#hybrid-models-for-efficient-prediction" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>reduced models</p></li>
 <li><p>a hybrid is a complete model with stored subset for most common missing features</p></li>
@@ -586,14 +600,14 @@ document.write(`
 </ul>
 </section>
 <section id="general-takeaways">
-<h3>General takeaways<a class="headerlink" href="#general-takeaways" title="Permalink to this heading">#</a></h3>
+<h3>General takeaways<a class="headerlink" href="#general-takeaways" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>reduced models vs imputatation is  a large improvement</p></li>
 <li><p>this is sort of an imputation</p></li>
 </ul>
 </section>
 <section id="weaknesses">
-<h3>Weaknesses<a class="headerlink" href="#weaknesses" title="Permalink to this heading">#</a></h3>
+<h3>Weaknesses<a class="headerlink" href="#weaknesses" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Didn’t check unique value imputation</p></li>
 <li><p>MCAR</p></li>
@@ -602,7 +616,7 @@ document.write(`
 </section>
 </section>
 <section id="overall-discussion">
-<h2>Overall Discussion<a class="headerlink" href="#overall-discussion" title="Permalink to this heading">#</a></h2>
+<h2>Overall Discussion<a class="headerlink" href="#overall-discussion" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>How might the two problems interact?</p>
 <ul>
@@ -627,13 +641,13 @@ document.write(`
 <ul>
 <li><p>LSTM for time series data</p></li>
 <li><p>hierarchichal modeling other wise</p></li>
-<li><p><a class="reference external" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.232.390&amp;rep=rep1&amp;type=pdf">example of hierarchical with time series also</a></p></li>
+<li><p><a class="reference external" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.232.390&amp;amp;rep=rep1&amp;amp;type=pdf">example of hierarchical with time series also</a></p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="for-wednesday">
-<h2>For Wednesday<a class="headerlink" href="#for-wednesday" title="Permalink to this heading">#</a></h2>
+<h2>For Wednesday<a class="headerlink" href="#for-wednesday" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf">Graphical Models for Inference with Missing Data</a></p></li>
 <li><p><a class="reference external" href="https://auai.org/uai2015/proceedings/papers/204.pdf">Missing Data as a Causal and Probabilistic Problem</a></p></li>

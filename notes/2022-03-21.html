@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>MLSS &#8212; Machine Learning for Science &amp; Society</title>
   
@@ -29,39 +28,43 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/2022-03-21';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -161,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -470,13 +484,13 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="mlss">
-<h1>MLSS<a class="headerlink" href="#mlss" title="Permalink to this heading">#</a></h1>
+<h1>MLSS<a class="headerlink" href="#mlss" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>2022-03-21<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>2022-03-21<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p>Lead Scribe Chamudi</p>
 <section id="the-indian-buffet-process-an-introduction-and-review">
-<h2>The Indian Buffet Process: An Introduction and Review<a class="headerlink" href="#the-indian-buffet-process-an-introduction-and-review" title="Permalink to this heading">#</a></h2>
+<h2>The Indian Buffet Process: An Introduction and Review<a class="headerlink" href="#the-indian-buffet-process-an-introduction-and-review" title="Link to this heading">#</a></h2>
 <p>Presented by Surbhi</p>
 <p>The Indian buffet process is a stochastic process defining a probability distribution over equiva- lence classes of sparse binary matrices with a finite number of rows and infinite number of columns.</p>
 <p>unsupervised learning aims to recover the latent structure responsible for generating observed data</p>
@@ -493,36 +507,36 @@ document.write(`
 </ul>
 </section>
 <section id="latent-class-models">
-<h2>Latent Class Models<a class="headerlink" href="#latent-class-models" title="Permalink to this heading">#</a></h2>
+<h2>Latent Class Models<a class="headerlink" href="#latent-class-models" title="Link to this heading">#</a></h2>
 <p>LCM relates a set of observed(Usually discrete) multivariate variables to a set of latent variables</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="finite-mixture-model">
-<h1>Finite Mixture Model<a class="headerlink" href="#finite-mixture-model" title="Permalink to this heading">#</a></h1>
+<h1>Finite Mixture Model<a class="headerlink" href="#finite-mixture-model" title="Link to this heading">#</a></h1>
 <p>A finite mixture model(FMM) is a statistical model that assumes the presence of unobserved groups, called latent classes, within an overall population. Each latent class can be fit with its own regression model, which may have a linear or generalized linear response function.</p>
 <p>assumes that the assignment of an object to a class of  is independent of the assignments of all other objects.</p>
 <p>if there are K classes</p>
 <p><img alt="" src="https://i.imgur.com/fdOyH9X.png" /></p>
 <section id="infinite-mixture-models">
-<h2>Infinite Mixture Models<a class="headerlink" href="#infinite-mixture-models" title="Permalink to this heading">#</a></h2>
+<h2>Infinite Mixture Models<a class="headerlink" href="#infinite-mixture-models" title="Link to this heading">#</a></h2>
 <p>defining an infinite mixture model means that we want to specify the probability of X in terms of infinitely many classes, modifying Equation 1 to become</p>
 <p><img alt="" src="https://i.imgur.com/UUJCQFK.png" /></p>
 </section>
 <section id="the-chinese-restaurant-process">
-<h2>The Chinese Restaurant Process<a class="headerlink" href="#the-chinese-restaurant-process" title="Permalink to this heading">#</a></h2>
+<h2>The Chinese Restaurant Process<a class="headerlink" href="#the-chinese-restaurant-process" title="Link to this heading">#</a></h2>
 <p>Named based upon a metaphor</p>
 <p>The objects are customers in a restaurant, and the classes are the tables at which they sit.</p>
 <p>If we assume an ordering on our N objects, then we can assign them to classes sequentially using the method specified by the CRP, letting objects play the role of customers and classes play the role of tables. The ith object would be assigned to the kth class with probability</p>
 </section>
 <section id="latent-feature-models">
-<h2>Latent Feature Models<a class="headerlink" href="#latent-feature-models" title="Permalink to this heading">#</a></h2>
+<h2>Latent Feature Models<a class="headerlink" href="#latent-feature-models" title="Link to this heading">#</a></h2>
 <p>Each object is represented by a vector of latent feature values fi, and the properties xi are generated from a distribution dertermined by those latent feature values.</p>
 <p>Latent  feature values can be continuous, as in factor analysis and probabilistic principal component analysis or discrete, as in cooperative vector quantization.</p>
 <p><img alt="" src="https://i.imgur.com/6D5mL4H.png" /></p>
 <p>Feature matrices. A binary matrix Z, as shown in <strong>a</strong>, can be used as the basis for sparse infinite latent feature models, indicating which features take non-zero values. Elementwise multiplication of Z by a matrix V of continuous values gives a representation like that shown in <strong>b</strong>. If V contains discrete values, we obtain a representation like that shown in <strong>c</strong>.</p>
 </section>
 <section id="the-indian-buffet-process">
-<h2>The indian Buffet Process<a class="headerlink" href="#the-indian-buffet-process" title="Permalink to this heading">#</a></h2>
+<h2>The indian Buffet Process<a class="headerlink" href="#the-indian-buffet-process" title="Link to this heading">#</a></h2>
 <p>Define a distribution over infinite binary matrices by specifying a procedure by which customers (objects) choose dishes (features).</p>
 <p>Indian buffet process (IBP), N customers enter a restaurant one after another.</p>
 <p>Each customer encounters a buffet consisting of infinitely many dishes arranged in a line.</p>
@@ -532,10 +546,10 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="auto-encoding-variational-bayes">
-<h1>Auto-Encoding Variational Bayes<a class="headerlink" href="#auto-encoding-variational-bayes" title="Permalink to this heading">#</a></h1>
+<h1>Auto-Encoding Variational Bayes<a class="headerlink" href="#auto-encoding-variational-bayes" title="Link to this heading">#</a></h1>
 <p>Presented by Chan</p>
 <section id="generative-model">
-<h2>Generative model<a class="headerlink" href="#generative-model" title="Permalink to this heading">#</a></h2>
+<h2>Generative model<a class="headerlink" href="#generative-model" title="Link to this heading">#</a></h2>
 <p>Ml model that learns a given learning data and geneates similar data according to the distribution of train data</p>
 <p>Explicit density</p>
 <p>Tractable density and approximate density</p>
@@ -545,13 +559,13 @@ document.write(`
 <p>The type of directed graphical model under consideration. Solid lines denote the generative model pθ(z)pθ(x|z), dashed lines denote the variational approximation qφ(z|x) to the intractable posterior pθ(z|x). The variational parameters φ are learned jointly with the generative model parameters θ.</p>
 </section>
 <section id="methodology">
-<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this heading">#</a></h2>
+<h2>Methodology<a class="headerlink" href="#methodology" title="Link to this heading">#</a></h2>
 <p>Maximumlikelihood :  𝑎𝑟𝑔max𝜃[𝑝𝜃(𝑥) = ∫z 𝑝𝜃 (𝑥,𝑧) = ∫z 𝑝𝜃 (𝑥|𝑧) 𝑝𝜃(𝑧)]</p>
 <p>Variation Inference</p>
 <p>q𝜙(z|x) ≈ pθ(z|x)</p>
 </section>
 <section id="the-variational-bound">
-<h2>The variational bound<a class="headerlink" href="#the-variational-bound" title="Permalink to this heading">#</a></h2>
+<h2>The variational bound<a class="headerlink" href="#the-variational-bound" title="Link to this heading">#</a></h2>
 <p>∫z q(𝑧|𝑥) = 1</p>
 <p>p(𝑥) = p(z,x)/p(z|x)</p>
 <p>𝔼[X] = ∫ 𝑥𝑓(𝑥)</p>
@@ -559,12 +573,12 @@ document.write(`
 <p><img alt="" src="https://i.imgur.com/aDRfycP.png" /></p>
 </section>
 <section id="evidence-lower-bound">
-<h2>Evidence Lower Bound<a class="headerlink" href="#evidence-lower-bound" title="Permalink to this heading">#</a></h2>
+<h2>Evidence Lower Bound<a class="headerlink" href="#evidence-lower-bound" title="Link to this heading">#</a></h2>
 <p><img alt="" src="https://i.imgur.com/hrMCglA.png" /></p>
 <p><img alt="" src="https://i.imgur.com/Pv9EAl1.png" /></p>
 </section>
 <section id="stochastic-gradient-variational-bayes-sgvb">
-<h2>Stochastic Gradient Variational Bayes(SGVB)<a class="headerlink" href="#stochastic-gradient-variational-bayes-sgvb" title="Permalink to this heading">#</a></h2>
+<h2>Stochastic Gradient Variational Bayes(SGVB)<a class="headerlink" href="#stochastic-gradient-variational-bayes-sgvb" title="Link to this heading">#</a></h2>
 <p><img alt="" src="https://i.imgur.com/JVwYcWs.png" /></p>
 <p>where z(l) ∼ qφ(z|x(i))</p>
 <p><img alt="" src="https://i.imgur.com/gi35kNA.png" /></p>
@@ -573,7 +587,7 @@ document.write(`
 <p><img alt="" src="https://i.imgur.com/TJsD18X.png" /></p>
 </section>
 <section id="reparameterization-tricks">
-<h2>Reparameterization Tricks<a class="headerlink" href="#reparameterization-tricks" title="Permalink to this heading">#</a></h2>
+<h2>Reparameterization Tricks<a class="headerlink" href="#reparameterization-tricks" title="Link to this heading">#</a></h2>
 <p>z(l) ∼ qφ(z|x(i)) cannot differentiate</p>
 <p>Solution</p>
 <p><img alt="" src="https://i.imgur.com/EeMaSb4.png" /></p>

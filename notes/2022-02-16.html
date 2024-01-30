@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Fairness &#8212; Machine Learning for Science &amp; Society</title>
   
@@ -29,39 +28,43 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/2022-02-16';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -161,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -482,22 +496,22 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="fairness">
-<h1>Fairness<a class="headerlink" href="#fairness" title="Permalink to this heading">#</a></h1>
+<h1>Fairness<a class="headerlink" href="#fairness" title="Link to this heading">#</a></h1>
 <p>Lead Scribe: Chan</p>
 <section id="fairness-and-machine-learning">
-<h2>FAIRNESS AND MACHINE LEARNING<a class="headerlink" href="#fairness-and-machine-learning" title="Permalink to this heading">#</a></h2>
+<h2>FAIRNESS AND MACHINE LEARNING<a class="headerlink" href="#fairness-and-machine-learning" title="Link to this heading">#</a></h2>
 <section id="chapter-2-classification">
-<h3>Chapter 2: Classification<a class="headerlink" href="#chapter-2-classification" title="Permalink to this heading">#</a></h3>
+<h3>Chapter 2: Classification<a class="headerlink" href="#chapter-2-classification" title="Link to this heading">#</a></h3>
 <p>Presented by Damon</p>
 <section id="main-goal">
-<h4>Main Goal<a class="headerlink" href="#main-goal" title="Permalink to this heading">#</a></h4>
+<h4>Main Goal<a class="headerlink" href="#main-goal" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>determine plausible value for an unknown varible Y given an obscent variable X</p></li>
 <li><p>Essentially trying to predict something based on other factors</p></li>
 </ul>
 </section>
 <section id="supervised-learning">
-<h4>Supervised learning<a class="headerlink" href="#supervised-learning" title="Permalink to this heading">#</a></h4>
+<h4>Supervised learning<a class="headerlink" href="#supervised-learning" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>The prevalent method for onstructing classifeirs from observed data</p>
 <ul>
@@ -514,7 +528,7 @@ document.write(`
 </ul>
 </section>
 <section id="statistical-classification-criteria">
-<h4>Statistical Classification Criteria<a class="headerlink" href="#statistical-classification-criteria" title="Permalink to this heading">#</a></h4>
+<h4>Statistical Classification Criteria<a class="headerlink" href="#statistical-classification-criteria" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>How to identify which classifer is best fo your purpose</p></li>
 <li><p>Accuracy: the probability of correctly predicting the target variable</p></li>
@@ -532,21 +546,21 @@ document.write(`
 </ul>
 </section>
 <section id="the-conditional-expectation">
-<h4>The Conditional Expectation<a class="headerlink" href="#the-conditional-expectation" title="Permalink to this heading">#</a></h4>
+<h4>The Conditional Expectation<a class="headerlink" href="#the-conditional-expectation" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Score:</span> <span class="pre">a</span> <span class="pre">single</span> <span class="pre">real-valued</span> <span class="pre">variable</span> <span class="pre">summairzed</span> <span class="pre">from</span> <span class="pre">a</span> <span class="pre">regression</span> <span class="pre">model</span></code></p></li>
 <li><p>A natural score function is the expectation of the target variable Y conditional on the features X we have observed</p></li>
 </ul>
 </section>
 <section id="sensitive-characteristics-a">
-<h4>Sensitive Characteristics (A)<a class="headerlink" href="#sensitive-characteristics-a" title="Permalink to this heading">#</a></h4>
+<h4>Sensitive Characteristics (A)<a class="headerlink" href="#sensitive-characteristics-a" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>In many classification tasks, the features X contain or implicitly encode sensitive characteristics of an individual</p></li>
 <li><p>It is dangerous to ignore these factors, which will make prediction difficult by tampering the correlation.</p></li>
 </ul>
 </section>
 <section id="indepdence-ra">
-<h4>Indepdence – R⏊A<a class="headerlink" href="#indepdence-ra" title="Permalink to this heading">#</a></h4>
+<h4>Indepdence – R⏊A<a class="headerlink" href="#indepdence-ra" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Requires the sentitive charactieric to be statistically independent of the score</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Definition</span> <span class="pre">1:</span> <span class="pre">The</span> <span class="pre">random</span> <span class="pre">variable</span> <span class="pre">(A,</span> <span class="pre">R)</span> <span class="pre">satisfy</span> <span class="pre">independence</span> <span class="pre">if</span> <span class="pre">A⏊R</span></code></p></li>
@@ -565,7 +579,7 @@ document.write(`
 </ul>
 </section>
 <section id="separation">
-<h4>Separation<a class="headerlink" href="#separation" title="Permalink to this heading">#</a></h4>
+<h4>Separation<a class="headerlink" href="#separation" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Acknowledges that in many scenarios, the sensitive characteristic may be correlated with the target variable.</p></li>
 <li><p>This separation criterion allows corelation between the score and the senstitive attribute to the extent that it is justified by the target variable</p></li>
@@ -581,7 +595,7 @@ document.write(`
 </ul>
 </section>
 <section id="sufficiency-ya-r">
-<h4>Sufficiency – Y⏊A|R<a class="headerlink" href="#sufficiency-ya-r" title="Permalink to this heading">#</a></h4>
+<h4>Sufficiency – Y⏊A|R<a class="headerlink" href="#sufficiency-ya-r" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Formalizes that the score already includes the sensitvie characteristic for the purpose of predicting the target</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Definition</span> <span class="pre">3:</span> <span class="pre">We</span> <span class="pre">say</span> <span class="pre">that</span> <span class="pre">random</span> <span class="pre">variables</span> <span class="pre">(R,</span> <span class="pre">A,</span> <span class="pre">Y)</span> <span class="pre">satistfy</span> <span class="pre">sufficienty</span> <span class="pre">if</span> <span class="pre">Y⏊A|R</span></code></p></li>
@@ -592,21 +606,21 @@ document.write(`
 </ul>
 </section>
 <section id="calibration-and-sufficiency">
-<h4>Calibration and Sufficiency<a class="headerlink" href="#calibration-and-sufficiency" title="Permalink to this heading">#</a></h4>
+<h4>Calibration and Sufficiency<a class="headerlink" href="#calibration-and-sufficiency" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>It is sometimes desirable to be able to interpret the values of the score functions as probabilities</p></li>
 <li><p>This condition means that the set of all instances assigned a score value r has an r fraction of positive instances among them.</p></li>
 </ul>
 </section>
 <section id="calibration-by-group">
-<h4>Calibration by Group<a class="headerlink" href="#calibration-by-group" title="Permalink to this heading">#</a></h4>
+<h4>Calibration by Group<a class="headerlink" href="#calibration-by-group" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>To formalize the connection between sufficiency and calibration we say that the score R satisfies calibration by group if it satisfies: <img alt="" src="https://i.imgur.com/Jqv4jBb.png" /></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Proposition</span> <span class="pre">1.</span> <span class="pre">If</span> <span class="pre">a</span> <span class="pre">score</span> <span class="pre">R</span> <span class="pre">satisfies</span> <span class="pre">sufficiency,</span> <span class="pre">then</span> <span class="pre">there</span> <span class="pre">exists</span> <span class="pre">a</span> <span class="pre">function</span> <span class="pre">𝓵:</span> <span class="pre">[0,1]</span> <span class="pre">--&gt;</span> <span class="pre">[0,1]</span> <span class="pre">so</span> <span class="pre">that</span> <span class="pre">𝓵(R)</span> <span class="pre">satisfies</span> <span class="pre">calibration</span> <span class="pre">by</span> <span class="pre">group.</span> </code></p></li>
 </ul>
 </section>
 <section id="relationships-between-criteria">
-<h4>Relationships Between Criteria<a class="headerlink" href="#relationships-between-criteria" title="Permalink to this heading">#</a></h4>
+<h4>Relationships Between Criteria<a class="headerlink" href="#relationships-between-criteria" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Initial criteria constrains the joint distribution in non-trivial ways therefore we can suspect that imposing any 2 of them simultaneously over-contrains the space to the point where only degenerate solutions remain.</p></li>
 <li><p>Happy path of establishing multiple fairnesses is intangible.</p></li>
@@ -614,10 +628,10 @@ document.write(`
 </section>
 </section>
 <section id="machine-bias">
-<h3>Machine Bias<a class="headerlink" href="#machine-bias" title="Permalink to this heading">#</a></h3>
+<h3>Machine Bias<a class="headerlink" href="#machine-bias" title="Link to this heading">#</a></h3>
 <p>Presented by Derek</p>
 <section id="the-premise">
-<h4>The premise<a class="headerlink" href="#the-premise" title="Permalink to this heading">#</a></h4>
+<h4>The premise<a class="headerlink" href="#the-premise" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Brisha Borden &amp; a friend - 18 years old</p>
 <ul>
@@ -639,14 +653,14 @@ document.write(`
 </ul>
 </section>
 <section id="risk-assessments">
-<h4>Risk Assessments<a class="headerlink" href="#risk-assessments" title="Permalink to this heading">#</a></h4>
+<h4>Risk Assessments<a class="headerlink" href="#risk-assessments" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Becoming increasingly more popular in courtrooms</p></li>
 <li><p>9 states provide scores to judges during sentencing</p></li>
 </ul>
 </section>
 <section id="following-the-warnings-of-ag-holder">
-<h4>Following the Warnings of AG Holder<a class="headerlink" href="#following-the-warnings-of-ag-holder" title="Permalink to this heading">#</a></h4>
+<h4>Following the Warnings of AG Holder<a class="headerlink" href="#following-the-warnings-of-ag-holder" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>The sentencing commission did not launch a study of risk scores</p></li>
 <li><p>ProPublica did launch a study</p>
@@ -664,7 +678,7 @@ document.write(`
 </ul>
 </section>
 <section id="in-theory">
-<h4>In Theory<a class="headerlink" href="#in-theory" title="Permalink to this heading">#</a></h4>
+<h4>In Theory<a class="headerlink" href="#in-theory" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Risk scores are great</p></li>
 <li><p>High scores mean more likely to commit crime</p></li>
@@ -673,7 +687,7 @@ document.write(`
 </ul>
 </section>
 <section id="in-practice">
-<h4>In Practice<a class="headerlink" href="#in-practice" title="Permalink to this heading">#</a></h4>
+<h4>In Practice<a class="headerlink" href="#in-practice" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>People are extremely complex</p></li>
 <li><p>Countless factors go into recidivism such as</p>
@@ -687,7 +701,7 @@ document.write(`
 </ul>
 </section>
 <section id="the-problem">
-<h4>The Problem<a class="headerlink" href="#the-problem" title="Permalink to this heading">#</a></h4>
+<h4>The Problem<a class="headerlink" href="#the-problem" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>people tend to blindly trust tech.</p></li>
 <li><p>any jurisdictions adopt Northpointe’s software without testing</p></li>
@@ -700,7 +714,7 @@ document.write(`
 </ul>
 </section>
 <section id="overall">
-<h4>Overall<a class="headerlink" href="#overall" title="Permalink to this heading">#</a></h4>
+<h4>Overall<a class="headerlink" href="#overall" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Using tech in social context is extremely complex</p></li>
 <li><p>Poeple are unique and countless factors go into individual behavior</p></li>
@@ -715,10 +729,10 @@ document.write(`
 </section>
 </section>
 <section id="gender-shades">
-<h3>Gender Shades<a class="headerlink" href="#gender-shades" title="Permalink to this heading">#</a></h3>
+<h3>Gender Shades<a class="headerlink" href="#gender-shades" title="Link to this heading">#</a></h3>
 <p>Presented by Derek</p>
 <section id="intro">
-<h4>Intro<a class="headerlink" href="#intro" title="Permalink to this heading">#</a></h4>
+<h4>Intro<a class="headerlink" href="#intro" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>AI is widely used in society</p></li>
 <li><p>Facial recognitiion software can realistically be used to identify suspects</p></li>
@@ -727,7 +741,7 @@ document.write(`
 </ul>
 </section>
 <section id="related-work">
-<h4>Related Work<a class="headerlink" href="#related-work" title="Permalink to this heading">#</a></h4>
+<h4>Related Work<a class="headerlink" href="#related-work" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Automated Facial Analysis</p></li>
 <li><p>Benchmarks</p></li>
@@ -735,7 +749,7 @@ document.write(`
 </ul>
 </section>
 <section id="intersectional-benchmark">
-<h4>Intersectional Benchmark<a class="headerlink" href="#intersectional-benchmark" title="Permalink to this heading">#</a></h4>
+<h4>Intersectional Benchmark<a class="headerlink" href="#intersectional-benchmark" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Gender classification means we need defined classes</p></li>
 <li><p>The dataset should contain varied phsyical attributes for subgroup accuracy analysis</p></li>
@@ -748,7 +762,7 @@ document.write(`
 </ul>
 </section>
 <section id="commercial-gender-classification-audit">
-<h4>Commercial Gender Classification Audit<a class="headerlink" href="#commercial-gender-classification-audit" title="Permalink to this heading">#</a></h4>
+<h4>Commercial Gender Classification Audit<a class="headerlink" href="#commercial-gender-classification-audit" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Classifiers perform best on lighter, male faces</p></li>
 <li><p>Classifiers perform worst on darker female faces</p>
@@ -761,7 +775,7 @@ document.write(`
 </section>
 </section>
 <section id="dissecting-racial-bias-in-an-algorithm-used-to-manage-the-health-of-populations">
-<h3>Dissecting racial bias in an algorithm used to manage the health of populations<a class="headerlink" href="#dissecting-racial-bias-in-an-algorithm-used-to-manage-the-health-of-populations" title="Permalink to this heading">#</a></h3>
+<h3>Dissecting racial bias in an algorithm used to manage the health of populations<a class="headerlink" href="#dissecting-racial-bias-in-an-algorithm-used-to-manage-the-health-of-populations" title="Link to this heading">#</a></h3>
 <p>Presented by Derek</p>
 <ul class="simple">
 <li><p>Black people had to have more chronic conditions to have a higher risk score</p></li>

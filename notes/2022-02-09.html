@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>MLSS &#8212; Machine Learning for Science &amp; Society</title>
   
@@ -29,39 +28,43 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/2022-02-09';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -161,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -470,21 +484,21 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="mlss">
-<h1>MLSS<a class="headerlink" href="#mlss" title="Permalink to this heading">#</a></h1>
+<h1>MLSS<a class="headerlink" href="#mlss" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>2022-02-09<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>2022-02-09<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p>Lead Scribe: Chamudi Kashmila</p>
 <section id="paper-graphical-models-for-inference-with-missing-data">
-<h2>Paper - Graphical Models for Inference with Missing Data<a class="headerlink" href="#paper-graphical-models-for-inference-with-missing-data" title="Permalink to this heading">#</a></h2>
+<h2>Paper - Graphical Models for Inference with Missing Data<a class="headerlink" href="#paper-graphical-models-for-inference-with-missing-data" title="Link to this heading">#</a></h2>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="paper-presented-by-chamudi">
-<h1><a class="reference external" href="https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1%60%60c4c455-Paper.pdf">paper</a> – Presented by Chamudi<a class="headerlink" href="#paper-presented-by-chamudi" title="Permalink to this heading">#</a></h1>
+<h1><a class="reference external" href="https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1%60%60c4c455-Paper.pdf">paper</a> – Presented by Chamudi<a class="headerlink" href="#paper-presented-by-chamudi" title="Link to this heading">#</a></h1>
 <section id="graphical-models-for-inference-with-missing-data">
-<h2>Graphical Models for Inference with Missing Data<a class="headerlink" href="#graphical-models-for-inference-with-missing-data" title="Permalink to this heading">#</a></h2>
+<h2>Graphical Models for Inference with Missing Data<a class="headerlink" href="#graphical-models-for-inference-with-missing-data" title="Link to this heading">#</a></h2>
 <section id="missing-data-can-have-several-hamrful-consequences">
-<h3>Missing data can have several hamrful consequences.<a class="headerlink" href="#missing-data-can-have-several-hamrful-consequences" title="Permalink to this heading">#</a></h3>
+<h3>Missing data can have several hamrful consequences.<a class="headerlink" href="#missing-data-can-have-several-hamrful-consequences" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Firstly they can significantly bias the outcome of research studies.</p>
 <ul>
@@ -500,7 +514,7 @@ document.write(`
 </ul>
 </section>
 <section id="existing-methods-for-handling-missing-data">
-<h3>Existing Methods for Handling Missing Data<a class="headerlink" href="#existing-methods-for-handling-missing-data" title="Permalink to this heading">#</a></h3>
+<h3>Existing Methods for Handling Missing Data<a class="headerlink" href="#existing-methods-for-handling-missing-data" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Listwise deletion (LD) and pairwise deletion (PD) are used in approximately 96% of studies in the social and behavioral sciences</p></li>
 <li><p>Expectation-maximization (EM) [example: K-Means] algorithm is a general technique for finding max likelihood (ML) estimates from incomplete data.</p></li>
@@ -520,7 +534,7 @@ document.write(`
 </ul>
 </section>
 <section id="graphical-representation-of-the-missingness-process">
-<h3>Graphical Representation of the Missingness Process<a class="headerlink" href="#graphical-representation-of-the-missingness-process" title="Permalink to this heading">#</a></h3>
+<h3>Graphical Representation of the Missingness Process<a class="headerlink" href="#graphical-representation-of-the-missingness-process" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Graphical Models have been used to analyze missing missing information in the form of missing cases</p></li>
 <li><p>The need exists for a general approach capable of modeling an arbitrary data-generating process and deciding whether how missingness can be outmaneuvered in every dataset generated by that process.</p></li>
@@ -529,7 +543,7 @@ document.write(`
 </ul>
 </section>
 <section id="missingness-graphs">
-<h3>Missingness Graphs<a class="headerlink" href="#missingness-graphs" title="Permalink to this heading">#</a></h3>
+<h3>Missingness Graphs<a class="headerlink" href="#missingness-graphs" title="Link to this heading">#</a></h3>
 <p><img alt="" src="https://i.imgur.com/368coCZ.png" />
 Let G(𝕍, E) be the causal DAG where 𝕍 = V ∪ U ∪ V* ∪ R</p>
 <p><strong>V</strong> is the set of observable nodes. Nodes in the graph correspond to variables in the data set.
@@ -551,7 +565,7 @@ Let G(𝕍, E) be the causal DAG where 𝕍 = V ∪ U ∪ V* ∪ R</p>
 </ul>
 </section>
 <section id="taxonomy-of-missingness-mechanisms">
-<h3>Taxonomy of Missingness Mechanisms<a class="headerlink" href="#taxonomy-of-missingness-mechanisms" title="Permalink to this heading">#</a></h3>
+<h3>Taxonomy of Missingness Mechanisms<a class="headerlink" href="#taxonomy-of-missingness-mechanisms" title="Link to this heading">#</a></h3>
 <p>It is common to classify missing data mechanisms into three types</p>
 <ul class="simple">
 <li><p><strong>Missing Completely At Random (MCAR)</strong> : Data are MCAR if the probability that Vm is missing is independent of Vm or any other variable in the study, as would be the case when <code class="docutils literal notranslate"><span class="pre">respondents</span> <span class="pre">decide</span> <span class="pre">to</span> <span class="pre">reveal</span> <span class="pre">their</span> <span class="pre">income</span> <span class="pre">levels</span> <span class="pre">based</span> <span class="pre">on</span> <span class="pre">coin-flips</span></code>.</p></li>
@@ -564,12 +578,12 @@ Let G(𝕍, E) be the causal DAG where 𝕍 = V ∪ U ∪ V* ∪ R</p>
 </ul>
 </section>
 <section id="recoverability">
-<h3>Recoverability<a class="headerlink" href="#recoverability" title="Permalink to this heading">#</a></h3>
+<h3>Recoverability<a class="headerlink" href="#recoverability" title="Link to this heading">#</a></h3>
 <p>Recoverability is a measurement to see if we can get P(X, Y) from the entire dataset D. Examine the conditions under which a bias-free estimate of a given probabilistic relation Q can be computed.</p>
 <p><strong>Definition</strong>  (Recoverability). Given a <strong>m-graph G</strong>, and a <strong>target relation Q</strong> defined on the variables in <strong>V</strong> , <strong>Q</strong> is said to be <strong>recoverable</strong> in <strong>G</strong> if there <code class="docutils literal notranslate"><span class="pre">exists</span> <span class="pre">an</span> <span class="pre">algorithm</span> <span class="pre">that</span> <span class="pre">produces</span> <span class="pre">a</span> <span class="pre">consistent</span> <span class="pre">estimate</span> <span class="pre">of</span> <span class="pre">Q</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">dataset</span> <span class="pre">D</span></code> such that <strong>P(D)</strong> is <code class="docutils literal notranslate"><span class="pre">(1)</span> <span class="pre">compatible</span> <span class="pre">with</span> <span class="pre">G</span></code> and <code class="docutils literal notranslate"><span class="pre">(2)</span> <span class="pre">strictly</span> <span class="pre">positive</span> <span class="pre">over</span> <span class="pre">complete</span> <span class="pre">cases</span></code> i.e. <strong>P(Vo, Vm, ℝ = 0) &gt; 0</strong>.</p>
 </section>
 <section id="recoverability-when-data-are-mcar">
-<h3>Recoverability when data are MCAR<a class="headerlink" href="#recoverability-when-data-are-mcar" title="Permalink to this heading">#</a></h3>
+<h3>Recoverability when data are MCAR<a class="headerlink" href="#recoverability-when-data-are-mcar" title="Link to this heading">#</a></h3>
 <p>For MCAR data we have ℝ ∐ (Vo ∪ Vm). Therefore, we can write
 P(V ) = P(V | ℝ) = P(Vo, V* |ℝ = 0).</p>
 <p>Since both <strong>ℝ</strong> and <strong>V</strong>* are observables, the joint probability <strong>P(V)</strong> is <strong>consistently estimable (recoverable)</strong> by considering complete cases only</p>
@@ -584,7 +598,7 @@ The RHS of Eq. 2 is consistently estimable from D;
 <strong>hence P(X, Y ) is recoverable</strong>.</p>
 </section>
 <section id="recoverability-when-data-are-mar">
-<h3>Recoverability when data are MAR<a class="headerlink" href="#recoverability-when-data-are-mar" title="Permalink to this heading">#</a></h3>
+<h3>Recoverability when data are MAR<a class="headerlink" href="#recoverability-when-data-are-mar" title="Link to this heading">#</a></h3>
 <p>When data are <strong>MAR</strong>, we have <strong>R ∐ Vm|Vo</strong>.
 Therefore   <strong>P(V )   =   P(Vm|Vo)P(Vo)   =   P(Vm|Vo, R = 0)P(Vo)</strong>.
 Hence the joint distribution <strong>P(V)</strong> is recoverable.</p>
@@ -600,7 +614,7 @@ Hence,       <strong>P(X, Y )   =   P(Y</strong>* <strong>|X, Ry = 0)P(X)</stron
 and since <strong>X is fully observable, P(X, Y ) is recoverable</strong></p>
 </section>
 <section id="recoverability-when-data-are-mnar">
-<h3>Recoverability when data are MNAR<a class="headerlink" href="#recoverability-when-data-are-mnar" title="Permalink to this heading">#</a></h3>
+<h3>Recoverability when data are MNAR<a class="headerlink" href="#recoverability-when-data-are-mnar" title="Link to this heading">#</a></h3>
 <p>Data that are neither MAR nor MCAR are termed <strong>MNAR</strong>. Though it is generally believed that relations in MNAR datasets are not recoverable, the following example demonstrates otherwise.</p>
 <p><em>Example : Fig. 1 (d) depicts a study where (i) some units who underwent treatment (X = 1) did not report the outcome (Y ) and (ii) we accidentally deleted the values of treatment for a handful of cases. Thus we have missing values for both X and Y which renders the dataset MNAR. We shall show that P(X, Y ) is recoverable.</em></p>
 <p><img alt="" src="https://i.imgur.com/plJibIl.png" /></p>
@@ -612,7 +626,7 @@ When <strong>Ry = 0</strong> and <strong>Rx = 0</strong> we have (<em>by Equatio
 Therefore, <strong>P(X,Y) is recoverable</strong></p>
 </section>
 <section id="conditions-for-recoverability">
-<h3>Conditions for Recoverability<a class="headerlink" href="#conditions-for-recoverability" title="Permalink to this heading">#</a></h3>
+<h3>Conditions for Recoverability<a class="headerlink" href="#conditions-for-recoverability" title="Link to this heading">#</a></h3>
 <p>How can we determine if a given relation is recoverable?
 <code class="docutils literal notranslate"><span class="pre">Theorem</span> <span class="pre">1:</span> <span class="pre">A</span> <span class="pre">query</span> <span class="pre">Q</span> <span class="pre">defined</span> <span class="pre">over</span> <span class="pre">variables</span> <span class="pre">in</span> <span class="pre">V0</span> </code>
 Theorem 1 provides a sufficient condition for recoverability</p>
@@ -651,7 +665,7 @@ and (4) would not satisfy the conditions of Theorem 1.</p>
 <p>P(X, Z) = P(X, Z|Rx = 0, Rz = 0) is recoverable</p>
 </section>
 <section id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Causal</span> <span class="pre">graphical</span> <span class="pre">models</span> <span class="pre">depicting</span> <span class="pre">the</span> <span class="pre">data</span> <span class="pre">generating</span> <span class="pre">process</span> <span class="pre">can</span> <span class="pre">serve</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">powerful</span> <span class="pre">tool</span> <span class="pre">for</span> <span class="pre">analyzing</span> <span class="pre">missing</span> <span class="pre">data</span> <span class="pre">problems</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Formalized</span> <span class="pre">the</span> <span class="pre">notion</span> <span class="pre">of</span> <span class="pre">recoverability</span> <span class="pre">and</span> <span class="pre">showed</span> <span class="pre">that</span> <span class="pre">relations</span> <span class="pre">are</span> <span class="pre">always</span> <span class="pre">recoverable</span> <span class="pre">when</span> <span class="pre">data</span> <span class="pre">are</span> <span class="pre">missing</span> <span class="pre">at</span> <span class="pre">random</span> <span class="pre">(MCAR</span> <span class="pre">or</span> <span class="pre">MAR)</span> <span class="pre">and</span> <span class="pre">even</span> <span class="pre">when</span> <span class="pre">data</span> <span class="pre">are</span> <span class="pre">missing</span> <span class="pre">not</span> <span class="pre">at</span> <span class="pre">random</span> <span class="pre">(MNAR).</span></code></p></li>
