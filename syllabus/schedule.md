@@ -87,6 +87,10 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
   - Fairness and Causality
   - [FairML Causality chapter](https://fairmlbook.org/causal.html) [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589)
   - Paper discussion TBD
+* - 2024-02-22
+  - Bias and STS
+  - Ruha Benjamin
+  - Talk at Welcome center
 * - 2024-02-27
   - Multi-objective & constrained opt
   - [Elastic Net](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x) + TBD
