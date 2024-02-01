@@ -87,42 +87,42 @@ The final project is a chance to dive deeply into one of the course topics. It h
   - Content and Format
   - Weight
   - Evaluation
-* - 2022-02-16
+* - 2024-02-16
   - Area Selection
   - Consultation meeting and general questions
   - 2%
   - feedback only
-* - 2021-03-02
+* - 2024-03-02
   - Topic Selection
   - Objective  and scope of work as bulleted lists or paragraph
   - 2%
   - on completion or scope adjustment/mandatory revisions
-* - 2021-03-08
+* - 2024-03-08
   - Proposal
   - Problem statement, lit review, method, detials below
   - 10%
   - specification, with revisions until approval
-* - 2021-04-05
+* - 2024-04-05
   - Checkin
   - Consultation meeting and prelim results
   - 3%
   - completion
-* - 2021-04-18
+* - 2024-04-18
   - Paper Rough draft
   - Draft ready for peers to read
   - 5%
   - completion + feedback, per paper specification
-* - 2021-04-23/25
+* - 2024-04-23/25
   - Presentation
   - talk in class, slides submitted for comment
   - 15%
   - specification
-* - 2021-05-07
+* - 2024-05-07
   - final paper
   - final paper submitted for grading
   - 20%
   - specification
-* - 2021-05-07
+* - 2024-05-07
   - final reflection
   - final paper submitted for grading
   - 3%
