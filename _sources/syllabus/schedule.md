@@ -74,38 +74,39 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
 * - 2024-02-08
   - Missing data with graphical models and causal reasoning
   - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf)
-  - Paper discussion led by TBD
+  - Paper discussion led by Reid + performance metric review
 * - 2024-02-13
-  - causal and probabilistic missing data
-  -  [Missing Data as a Causal and Probabilistic Problem](https://auai.org/uai2015/proceedings/papers/204.pdf)
+  - Fairness
+  - [Fairml classification chapter](https://fairmlbook.org/classification.html) (including impossibility proofs) and [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589) 
   - Paper discussion by TBD
 * - 2024-02-15
-  - Fairness
-  - [Fairml classification chapter](https://fairmlbook.org/classification.html) and [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342)
+  - Fairness and Causality
+  - [FairML Causality chapter](https://fairmlbook.org/causal.html) and classic bias examples ([Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342))
   - Paper discussion by TBD
 * - 2024-02-20
-  - Fairness and Causality
-  - [FairML Causality chapter](https://fairmlbook.org/causal.html) [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589)
+  - Complexity of bias and fairness
+  -  [On the Independence of Association Bias and Empirical Fairness
+in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the possibility of fairness](https://dl.acm.org/doi/abs/10.1145/3593013.3594007)
   - Paper discussion TBD
 * - 2024-02-22
   - Bias and STS
   - Ruha Benjamin
   - Talk at Welcome center
 * - 2024-02-27
-  - Multi-objective & constrained opt
-  - [Elastic Net](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2005.00503.x) + TBD
+  - Latent Variable models
+  - classic: [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and deep learning:[Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
   - Paper presentation by TBD
 * - 2024-02-29
-  - Multi-objective & constrained opt
-  - [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg)
-  - Paper presentation TBD
+  - Interpretable & Explanation Intro
+  - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009) and [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)
+  - Paper presentation by TBD
 * - 2024-03-05
-  - Latent Variable Models
-  - [Gaussian Mixture Models](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) and [Topic Models](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
+  - A Case for Interpretability over Explanation
+  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
   - Paper presentation by TBD
 * - 2024-03-07
-  - Latent Variable Models
-  - (one classic + one Deep, eg [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf))
+  - What does Interpretable mean
+  - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
   - Paper presentation by TBD
 * - 2024-03-12
   - spring break
@@ -124,37 +125,37 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
   - none
   - peer review
 * - 2024-03-26
-  - Missing or Noisy labels
-  - [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf) and [Semi Supervised Learning](https://link.springer.com/article/10.1007/s10994-019-05855-6)
-  - presentations by Dereck
+  - what to/not do with explanation
+  - [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566) and [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
+  - Paper Presentation by TBD
 * - 2024-03-28
-  - Noisy Labels as a model for Bias
-  - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Fair classification with group dependent label noise](https://dl.acm.org/doi/10.1145/3442188.3445915)
-  - Paper presentations by TBD
+  - Trust
+  - [Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI](https://dl.acm.org/doi/10.1145/3442188.3445923) and [trustworthiness of GPT models](https://openreview.net/pdf?id=kaHpo8OZw2) 
+  - Paper Presentation by TBD
 * - 2024-04-02
-  - Interpretable & Explanation Intro
-  - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)
+  - LLMs and risks
+  - [GPT3](https://papers.nips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf) and [Stochastic Parrots](https://dl.acm.org/doi/10.1145/3442188.3445922)
+[Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342)
   - Paper Presentation by TBD
 * - 2024-04-04
-  - A Case for Interpretability over Explanation
-  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
+  - Generative Models in social contexts
+  - [Are Emergent abilities of LLMs a Mirage](https://openreview.net/pdf?id=ITw9edRDlD) and [Regulating ChatGPT and other Large GenAI models](https://dl.acm.org/doi/10.1145/3593013.3594067)
   - Paper Presentation by TBD
 * - 2024-04-09
-  - Models for Explanation
-  - [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)
+  - Multi objective learning 
+  -  [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg) 
   - Paper Presentation by TBD
 * - 2024-04-11
-  - Choosing Explanations and using explanations
-  - [How can I choose an explainer? An Application-grounded
-Evaluation of Post-hoc Explanations](https://dl.acm.org/doi/pdf/10.1145/3442188.3445941) [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566)
+  - Noisy labels and bias 
+  - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf)
   - Paper Presentation by TBD
 * - 2024-04-16
-  - What does Interpretable mean
-  - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
+  - art/future or work?
+  - tba
   - Paper Presentation by TBD
 * - 2024-04-18
-  - What are the risks of explanations
-  - [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
+  - data augmentation?
+  - tba
   - Paper Presentation by 
 * - 2024-04-23
   - 3 Project Presentations
