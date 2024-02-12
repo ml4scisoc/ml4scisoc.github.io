@@ -135,7 +135,6 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the
 * - 2024-04-02
   - LLMs and risks
   - [GPT3](https://papers.nips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf) and [Stochastic Parrots](https://dl.acm.org/doi/10.1145/3442188.3445922)
-[Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342)
   - Paper Presentation by TBD
 * - 2024-04-04
   - Generative Models in social contexts
