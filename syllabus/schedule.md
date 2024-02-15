@@ -75,14 +75,14 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
   - Missing data with graphical models and causal reasoning
   - [Graphical Models for Inference with Missing Data](https://proceedings.neurips.cc/paper/2013/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf)
   - Paper discussion led by Reid + performance metric review
-* - 2024-02-13
+* - 2024-02-15
   - Fairness
   - [Fairml classification chapter](https://fairmlbook.org/classification.html) (including impossibility proofs) and [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589) 
-  - Paper discussion by TBD
-* - 2024-02-15
+  - Paper discussion by Arlen and ?
+* - 2024-02-20
   - Fairness and Causality
   - [FairML Causality chapter](https://fairmlbook.org/causal.html) and classic bias examples ([Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342))
-  - Paper discussion by TBD
+  - Paper discussion by Liam and David
 * - 2024-02-20
   - Complexity of bias and fairness
   -  [On the Independence of Association Bias and Empirical Fairness
