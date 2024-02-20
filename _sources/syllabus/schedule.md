@@ -78,24 +78,24 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
 * - 2024-02-15
   - Fairness
   - [Fairml classification chapter](https://fairmlbook.org/classification.html) (including impossibility proofs) and [Emprical comparison paper](https://dl.acm.org/doi/10.1145/3287560.3287589) 
-  - Paper discussion by Arlen and ?
+  - Paper discussion by Arlen and Yusra
 * - 2024-02-20
   - Fairness and Causality
   - [FairML Causality chapter](https://fairmlbook.org/causal.html) and classic bias examples ([Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [Gender Shades](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) and [Obermeyer](https://www.science.org/doi/full/10.1126/science.aax2342))
   - Paper discussion by Liam and David
-* - 2024-02-20
-  - Complexity of bias and fairness
-  -  [On the Independence of Association Bias and Empirical Fairness
-in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the possibility of fairness](https://dl.acm.org/doi/abs/10.1145/3593013.3594007)
-  - Paper discussion TBD
 * - 2024-02-22
   - Bias and STS
   - Ruha Benjamin
   - Talk at Welcome center
 * - 2024-02-27
+  - Complexity of bias and fairness
+  -  [On the Independence of Association Bias and Empirical Fairness
+in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the possibility of fairness](https://dl.acm.org/doi/abs/10.1145/3593013.3594007)
+  - Paper discussion Puja and Victoria
+* - 2024-02-29
   - Latent Variable models
   - classic: [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and deep learning:[Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
-  - Paper presentation by TBD
+  - Paper presentation by Kushas and Niraj
 * - 2024-02-29
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009) and [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)
