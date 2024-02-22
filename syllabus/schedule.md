@@ -96,13 +96,9 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the
   - Latent Variable models
   - classic: [Indian Buffet Process](https://jmlr.org/papers/volume12/griffiths11a/griffiths11a.pdf) and deep learning:[Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
   - Paper presentation by Kushas and Niraj
-* - 2024-02-29
+* - 2024-03-05
   - Interpretable & Explanation Intro
   - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009) and [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)
-  - Paper presentation by TBD
-* - 2024-03-05
-  - A Case for Interpretability over Explanation
-  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
   - Paper presentation by TBD
 * - 2024-03-07
   - What does Interpretable mean
@@ -125,37 +121,37 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the
   - none
   - peer review
 * - 2024-03-26
+  - A Case for Interpretability over Explanation
+  - [Why are we explaining black box models](https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/6) and [Learning Certifiably optimal rule lists for categorical data](http://jmlr.org/papers/volume18/17-716/17-716.pdf)
+  - Paper presentation by TBD
+* - 2024-03-28
   - what to/not do with explanation
   - [Actionable Recourse in Linear Classification](https://dl.acm.org/doi/10.1145/3287560.3287566) and [Model Reconstruction from Model Explanations](https://arxiv.org/abs/1807.05185)
   - Paper Presentation by TBD
-* - 2024-03-28
+* - 2024-04-02
   - Trust
   - [Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI](https://dl.acm.org/doi/10.1145/3442188.3445923) and [trustworthiness of GPT models](https://openreview.net/pdf?id=kaHpo8OZw2) 
   - Paper Presentation by TBD
-* - 2024-04-02
+* - 2024-04-04
   - LLMs and risks
   - [GPT3](https://papers.nips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf) and [Stochastic Parrots](https://dl.acm.org/doi/10.1145/3442188.3445922)
   - Paper Presentation by TBD
-* - 2024-04-04
+* - 2024-04-09
   - Generative Models in social contexts
   - [Are Emergent abilities of LLMs a Mirage](https://openreview.net/pdf?id=ITw9edRDlD) and [Regulating ChatGPT and other Large GenAI models](https://dl.acm.org/doi/10.1145/3593013.3594067)
   - Paper Presentation by TBD
-* - 2024-04-09
+* - 2024-04-11
   - Multi objective learning 
   -  [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg) 
   - Paper Presentation by TBD
-* - 2024-04-11
+* - 2024-04-16
   - Noisy labels and bias 
   - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf)
   - Paper Presentation by TBD
-* - 2024-04-16
+* - 2024-04-18
   - art/future or work?
   - tba
   - Paper Presentation by TBD
-* - 2024-04-18
-  - data augmentation?
-  - tba
-  - Paper Presentation by 
 * - 2024-04-23
   - 3 Project Presentations
   - projects 
@@ -178,6 +174,11 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the
   - projects
   - presentations with peer feedback; discuss revision plans; overall course review-->
 
+
+* - 2024-04-18
+  - data augmentation?
+  - tba
+  - Paper Presentation by 
 
 
 <!-- You can also cite references that are stored in a `bibtex` file. For example,
