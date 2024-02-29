@@ -89,8 +89,7 @@ The first two weeks will be as follows, other papers will liklely be adjusted ba
   - Talk at Welcome center
 * - 2024-02-27
   - Complexity of bias and fairness
-  -  [On the Independence of Association Bias and Empirical Fairness
-in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the possibility of fairness](https://dl.acm.org/doi/abs/10.1145/3593013.3594007)
+  -   and [the possibility of fairness](https://dl.acm.org/doi/abs/10.1145/3593013.3594007)
   - Paper discussion Puja and Victoria
 * - 2024-02-29
   - Latent Variable models
@@ -98,12 +97,13 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [the
   - Paper presentation by Kushas and Niraj
 * - 2024-03-05
   - Interpretable & Explanation Intro
-  - [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009) and [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)
-  - Paper presentation by TBD
+  - [On the Independence of Association Bias and Empirical Fairness
+in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [Towards A Rigorous Science of Interpretable Machine Learning] (https://arxiv.org/abs/1702.08608)
+  - Paper presentation by Puja and Liam
 * - 2024-03-07
   - What does Interpretable mean
-  - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
-  - Paper presentation by TBD
+  -   [A Survey of Methods for Explaining Black Box Models](https://dl.acm.org/doi/pdf/10.1145/3236009)  [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)](https://arxiv.org/abs/1711.11279)  and [Towards falsifiable interpretability research](https://ml-retrospectives.github.io/neurips2020/camera_ready/4.pdf)
+  - Paper presentation by Sarah, Reid, and Borano
 * - 2024-03-12
   - spring break
   - none
