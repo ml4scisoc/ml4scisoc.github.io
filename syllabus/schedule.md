@@ -135,7 +135,7 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [Tow
 * - 2024-04-04
   - LLMs and risks
   - [GPT3](https://papers.nips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf) and [Stochastic Parrots](https://dl.acm.org/doi/10.1145/3442188.3445922)
-  - Paper Presentation by Yusras and Kushas
+  - Paper Presentation by Yusra and Kushas
 * - 2024-04-09
   - Generative Models in social contexts
   - [Are Emergent abilities of LLMs a Mirage](https://openreview.net/pdf?id=ITw9edRDlD) and [Regulating ChatGPT and other Large GenAI models](https://dl.acm.org/doi/10.1145/3593013.3594067)
