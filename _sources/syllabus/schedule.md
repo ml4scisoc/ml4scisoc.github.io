@@ -143,11 +143,11 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [Tow
 * - 2024-04-11
   - Multi objective learning 
   -  [A critical review of multi-objective optimization in data mining: a position paper](https://dl.acm.org/doi/abs/10.1145/1046456.1046467?casa_token=EolodHNPqJcAAAAA:WP8AqKpTtu74hQbMH6MabfM3HjFbQZ2C5Vp4CV--FTleunL6O_cKD98tfi7KVSWbD89vGdVaReg) 
-  - Paper Presentation Nirajs
+  - Paper Presentation Niraj
 * - 2024-04-16
   - Noisy labels and bias 
   - [Recovering from biased data: Can fairness constraints improve accuracy](https://arxiv.org/pdf/1912.01094.pdf) and  [Learning with Noisy Labels](https://proceedings.neurips.cc/paper/2013/file/3871bd64012152bfb53fdf04b401193f-Paper.pdf)
-  - Paper Presentation by Puja and TBD
+  - Paper Presentation by Puja and Kushas
 * - 2024-04-18
   - art/future or work?
   - tba
