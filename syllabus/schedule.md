@@ -151,15 +151,15 @@ in Language Models](https://dl.acm.org/doi/pdf/10.1145/3593013.3594004) and [Tow
 * - 2024-04-18
   - art/future or work?
   - tba
-  - Paper Presentation by TBD
+  - Paper Presentation by Niraj
 * - 2024-04-23
   - 3 Project Presentations
   - projects 
-  - Paper Presentation by TBD
+  - Paper Presentation by Yusra, Puja, and Liam; Arlen; Ryan & Victoria
 * - 2024-04-25
   - 3 Project Presentations
   - projects
-  - presentations by  TBD
+  - presentations by  David; Borano & Kushas
 
 
 ``````
